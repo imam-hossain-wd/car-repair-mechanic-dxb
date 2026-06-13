@@ -1,3 +1,5 @@
+import { Zap, Shield, Truck, Clock } from "lucide-react";
+
 export const batteriesData = {
   premiumBrands: [
     { name: "Bosch", origin: "Germany", warranty: "2 Years", type: "Premium", popular: true },

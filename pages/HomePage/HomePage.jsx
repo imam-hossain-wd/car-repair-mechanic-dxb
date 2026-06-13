@@ -1,3 +1,4 @@
+import { Loading } from "@/components/shared/Loading/Loading";
 import { AboutUs } from "@/components/view/AboutUs/AboutUs";
 import { BatteriesWeProvide } from "@/components/view/BatteriesWeProvide/BatteriesWeProvide";
 import { CarBrandsWeServe } from "@/components/view/CarBrandsWeServe/CarBrandsWeServe";
@@ -11,6 +12,7 @@ import { StillHasQuestionSection } from "@/components/view/StillHasQuestionSecti
 import { WhyChooseUs } from "@/components/view/WhyChooseUs/WhyChooseUs";
 
 const HomePage = () => {
+
   return (
     <div>
       <HomeHero />
