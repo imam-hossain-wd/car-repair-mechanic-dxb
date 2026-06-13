@@ -1,4 +1,5 @@
 import { AboutUs } from "@/components/view/AboutUs/AboutUs";
+import { CarBrandsWeServe } from "@/components/view/CarBrandsWeServe/CarBrandsWeServe";
 import { EmergancyServices } from "@/components/view/EmergancyServices/EmergancyServices";
 import { FeaturedServices } from "@/components/view/FeaturedServices/FeaturedServices";
 import { HomeHero } from "@/components/view/Hero/HomeHero";
@@ -14,6 +15,8 @@ const HomePage = () => {
       <FeaturedServices />
       <AboutUs />
       <WhyChooseUs />
+      <CarBrandsWeServe />
+
     </div>
   );
 };
