@@ -1,4 +1,5 @@
 import { AboutUs } from "@/components/view/AboutUs/AboutUs";
+import { BatteriesWeProvide } from "@/components/view/BatteriesWeProvide/BatteriesWeProvide";
 import { CarBrandsWeServe } from "@/components/view/CarBrandsWeServe/CarBrandsWeServe";
 import { EmergancyServices } from "@/components/view/EmergancyServices/EmergancyServices";
 import { FeaturedServices } from "@/components/view/FeaturedServices/FeaturedServices";
@@ -16,6 +17,8 @@ const HomePage = () => {
       <AboutUs />
       <WhyChooseUs />
       <CarBrandsWeServe />
+      <BatteriesWeProvide />
+
 
     </div>
   );
