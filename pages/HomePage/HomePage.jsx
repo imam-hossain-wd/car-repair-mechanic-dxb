@@ -1,6 +1,7 @@
 import { AboutUs } from "@/components/view/AboutUs/AboutUs";
 import { BatteriesWeProvide } from "@/components/view/BatteriesWeProvide/BatteriesWeProvide";
 import { CarBrandsWeServe } from "@/components/view/CarBrandsWeServe/CarBrandsWeServe";
+import { ClientReviews } from "@/components/view/ClientReviews/ClientReviews";
 import { EmergancyServices } from "@/components/view/EmergancyServices/EmergancyServices";
 import { FAQ } from "@/components/view/FAQ/FAQ";
 import { FeaturedServices } from "@/components/view/FeaturedServices/FeaturedServices";
@@ -21,6 +22,7 @@ const HomePage = () => {
       <CarBrandsWeServe />
       <BatteriesWeProvide />
       <FAQ />
+      <ClientReviews />
       <StillHasQuestionSection />
     </div>
   );

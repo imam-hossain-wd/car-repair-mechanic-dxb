@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { SiteConfig } from "@/config/siteConfig";
@@ -7,7 +5,6 @@ import { Mail, MessageCircle, Phone } from "lucide-react";
 import Link from "next/link";
 
 export function StillHasQuestionSection() {
-
     return (
         <div className="my-8 container md:w-[90%] mx-auto p-4 bg-linear-to-r from-primary/10 to-primary/5 rounded-xl text-center border border-primary/20">
             <h3 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
