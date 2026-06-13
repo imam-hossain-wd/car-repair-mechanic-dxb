@@ -10,12 +10,12 @@ import { Drawer } from "../Drawer/Drawer";
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "Services", href: "/services" },
-  { name: "Area We Serve", href: "/area-we-serve" },
-  { name: "Brand We Serve", href: "/brand-we-serve" },
-  { name: "Contact", href: "/contact" },
-  { name: "About", href: "/about" },
-  { name: "Blogs", href: "/blogs" },
+  { name: "Services", href: "/dubai/services" },
+  { name: "Area We Serve", href: "/dubai/area-we-serve" },
+  { name: "Brand We Serve", href: "/dubai/brand-we-serve" },
+  { name: "Contact", href: "/dubai/contact" },
+  { name: "About", href: "/dubai/about" },
+  { name: "Blogs", href: "/dubai/blogs" },
 ];
 
 const NavLink = ({ href, children, isActive, onClick }) => {
