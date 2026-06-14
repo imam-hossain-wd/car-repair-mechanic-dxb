@@ -12,6 +12,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import Link from "next/link";
 
 
 // --- DATA ---
@@ -122,7 +123,7 @@ export default function VehiclesWeServePage() {
         <main className="min-h-screen bg-background text-foreground">
 
             {/* 1. HERO SECTION */}
-            <section className="py-16 md:py-24 bg-gradient-to-b from-muted/50 to-background border-b">
+            <section className="py-16 md:py-24 bg-linear-to-b from-muted/50 to-background border-b">
                 <div className="container mx-auto px-4 text-center max-w-4xl">
                     <Badge variant="secondary" className="mb-6 px-4 py-1.5 text-sm font-medium">
                         <Compass className="mr-2 h-4 w-4" /> Serving All Dubai Emirates
@@ -133,13 +134,13 @@ export default function VehiclesWeServePage() {
                     <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
                         From daily sedans to luxury SUVs and electric vehicles, our certified mechanics deliver expert doorstep repair across Dubai. All makes and models welcome.
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Button asChild size="lg" className="w-full sm:w-auto px-8">
-                            <a href={`tel:${SiteConfig.displayNumber}`}>
+                    <div className=" w-full flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <Button asChild size="lg" className="w-auto px-8">
+                            <Link href={`tel:${SiteConfig.displayNumber}`}>
                                 <Phone className="mr-2 h-5 w-5" /> Call {SiteConfig.displayNumber}
-                            </a>
+                            </Link>
                         </Button>
-                        <Button asChild variant="outline" size="lg" className="w-full sm:w-auto px-8">
+                        <Button asChild variant="outline" size="lg" className="w-auto px-8">
                             <a href={SiteConfig.whatsappCallLink} target="_blank" rel="noopener noreferrer">
                                 <MessageSquare className="mr-2 h-5 w-5" /> WhatsApp Us
                             </a>
@@ -307,15 +308,15 @@ export default function VehiclesWeServePage() {
                         Skip the garage wait. Our certified mobile mechanics come to your home or office in Dubai with all the tools needed.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto px-8">
-                            <a href={`tel:${SiteConfig.displayNumber}`}>
+                        <Button asChild size="lg" variant="secondary" className="w-auto px-8">
+                            <Link href={`tel:${SiteConfig.displayNumber}`}>
                                 <Phone className="mr-2 h-5 w-5" /> Call Now
-                            </a>
+                            </Link>
                         </Button>
-                        <Button asChild size="lg" variant="outline" className="w-full sm:w-auto px-8 bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                            <a href={SiteConfig.whatsappCallLink} target="_blank" rel="noopener noreferrer">
+                        <Button asChild size="lg" variant="outline" className="w-auto px-8 bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+                            <Link href={SiteConfig.whatsappCallLink} target="_blank" rel="noopener noreferrer">
                                 <MessageSquare className="mr-2 h-5 w-5" /> WhatsApp Us
-                            </a>
+                            </Link>
                         </Button>
                     </div>
                 </div>

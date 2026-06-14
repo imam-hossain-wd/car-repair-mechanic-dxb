@@ -11,19 +11,10 @@ import {
   MessageCircle,
   Send,
   CheckCircle,
-  Facebook,
-  Instagram,
-  Twitter,
-  Youtube,
   Navigation,
-  Calendar,
   User,
-  AlertCircle,
   Wrench,
-  Car,
-  Shield,
   Star,
-  Truck
 } from "lucide-react";
 import { SiteConfig } from "@/config/siteConfig";
 

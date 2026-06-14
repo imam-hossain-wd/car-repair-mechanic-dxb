@@ -13,6 +13,7 @@ const navItems = [
   { name: "Services", href: "/dubai/services" },
   { name: "Area We Serve", href: "/dubai/area-we-serve" },
   { name: "Brand We Serve", href: "/dubai/brand-we-serve" },
+  { name: "Vehicles We Serve", href: "/dubai/vehicles-we-serve" },
   { name: "Contact", href: "/dubai/contact" },
   { name: "About", href: "/dubai/about" },
   { name: "Blogs", href: "/dubai/blogs" },
@@ -149,7 +150,9 @@ export const Navbar = () => {
 
   // Close drawer when route changes
   useEffect(() => {
-    setIsDrawerOpen(false);
+    return () => {
+      setIsDrawerOpen(false);
+    };
   }, [pathname]);
 
   return (
