@@ -106,11 +106,12 @@ export function FAQ() {
         </div>
 
         {/* FAQ Accordion */}
-        <div className="w-container md:w-[80%] mx-auto grid grid-cols-2 gap-5">
+        <div className="w-container md:w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
           {filteredFAQs.map((faq, index) => (
             <div
               key={index}
               className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden transition-all duration-200"
+              // className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden transition-all duration-200"
             >
               <button
                 onClick={() => toggleFAQ(index)}

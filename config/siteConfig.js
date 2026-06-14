@@ -188,7 +188,7 @@ export const SiteConfig = {
   brandName: "Car Repair Mechanic Dubai",
   url: "https://carrepairmechanic.ae",
   email: "carmechanicdxb@gmail.com",
-  description: "Your On-Demand Car Savior Anywhere, Anytime in Dubai!",
+  description: "Broke down? Get Dubai's #1 mobile mechanic at your doorstep in 5 to 15 mins. We provide 24/7 car repair, battery replacement & AC service across Dubai. Fast, reliable, and affordable auto repair wherever you are in the city.",
   displayNumber: "+971 56 870 3512",
   numberCallLink: "tel:+971568703512",
   whatsappCallLink: "https://wa.me/971568703512",
