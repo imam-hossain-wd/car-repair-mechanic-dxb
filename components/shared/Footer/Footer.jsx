@@ -25,6 +25,7 @@ import {
     CheckCircle
 } from "lucide-react";
 import { SiteConfig } from "@/config/siteConfig";
+import Logo from "../Logo/Logo";
 
 
 export function Footer() {
@@ -72,25 +73,19 @@ export function Footer() {
                     {/* Column 1: Brand & Contact - 4 columns */}
                     <div className="lg:col-span-4 space-y-6">
                         {/* Brand Logo & Name */}
-                        <div className="space-y-4">
-                            <Link href="/" className="inline-block group">
-                                <div className="flex items-center gap-3">
-                                    <div className="p-2.5 bg-primary/20 rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                                        <Wrench className="h-8 w-8 text-primary" />
-                                    </div>
-                                    <div>
-                                        <h2 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                                            {brandName}
-                                        </h2>
-                                        <p className="text-xs text-gray-400 mt-0.5">Professional Auto Care</p>
-                                    </div>
-                                </div>
-                            </Link>
+                        <div className="space-y-4 bg-white p-4  rounded-xl">
+                            <Logo />
 
-                            <p className="text-sm text-gray-300 leading-relaxed">
+
+                        </div>
+
+                        <dib className="">
+                            <p className="text-xs text-white ">Professional Auto Care</p>
+
+                            <p className="text-sm text-white mt-2 mb-5">
                                 {description || "Your trusted mobile car repair service in Dubai. Professional, reliable, and available 24/7 for all your automotive needs."}
                             </p>
-                        </div>
+                        </dib>
 
                         {/* Trust Badges */}
                         <div className="flex flex-wrap gap-2">
