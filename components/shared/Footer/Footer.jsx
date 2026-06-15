@@ -48,9 +48,7 @@ export function Footer() {
         coordinate
     } = SiteConfig;
 
-    // Get unique service areas for display (limit to 8 for better UX)
-    const displayServiceAreas = serviceAreas;
-    const displayServices = services;
+
 
     return (
         <footer className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
@@ -71,7 +69,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 gap-8 md:gap-10 lg:grid-cols-12 relative z-10">
 
                     {/* Column 1: Brand & Contact - 4 columns */}
-                    <div className="lg:col-span-4 space-y-6">
+                    <div className="lg:col-span-3 space-y-6">
                         {/* Brand Logo & Name */}
                         <div className="space-y-4 bg-white p-4  rounded-xl">
                             <Logo />
@@ -107,6 +105,29 @@ export function Footer() {
                         <div className="space-y-3">
                             <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">Get in Touch</h3>
 
+
+                            {/* Google Maps Badge */}
+                            <Link href={mapsLink} target="_blank" className="block p-3 bg-white/5 rounded-xl hover:bg-primary/10 transition-all border border-white/10 hover:border-primary/30">
+                                <div className="flex items-center gap-2">
+                                    <MapPin className="h-4 w-4 text-primary" />
+                                    <span className="text-xs text-gray-300">Find us on Google Maps</span>
+                                </div>
+                                <p className="text-xs text-primary mt-1">4.9 ★ (500+ reviews)</p>
+                            </Link>
+
+                            <div className="flex items-start gap-3 p-3 bg-white/5 rounded-xl border border-white/10">
+                                <div className="p-2 bg-primary/80 rounded-lg">
+                                    <MapPin className="h-4 w-4 text-white" />
+                                </div>
+                                <div className="flex-1">
+                                    <p className="text-sm font-medium text-white">{location}</p>
+                                    <Link href={mapsLink} target="_blank" className="text-xs text-primary hover:underline inline-flex items-center gap-1 mt-1">
+                                        <Navigation className="h-3 w-3" />
+                                        Get Directions
+                                    </Link>
+                                </div>
+                            </div>
+
                             <Link href={numberCallLink} className="flex items-center gap-3 p-3 bg-white/5 rounded-xl hover:bg-primary/10 transition-all duration-300 group border border-white/10 hover:border-primary/30">
                                 <div className="p-2 bg-primary rounded-lg group-hover:scale-110 transition-transform">
                                     <Phone className="h-4 w-4 text-white" />
@@ -140,39 +161,10 @@ export function Footer() {
                                 <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all" />
                             </Link>
 
-                            <div className="flex items-start gap-3 p-3 bg-white/5 rounded-xl border border-white/10">
-                                <div className="p-2 bg-primary/80 rounded-lg">
-                                    <MapPin className="h-4 w-4 text-white" />
-                                </div>
-                                <div className="flex-1">
-                                    <p className="text-sm font-medium text-white">{location}</p>
-                                    <Link href={mapsLink} target="_blank" className="text-xs text-primary hover:underline inline-flex items-center gap-1 mt-1">
-                                        <Navigation className="h-3 w-3" />
-                                        Get Directions
-                                    </Link>
-                                </div>
-                            </div>
                         </div>
 
-                        {/* Business Hours */}
-                        <div className="p-4 bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl border border-primary/20">
-                            <div className="flex items-center gap-2 mb-3">
-                                <Clock className="h-4 w-4 text-primary" />
-                                <h3 className="text-sm font-semibold">Operating Hours</h3>
-                            </div>
-                            <div className="space-y-1.5">
-                                {operatingHours?.slice(0, 4).map((schedule, index) => (
-                                    <div key={index} className="flex justify-between text-xs">
-                                        <span className="text-gray-300">{schedule.day}</span>
-                                        <span className="text-primary font-medium">{schedule.hours}</span>
-                                    </div>
-                                ))}
-                            </div>
-                            <p className="text-xs text-gray-400 mt-2 flex items-center gap-1">
-                                <CheckCircle className="h-3 w-3 text-green-500" />
-                                Available 365 days a year
-                            </p>
-                        </div>
+
+
                     </div>
 
                     {/* Column 2: Services - 3 columns */}
@@ -195,9 +187,34 @@ export function Footer() {
                                 ))}
                             </nav>
                         </div>
+                    </div>
 
+                    {/* Column 3: Service Areas - 3 columns */}
+                    <div className="lg:col-span-3 space-y-5">
+                        <div>
+                            <h3 className="text-lg font-bold flex items-center gap-2 mb-4">
+                                <Map className="h-5 w-5 text-primary" />
+                                Service Areas
+                            </h3>
+                            <div className="grid grid-cols-1 gap-2">
+                                {serviceAreas.map((area, index) => (
+                                    <Link
+                                        key={index}
+                                        href={area.href}
+                                        className="group flex items-center gap-2 text-sm text-gray-300 "
+                                    >
+                                        <div className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary group-hover:scale-125 transition-all"></div>
+                                        <span className="truncate group-hover:translate-x-1 transition-transform">{area.name}</span>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Column 4: Newsletter & Social - 2 columns */}
+                    <div className="lg:col-span-3 space-y-5">
                         {/* Quick Links */}
-                        <div className="pt-4">
+                        <div className="">
                             <h3 className="text-lg font-bold flex items-center gap-2 mb-4">
                                 <Award className="h-5 w-5 text-primary" />
                                 Quick Links
@@ -216,44 +233,15 @@ export function Footer() {
                                 ))}
                             </nav>
                         </div>
-                    </div>
 
-                    {/* Column 3: Service Areas - 3 columns */}
-                    <div className="lg:col-span-3 space-y-5">
-                        <div>
-                            <h3 className="text-lg font-bold flex items-center gap-2 mb-4">
-                                <Map className="h-5 w-5 text-primary" />
-                                Service Areas
-                            </h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                {serviceAreas.map((area, index) => (
-                                    <Link
-                                        key={index}
-                                        href={area.href}
-                                        className="group flex items-center gap-2 text-sm text-gray-300 hover:text-primary transition-all duration-200"
-                                    >
-                                        <div className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary group-hover:scale-125 transition-all"></div>
-                                        <span className="truncate group-hover:translate-x-1 transition-transform">{area.name}</span>
-                                    </Link>
-                                ))}
-                            </div>
-                            {serviceAreas?.length > 8 && (
-                                <Link href="/dubai/area-we-serve" className="inline-flex items-center gap-2 text-xs text-primary hover:underline mt-3">
-                                    View All Areas <ChevronRight className="h-3 w-3" />
-                                </Link>
-                            )}
-                        </div>
-                    </div>
 
-                    {/* Column 4: Newsletter & Social - 2 columns */}
-                    <div className="lg:col-span-2 space-y-5">
-                        {/* Social Links */}
+
                         <div>
                             <h3 className="text-lg font-bold flex items-center gap-2 mb-4">
                                 <Headphones className="h-5 w-5 text-primary" />
                                 Connect With Us
                             </h3>
-                            <div className="flex flex-wrap gap-3">
+                            <div className="flex  gap-3">
                                 {socialLinks?.map((social, index) => {
                                     const Icon = social.icon;
                                     return (
@@ -274,8 +262,27 @@ export function Footer() {
                             </div>
                         </div>
 
+                        <div className="p-4 bg-linear-to-br from-primary/10 to-primary/5 rounded-xl border border-primary/20 ">
+                            <div className="flex items-center gap-2 mb-3">
+                                <Clock className="h-4 w-4 text-primary" />
+                                <h3 className="text-sm font-semibold">Operating Hours</h3>
+                            </div>
+                            <div className="space-y-1.5 ">
+                                {operatingHours?.map((schedule, index) => (
+                                    <div key={index} className="flex justify-between text-xs">
+                                        <span className="text-gray-300">{schedule.day}</span>
+                                        <span className="text-white font-medium">{schedule.hours}</span>
+                                    </div>
+                                ))}
+                            </div>
+                            <p className="text-xs text-gray-400 mt-2 flex items-center gap-1">
+                                <CheckCircle className="h-3 w-3 text-green-500" />
+                                Available 365 days a year
+                            </p>
+                        </div>
+
                         {/* Newsletter Subscription */}
-                        <div className="p-5 bg-gradient-to-br from-primary/15 to-primary/5 rounded-2xl border border-primary/20">
+                        <div className="p-5 bg-linear-to-br from-primary/15 to-primary/5 rounded-2xl border border-primary/20">
                             <h3 className="text-sm font-semibold mb-2 flex items-center gap-2">
                                 <Send className="h-4 w-4 text-primary" />
                                 Newsletter
@@ -303,14 +310,7 @@ export function Footer() {
                             </p>
                         </div>
 
-                        {/* Google Maps Badge */}
-                        <Link href={mapsLink} target="_blank" className="block p-3 bg-white/5 rounded-xl hover:bg-primary/10 transition-all border border-white/10 hover:border-primary/30">
-                            <div className="flex items-center gap-2">
-                                <MapPin className="h-4 w-4 text-primary" />
-                                <span className="text-xs text-gray-300">Find us on Google Maps</span>
-                            </div>
-                            <p className="text-xs text-primary mt-1">4.9 ★ (500+ reviews)</p>
-                        </Link>
+
                     </div>
                 </div>
 
