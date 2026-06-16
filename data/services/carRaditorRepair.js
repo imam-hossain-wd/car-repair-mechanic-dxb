@@ -17,7 +17,7 @@ export const carRaditorRepair = {
 
     slug: "car-radiator-repair-dubai",
 
-    service_image: serviceImages?.carRaditor,
+    service_image: serviceImages?.engine,
 
     intro: {
         heading: "Professional Car Radiator Repair Service in Dubai",

@@ -1,23 +1,13 @@
 // components/MobileFloatingButtons.jsx
 "use client";
 
-import { useState, useEffect } from "react";
-import { Phone, MessageCircle, ChevronUp } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 import { SiteConfig } from "@/app/siteConfig";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export function MobileFloatingButtons() {
     const { numberCallLink, whatsappCallLink } = SiteConfig;
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setShowScrollTop(window.scrollY > 300);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
 
     return (
         <div className="w-full fixed bottom-6 left-1/2 -translate-x-1/2 z-50 md:hidden">

@@ -17,7 +17,7 @@ export const acRepair = {
 
     slug: "car-ac-repair-dubai",
 
-    service_image: serviceImages?.carAcRepair,
+    service_image: serviceImages?.airConditioner,
 
     intro: {
         heading: "Professional Car AC Repair Service in Dubai",

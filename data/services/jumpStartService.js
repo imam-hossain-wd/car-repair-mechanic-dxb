@@ -16,7 +16,7 @@ export const jumpStartService = {
 
     slug: "car-jump-start-dubai",
 
-    service_image: serviceImages?.jumpStartCar,
+    service_image: serviceImages?.carBattery,
 
     intro: {
         heading: "24/7 Car Jump Start Service in Dubai",

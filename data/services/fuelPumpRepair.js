@@ -17,7 +17,7 @@ export const fuelPumpRepair = {
 
     slug: "car-fuel-pump-repair-dubai",
 
-    service_image: serviceImages?.fuelPumpRepair,
+    service_image: serviceImages?.spareParts,
 
     intro: {
         heading: "Professional Car Fuel Pump Repair Service in Dubai",

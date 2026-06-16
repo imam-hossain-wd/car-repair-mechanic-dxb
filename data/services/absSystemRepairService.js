@@ -17,7 +17,7 @@ export const absSystemRepairService = {
 
     slug: "abs-system-repair-dubai",
 
-    service_image: serviceImages?.absSystemRepair,
+    service_image: serviceImages?.spareParts,
 
     intro: {
         heading: "Professional ABS System Repair in Dubai",

@@ -17,7 +17,7 @@ export const oilChangeService = {
 
     slug: "oil-change-service-dubai",
 
-    service_image: serviceImages?.engineOilChane,
+    service_image: serviceImages?.engineOil,
 
     intro: {
         heading: "Professional Car Oil Change Service in Dubai",

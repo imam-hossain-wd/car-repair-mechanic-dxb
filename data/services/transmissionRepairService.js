@@ -17,7 +17,7 @@ export const transmissionRepairService = {
 
     slug: "car-transmission-repair-dubai",
 
-    service_image: serviceImages?.transmission,
+    service_image: serviceImages?.gear,
 
     intro: {
         heading: "Professional Car Transmission Repair in Dubai",

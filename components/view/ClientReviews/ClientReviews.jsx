@@ -175,18 +175,17 @@ export function ClientReviews() {
         </div>
         
         {/* CTA Button */}
-        <div className="text-center mt-8">
+        {/* <div className="text-center mt-8">
           <div className="inline-flex flex-col sm:flex-row gap-3">
             <Link
-              href={`tel:${displayNumber}`}
+              href=""
               className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 text-sm"
             >
               <Eye className="h-4 w-4" />
               View All Reviews
             </Link>
           </div>
-         
-        </div>
+        </div> */}
 
         {/* SEO Structured Data */}
         <script

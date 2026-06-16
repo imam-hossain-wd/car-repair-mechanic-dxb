@@ -17,7 +17,7 @@ export const carDetailingService = {
 
     slug: "car-detailing-service-dubai",
 
-    service_image: serviceImages?.carDetailing,
+    service_image: serviceImages?.maintenance,
 
     intro: {
         heading: "Professional Car Detailing Service in Dubai",

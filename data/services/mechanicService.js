@@ -18,7 +18,7 @@ export const mechanicService = {
 
   slug: "car-mechanic-service-dubai",
 
-  service_image: serviceImages?.carMechanic,
+  service_image: serviceImages?.autoRepair,
 
   intro: {
     heading: "Professional Car Mechanic Service in Dubai",

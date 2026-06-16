@@ -17,7 +17,7 @@ export const starterMotorRepair = {
 
     slug: "car-starter-motor-repair-dubai",
 
-    service_image: serviceImages?.selfStarterRepair,
+    service_image: serviceImages?.engine,
 
     intro: {
         heading: "Professional Car Starter Motor Repair Service in Dubai",

@@ -15,7 +15,7 @@ import spareParts from "../assets/services/spare-parts.png";
 import timing from "../assets/services/timing.png";
 
 
-export const services = {
+export const serviceImages = {
     carRepair,
     airConditioner,
     autoRepair,

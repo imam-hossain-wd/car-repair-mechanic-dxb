@@ -17,7 +17,7 @@ export const acGasRefillService = {
 
     slug: "car-ac-gas-refill-service-dubai",
 
-    service_image: serviceImages?.acGasfill,
+    service_image: serviceImages?.airConditioner,
 
     intro: {
         heading: "Professional Car AC Gas Refill in Dubai",

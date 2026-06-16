@@ -19,10 +19,13 @@ import {
   Calendar,
   Users,
   ThumbsUp,
-  Truck
+  Truck,
+  Eye
 } from "lucide-react";
 import { SiteConfig } from "@/app/siteConfig";
 import { Button } from "@/components/ui/button";
+import { ServiceCard } from "@/components/shared/ServiceCard/ServiceCard";
+import { services } from "@/data/services/services";
 
 // Icon mapping for services
 const serviceIcons = {
@@ -89,8 +92,17 @@ export function FeaturedServices() {
           </p>
         </div>
 
-        {/* Featured Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        {services?.length > 0 && (
+          <div className="container mx-auto px-4 py-">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {services?.slice(0, 8)?.map((service) => (
+                <ServiceCard key={service?.id} service={service} featured={true} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           {featuredServices.map((service) => {
             const Icon = serviceIcons[service.slug] || Wrench;
             return (
@@ -98,14 +110,11 @@ export function FeaturedServices() {
                 key={service.id}
                 className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-primary/50 transition-all duration-300 hover:shadow-xl"
               >
-                {/* Featured Badge */}
                 <div className="absolute top-4 right-4 z-10">
                   <div className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
                     Featured
                   </div>
                 </div>
-
-                {/* Emergency Badge */}
                 {service.emergency && (
                   <div className="absolute top-4 left-4 z-10">
                     <div className="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
@@ -116,14 +125,12 @@ export function FeaturedServices() {
                 )}
 
                 <div className="p-6">
-                  {/* Icon */}
                   <div className="mb-4">
                     <div className="inline-flex p-3 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-all duration-300">
                       <Icon className="h-8 w-8 text-primary" />
                     </div>
                   </div>
 
-                  {/* Title & Description */}
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
                     {service.name}
                   </h3>
@@ -131,7 +138,7 @@ export function FeaturedServices() {
                     {service.shortDescription}
                   </p>
 
-                  {/* Service Details */}
+                  
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center justify-between text-sm">
                       <span className="text-gray-500 dark:text-gray-400">Duration</span>
@@ -152,8 +159,6 @@ export function FeaturedServices() {
                       </span>
                     </div>
                   </div>
-
-                  {/* CTA Button */}
                   <Link
                     href={`/dubai/services/${service.slug}`}
                     className="inline-flex items-center justify-between w-full px-4 py-2.5 bg-primary text-white rounded-lg transition-all duration-300 group/link"
@@ -165,7 +170,7 @@ export function FeaturedServices() {
               </div>
             );
           })}
-        </div>
+        </div> */}
 
         {/* SEO Structured Data */}
         <script
@@ -194,9 +199,19 @@ export function FeaturedServices() {
           }}
         />
 
-        <Link className="flex justify-center items-center w-auto h-auto" href="/dubai/services">
-          <Button classname="w-50 h-20">View All Services</Button>
-        </Link>
+        <div className="text-center mt-8">
+          <div className="inline-flex flex-col sm:flex-row gap-3">
+            <Link
+              href="services"
+              className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-primary  text-white font-semibold rounded-lg"
+            >
+              <Eye className="h-4 w-4" />
+              View All Reviews
+            </Link>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );
