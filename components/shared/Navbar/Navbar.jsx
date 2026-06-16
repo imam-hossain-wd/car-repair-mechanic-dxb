@@ -28,8 +28,10 @@ import { Button } from "@/components/ui/button";
 import { Drawer } from "../Drawer/Drawer";
 import { SiteConfig } from "@/app/siteConfig";
 import Logo from "../Logo/Logo";
+import { services } from "@/data/services/services";
 
-// Services dropdown data
+
+
 const servicesDropdown = [
   { name: "Auto Repair", slug: "auto-repair" },
   { name: "Car Battery Replacement", slug: "battery-replacement" },
@@ -42,18 +44,7 @@ const servicesDropdown = [
   { name: "Engine Diagnostics", slug: "engine-diagnostics" },
   { name: "Transmission Service", slug: "transmission" },
 ];
-// const servicesDropdown = [
-//   { name: "Auto Repair", slug: "auto-repair",  description: "Complete car repair solutions" },
-//   { name: "Car Battery Replacement", slug: "battery-replacement",description: "2 years warranty" },
-//   { name: "Jump Start Service", slug: "jump-start",  description: "24/7 emergency" },
-//   { name: "AC Repair Service", slug: "ac-repair", description: "Fast cooling solutions" },
-//   { name: "Radiator Repair", slug: "radiator-repair", description: "Overheating fix" },
-//   { name: "Oil Change Service", slug: "oil-change",  description: "Engine protection" },
-//   { name: "Car Mechanic Service", slug: "mechanic-service",  description: "Full inspection" },
-//   { name: "Brake Repair", slug: "brake-repair",  description: "Safety first" },
-//   { name: "Engine Diagnostics", slug: "engine-diagnostics",  description: "Advanced scanning" },
-//   { name: "Transmission Service", slug: "transmission", description: "Smooth shifting" },
-// ];
+
 
 // Area we serve dropdown
 const areaDropdown = [
@@ -71,6 +62,8 @@ const areaDropdown = [
   { name: "Za'abeel First", slug: "zaabeel-second", responseTime: "15 min" },
   { name: "Za'abeel Second", slug: "zaabeel-second", responseTime: "15 min" },
 ];
+
+
 
 // Brands we serve dropdown
 const brandsDropdown = [
@@ -198,14 +191,6 @@ const DesktopNav = ({ pathname }) => {
         <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${pathname === "/" ? "w-full" : ""}`} />
       </Link>
 
-      <Dropdown
-        title="Services"
-        href="/services"
-        items={servicesDropdown}
-        isOpen={openDropdown === "services"}
-        onToggle={() => handleDropdownToggle("services")}
-        onClose={handleDropdownClose}
-      />
 
       {/* <Dropdown
         title="Area We Serve"
@@ -214,7 +199,30 @@ const DesktopNav = ({ pathname }) => {
         isOpen={openDropdown === "areas"}
         onToggle={() => handleDropdownToggle("areas")}
         onClose={handleDropdownClose}
-      /> */}
+        /> */}
+
+      {/* <Dropdown
+          title="Services"
+          href="/services"
+          items={servicesDropdown}
+          isOpen={openDropdown === "services"}
+          onToggle={() => handleDropdownToggle("services")}
+          onClose={handleDropdownClose}
+        /> */}
+      <Dropdown
+        title="Services"
+        href="/services"
+        items={services?.slice(0,10).map((service) => ({
+          name: service.name,
+          slug: service.slug,
+        }))}
+        isOpen={openDropdown === "services"}
+        onToggle={() => handleDropdownToggle("services")}
+        onClose={handleDropdownClose}
+      />
+
+
+
 
       <Link
         href="/area-we-serve"
@@ -365,12 +373,12 @@ const MobileDrawerNav = ({ isOpen, onClose, pathname }) => {
                           onClick={onClose}
                           className="block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary rounded-lg transition-all"
                         >
-                          <div className="flex items-center justify-between">
-                            <span>{sub.name}</span>
-                            {sub.responseTime && (
-                              <span className="text-[10px] text-green-600">{sub.responseTime}</span>
-                            )}
-                          </div>
+                            {/* <div className="flex items-center justify-between">
+                              <span>{sub.name}</span>
+                              {sub.responseTime && (
+                                <span className="text-[10px] text-green-600">{sub.responseTime}</span>
+                              )}
+                            </div> */}
                         </Link>
                       ))}
                     </div>

@@ -130,13 +130,14 @@ export const ServiceCard = ({ service, featured = false }) => {
 
 
         <div className="flex justify-around mt-4">
-
-          <Button className="rounded w-24">
-            <Eye className="h-4 w-4 text-white group-hover/action:text-white" />
-            <span>
-              View
-            </span>
-          </Button>
+          <Link href={`services/${service?.slug}`}>
+            <Button className="rounded w-24">
+              <Eye className="h-4 w-4 text-white group-hover/action:text-white" />
+              <span>
+                View
+              </span>
+            </Button>
+          </Link>
 
 
           <Button className="rounded">
