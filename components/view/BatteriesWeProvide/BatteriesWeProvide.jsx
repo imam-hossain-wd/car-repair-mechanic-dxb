@@ -2,7 +2,7 @@
 "use client";
 
 import { Battery, Zap, Shield, CheckCircle, Truck, Clock } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 import { batteriesData } from "@/data/battriesData";
 
 const allBatteries = [

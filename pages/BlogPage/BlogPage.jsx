@@ -28,7 +28,7 @@ import {
   Sparkles,
   Filter
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 import { blogPosts } from "@/data/blogsData";
 
 

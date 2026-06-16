@@ -4,7 +4,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { AlertCircle, RefreshCw, Home, Phone, Wrench, ArrowLeft, Car } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 
 export default function ErrorPage({ error, reset }) {
   const { brandName, displayNumber, whatsappCallLink } = SiteConfig;

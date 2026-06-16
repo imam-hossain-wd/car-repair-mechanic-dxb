@@ -1,4 +1,4 @@
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 import ServiceAreaPage from "@/pages/AreaWeServePage/AreaWeServePage";
 
 

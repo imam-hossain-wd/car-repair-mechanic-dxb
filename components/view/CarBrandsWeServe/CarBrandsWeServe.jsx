@@ -6,7 +6,7 @@ import {
   Star,
   CheckCircle
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 import { carBrands } from "@/data/carBrands";
 
 

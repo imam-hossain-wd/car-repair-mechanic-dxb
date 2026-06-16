@@ -13,7 +13,7 @@ import {
     Wrench,
     Truck
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 
 // Icon mapping for services
 const serviceIcons = {

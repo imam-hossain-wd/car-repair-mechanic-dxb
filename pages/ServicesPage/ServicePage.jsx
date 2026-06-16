@@ -1,6 +1,6 @@
 // app/dubai/services/page.jsx
 import { ServiceCard } from "@/components/shared/ServiceCard/ServiceCard";
-import { fullServices } from "@/config/siteConfig";
+import { fullServices } from "@/app/siteConfig";
 // import { fullServices } from "@/config/site";
 // import { ServiceCard } from "@/components/ServiceCard";
 
@@ -37,7 +37,7 @@ export default function ServicesPage() {
               <h2 className="text-3xl font-bold text-center mb-8">
                 Featured Services
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 {featuredServices.map((service) => (
                   <ServiceCard key={service.id} service={service} featured={true} />
                 ))}

@@ -16,7 +16,7 @@ import {
   MapPin,
   Star
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 import { faqData } from "@/data/faq";
 
 

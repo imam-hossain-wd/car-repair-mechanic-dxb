@@ -19,7 +19,7 @@ import {
   Shield,
   Phone
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 
 export function HomeHero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,7 +33,7 @@ export function HomeHero() {
   }, []);
 
   const stats = [
-    { value: "13+", label: "Years", icon: Award },
+    { value: "13+", label: "Years Experience", icon: Award },
     { value: "5000+", label: "Customers", icon: Star },
     { value: "24/7", label: "Emergency", icon: Clock },
     { value: "15min", label: "Response", icon: Truck },

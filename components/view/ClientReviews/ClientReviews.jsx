@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from "react";
 import { Star, Quote, ChevronLeft, ChevronRight, Phone, MessageCircle, Wrench, Eye } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 import Link from "next/link";
 import { reviews } from "@/data/reviews";
 

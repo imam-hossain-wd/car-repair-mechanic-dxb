@@ -21,7 +21,7 @@ import {
   ThumbsUp,
   Truck
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 import { Button } from "@/components/ui/button";
 
 // Icon mapping for services

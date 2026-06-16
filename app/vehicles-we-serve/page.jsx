@@ -1,6 +1,6 @@
 import React from 'react'
 import VehiclesWeServePage from '@/pages/VehiclesWeServePage/VehiclesWeServePage'
-import { SiteConfig } from '@/config/siteConfig';
+import { SiteConfig } from '@/app/siteConfig';
 
 export const metadata = {
     title: "Vehicles We Service in Dubai | All Makes & Models | Car Repair Mechanic",

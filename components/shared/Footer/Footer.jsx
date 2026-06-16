@@ -24,7 +24,7 @@ import {
     Calendar,
     CheckCircle
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 import Logo from "../Logo/Logo";
 
 
@@ -71,7 +71,7 @@ export function Footer() {
                     {/* Column 1: Brand & Contact - 4 columns */}
                     <div className="lg:col-span-3 space-y-6">
                         {/* Brand Logo & Name */}
-                        <div className="space-y-4 bg-white p-4  rounded-xl">
+                        <div className="w-[55%] md:w-[70%] space-y-4 bg-white p-4  rounded">
                             <Logo />
 
 

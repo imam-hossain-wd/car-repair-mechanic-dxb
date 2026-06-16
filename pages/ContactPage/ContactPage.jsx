@@ -16,7 +16,7 @@ import {
   Wrench,
   Star,
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 
 export const metadata = {
   title: "Contact Us | 24/7 Car Repair Service in Dubai",

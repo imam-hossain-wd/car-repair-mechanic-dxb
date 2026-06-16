@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { Home, Phone, Search, Wrench, ArrowLeft, Car, Battery } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 
 export default function NotFound() {
   const { brandName, displayNumber, whatsappCallLink } = SiteConfig;

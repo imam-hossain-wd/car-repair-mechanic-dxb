@@ -26,20 +26,20 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Drawer } from "../Drawer/Drawer";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 import Logo from "../Logo/Logo";
 
 // Services dropdown data
 const servicesDropdown = [
   { name: "Auto Repair", slug: "auto-repair" },
-  { name: "Car Battery Replacement", slug: "battery-replacement"},
-  { name: "Jump Start Service", slug: "jump-start",  },
+  { name: "Car Battery Replacement", slug: "battery-replacement" },
+  { name: "Jump Start Service", slug: "jump-start", },
   { name: "AC Repair Service", slug: "ac-repair", },
-  { name: "Radiator Repair", slug: "radiator-repair",},
+  { name: "Radiator Repair", slug: "radiator-repair", },
   { name: "Oil Change Service", slug: "oil-change", },
-  { name: "Car Mechanic Service", slug: "mechanic-service"},
-  { name: "Brake Repair", slug: "brake-repair"},
-  { name: "Engine Diagnostics", slug: "engine-diagnostics"},
+  { name: "Car Mechanic Service", slug: "mechanic-service" },
+  { name: "Brake Repair", slug: "brake-repair" },
+  { name: "Engine Diagnostics", slug: "engine-diagnostics" },
   { name: "Transmission Service", slug: "transmission" },
 ];
 // const servicesDropdown = [
@@ -57,14 +57,19 @@ const servicesDropdown = [
 
 // Area we serve dropdown
 const areaDropdown = [
-  { name: "Al Karama", slug: "al-karama", responseTime: "15 min" },
   { name: "Business Bay", slug: "business-bay", responseTime: "18 min" },
-  { name: "Damac Hills", slug: "damac-hills", responseTime: "18 min" },
+  { name: "Al Rigga", slug: "al-rigga", responseTime: "15 min" },
+  { name: "Dubai Land", slug: "dubai-land", responseTime: "18 min" },
+  { name: "Jumeirah", slug: "jumeirah", responseTime: "17 min" },
+  { name: "Al Mankhhol", slug: "al-mankhool", responseTime: "17 min" },
   { name: "Dubai Silicon Oasis", slug: "dubai-silicon-oasis", responseTime: "18 min" },
   { name: "Al Rigga", slug: "al-rigga", responseTime: "16 min" },
   { name: "Dubai Marina", slug: "dubai-marina", responseTime: "20 min" },
-  { name: "Jumeirah", slug: "jumeirah", responseTime: "17 min" },
-  { name: "Deira", slug: "deira", responseTime: "15 min" },
+  { name: "Downtown Dubai", slug: "downtown-dubai", responseTime: "15 min" },
+  { name: "Al Jaddaf", slug: "al-jaddaf", responseTime: "15 min" },
+  { name: "Trade Center", slug: "trade-center", responseTime: "15 min" },
+  { name: "Za'abeel First", slug: "zaabeel-second", responseTime: "15 min" },
+  { name: "Za'abeel Second", slug: "zaabeel-second", responseTime: "15 min" },
 ];
 
 // Brands we serve dropdown
@@ -195,7 +200,7 @@ const DesktopNav = ({ pathname }) => {
 
       <Dropdown
         title="Services"
-        href="/dubai/services"
+        href="/services"
         items={servicesDropdown}
         isOpen={openDropdown === "services"}
         onToggle={() => handleDropdownToggle("services")}
@@ -204,7 +209,7 @@ const DesktopNav = ({ pathname }) => {
 
       <Dropdown
         title="Area We Serve"
-        href="/dubai/area-we-serve"
+        href="/area-we-serve"
         items={areaDropdown}
         isOpen={openDropdown === "areas"}
         onToggle={() => handleDropdownToggle("areas")}
@@ -213,7 +218,7 @@ const DesktopNav = ({ pathname }) => {
 
       <Dropdown
         title="Brands"
-        href="/dubai/brand-we-serve"
+        href="/brand-we-serve"
         items={brandsDropdown}
         isOpen={openDropdown === "brands"}
         onToggle={() => handleDropdownToggle("brands")}
@@ -241,7 +246,7 @@ const DesktopNav = ({ pathname }) => {
 
 
       <Link
-        href="/dubai/about"
+        href="/about"
         className={`relative flex justify-center items-center gap-1 px-4 py-2 text-base font-medium transition-all duration-200 hover:text-primary group ${pathname === "/dubai/about" ? "text-primary font-semibold" : "text-foreground/80"
           }`}
       >
@@ -250,7 +255,7 @@ const DesktopNav = ({ pathname }) => {
       </Link>
 
       <Link
-        href="/dubai/blogs"
+        href="/blogs"
         className={`relative flex justify-center items-center gap-1 px-4 py-2 text-base font-medium transition-all duration-200 hover:text-primary group ${pathname === "/dubai/blogs" ? "text-primary font-semibold" : "text-foreground/80"
           }`}
       >
@@ -259,7 +264,7 @@ const DesktopNav = ({ pathname }) => {
       </Link>
 
       <Link
-        href="/dubai/contact"
+        href="/contact"
         className={`relative flex justify-center items-center gap-1 px-4 py-2 text-base font-medium transition-all duration-200 hover:text-primary group ${pathname === "/dubai/contact" ? "text-primary font-semibold" : "text-foreground/80"
           }`}
       >
@@ -280,14 +285,14 @@ const MobileDrawerNav = ({ isOpen, onClose, pathname }) => {
 
   const mobileNavItems = [
     { name: "Home", href: "/", icon: House },
-    { name: "Services", href: "/dubai/services", icon: Wrench, dropdown: servicesDropdown },
-    { name: "Area We Serve", href: "/dubai/area-we-serve", icon: MapPin, dropdown: areaDropdown },
-    { name: "Brand We Serve", href: "/dubai/brand-we-serve", icon: Flag, dropdown: brandsDropdown },
-    { name: "Batteries We Serve", href: "/dubai/batteries-we-serve", icon: Battery, dropdown: batteriesDropdown },
-    { name: "Vehicles We Serve", href: "/dubai/vehicles-we-serve", icon: Truck },
-    { name: "Contact", href: "/dubai/contact", icon: Phone },
-    { name: "About", href: "/dubai/about", icon: Sparkles },
-    { name: "Blogs", href: "/dubai/blogs", icon: Car },
+    { name: "Services", href: "/services", icon: Wrench, dropdown: servicesDropdown },
+    { name: "Area We Serve", href: "/area-we-serve", icon: MapPin, dropdown: areaDropdown },
+    { name: "Brand We Serve", href: "/brand-we-serve", icon: Flag, dropdown: brandsDropdown },
+    { name: "Batteries We Serve", href: "/batteries-we-serve", icon: Battery, dropdown: batteriesDropdown },
+    { name: "Vehicles We Serve", href: "/vehicles-we-serve", icon: Truck },
+    { name: "Contact", href: "/contact", icon: Phone },
+    { name: "About", href: "/about", icon: Sparkles },
+    { name: "Blogs", href: "/blogs", icon: Car },
   ];
 
   return (
@@ -376,23 +381,23 @@ const MobileDrawerNav = ({ isOpen, onClose, pathname }) => {
 
         {/* Quote Button in Drawer */}
         <div className="mt-6 flex justify-center p-4 border-t border-gray-200 dark:border-gray-700">
-          <GetQuoteButton />
+          <CallButton />
         </div>
       </div>
     </Drawer>
   );
 };
 
-
+//  in this project root folder here is a folder named data. inside this data folder here another folder named services.in  this folder there are many car repair services data and this data is another car repair website project data. now already know about my website information.. my business location , services areas and contact and more information. you have to  modify and update these services data for my website . deep research and do it 
 // Get Quote Button
-const GetQuoteButton = () => {
+const CallButton = () => {
   return (
     <Link
-      href="/get-quote"
-      className="hidden sm:inline-flex items-center justify-center gap-2 px-4 py-2 bg-primary text-white font-semibold rounded-xl"
+      href={SiteConfig?.numberCallLink}
+      className="flex items-center justify-center gap-2 px-2 py-2 bg-primary text-white font-semibold rounded"
     >
-      <Phone className="h-4 w-4 group-hover:rotate-12 transition-transform" />
-      <span className="text-sm md:text-md">Emergancy Service</span>
+      <Phone className="h-3 w-3 group-hover:rotate-12 transition-transform" />
+      <span className="text-[10px] md:text-md">054 323 7225</span>
     </Link>
   );
 };
@@ -426,6 +431,7 @@ export const Navbar = () => {
 
   // Close drawer when route changes
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsDrawerOpen(false);
   }, [pathname]);
 
@@ -440,6 +446,41 @@ export const Navbar = () => {
           }
         `}
       >
+
+        <div className="bg-primary text-white">
+          <div className="px-2">
+            <div className="h-9 flex items-center justify-between text-[11px] font-medium">
+
+              <div className="flex items-center gap-3">
+
+                <div className="flex items-center gap-1.5">
+                  <MapPin className="h-3.5 w-3.5" />
+                  <span>{SiteConfig.location}</span>
+                </div>
+
+                {/* <Link
+                  href={`tel:${SiteConfig.displayNumber}`}
+                  className="flex items-center gap-1.5 hover:text-white/80 transition"
+                >
+                  <PhoneCall className="h-3.5 w-3.5" />
+                  <span>{SiteConfig.displayNumber}</span>
+                </Link> */}
+
+              </div>
+
+              <div className="flex items-center gap-2 ">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                </span>
+
+                <span>24/7 Operating Dubai City</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             <Logo />
@@ -447,7 +488,7 @@ export const Navbar = () => {
             <DesktopNav pathname={pathname} />
 
             <div className="flex items-center gap-3">
-              <GetQuoteButton />
+              <CallButton />
               <MobileMenuButton onClick={() => setIsDrawerOpen(true)} />
             </div>
           </div>

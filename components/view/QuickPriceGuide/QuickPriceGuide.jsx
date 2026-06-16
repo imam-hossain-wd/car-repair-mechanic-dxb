@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 
 
 export function QuickPriceGuide() {

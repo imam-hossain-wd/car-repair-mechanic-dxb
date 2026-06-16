@@ -15,7 +15,7 @@ import {
   Headphones,
   Hammer
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/app/siteConfig";
 
 export function WhyChooseUs() {
   const { brandName, displayNumber, city } = SiteConfig;

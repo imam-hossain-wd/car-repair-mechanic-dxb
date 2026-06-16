@@ -1,0 +1,37 @@
+import { absSystemRepairService } from "./absSystemRepairService";
+import { acGasRefillService } from "./acGasRefillService";
+import { acRepair } from "./acRepair";
+import { alternatorRepair } from "./alternatorRepair";
+import { batteryReplacementService } from "./batteryReplacementService";
+import { brakepadRepairService } from "./brakepadRepairService";
+import { carDetailingService } from "./carDetailingService";
+import { carRaditorRepair } from "./carRaditorRepair";
+import { carRepairDubai } from "./carRepairDubai";
+import { carServiceDubai } from "./carServiceDubai";
+import { emergancyCarRepairService } from "./emergancyCarRepairService";
+import { fuelPumpRepair } from "./fuelPumpRepair";
+import { jumpStartService } from "./jumpStartService";
+import { mechanicService } from "./mechanicService";
+import { oilChangeService } from "./oilChangeService";
+import { starterMotorRepair } from "./starterMotorRepair";
+import { transmissionRepairService } from "./transmissionRepairService";
+
+export const services = [
+    batteryReplacementService,
+    jumpStartService,
+    alternatorRepair,
+    fuelPumpRepair,
+    starterMotorRepair,
+    acRepair,
+    carRaditorRepair,
+    absSystemRepairService,
+    brakepadRepairService,
+    carDetailingService,
+    emergancyCarRepairService,
+    mechanicService,
+    oilChangeService,
+    acGasRefillService,
+    transmissionRepairService,
+    carServiceDubai,
+    carRepairDubai
+]

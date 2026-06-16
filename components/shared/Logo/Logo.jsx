@@ -10,7 +10,7 @@ export default function Logo() {
                 {/* Icon with animation */}
                 <div className="relative">
                     <div className="absolute inset-0 bg-primary/10 rounded-full blur-xl transition-all duration-500"></div>
-                    <div className="relative  w-8 h-8 md:w-10 md:h-10 rounded-xl flex items-center justify-center bg-primary shadow-lg -skew-x-14">
+                    <div className="relative  w-8 h-8 md:w-10 md:h-10 rounded-xl flex items-center justify-center bg-primary shadow-lg -skew-x-8">
                         <Wrench className="h-4 w-4 md:h-6 md:w-6  text-white" />
                     </div>
                 </div>
