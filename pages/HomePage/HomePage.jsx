@@ -9,6 +9,7 @@ import { FAQ } from "@/components/view/FAQ/FAQ";
 import { FeaturedServices } from "@/components/view/FeaturedServices/FeaturedServices";
 // import { Hero } from "@/components/view/Hero/hero";  
 import { HomeHero } from "@/components/view/Hero/HomeHero";
+import { Maps } from "@/components/view/Maps/Maps";
 import { QuickPriceGuide } from "@/components/view/QuickPriceGuide/QuickPriceGuide";
 import { StillHasQuestionSection } from "@/components/view/StillHasQuestionSection/StillHasQuestionSection";
 import { WhyChooseUs } from "@/components/view/WhyChooseUs/WhyChooseUs";
@@ -18,7 +19,7 @@ const HomePage = () => {
   return (
     <div>
       <HomeHero />
-    
+
       {/* <EmergancyServices />
       <QuickPriceGuide /> */}
       <FeaturedServices />
@@ -28,6 +29,7 @@ const HomePage = () => {
       <BatteriesWeProvide />
       <FAQ />
       <ClientReviews />
+      <Maps />
       <StillHasQuestionSection />
     </div>
   );

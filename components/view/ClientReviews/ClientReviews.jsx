@@ -12,7 +12,6 @@ import { reviews } from "@/data/reviews";
 export function ClientReviews() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const { displayNumber, whatsappCallLink, brandName, city } = SiteConfig;
   
   const reviewsPerView = 4;
   const totalSlides = Math.ceil(reviews.length / reviewsPerView);
