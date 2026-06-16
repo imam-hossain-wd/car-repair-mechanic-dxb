@@ -3,11 +3,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
   MessageCircle,
   Send,
   CheckCircle,
@@ -17,6 +17,7 @@ import {
   Star,
 } from "lucide-react";
 import { SiteConfig } from "@/app/siteConfig";
+import { Maps } from "@/components/view/Maps/Maps";
 
 export const metadata = {
   title: "Contact Us | 24/7 Car Repair Service in Dubai",
@@ -28,13 +29,13 @@ export const metadata = {
 };
 
 export default function ContactPage() {
-  const { 
-    brandName, 
-    displayNumber, 
-    numberCallLink, 
-    whatsappCallLink, 
-    email, 
-    location, 
+  const {
+    brandName,
+    displayNumber,
+    numberCallLink,
+    whatsappCallLink,
+    email,
+    location,
     mapsLink,
     operatingHours,
     city,
@@ -103,16 +104,10 @@ export default function ContactPage() {
     }
   ];
 
-  const quickLinks = [
-    { name: "Battery Replacement", href: "/dubai/services/battery-replacement" },
-    { name: "AC Repair", href: "/dubai/services/ac-repair" },
-    { name: "Oil Change", href: "/dubai/services/oil-change" },
-    { name: "Brake Repair", href: "/dubai/services/brake-repair" }
-  ];
 
   return (
     <div className="min-h-screen bg-linear-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900">
-      
+
       {/* Hero Section */}
       <section className="relative bg-linear-to-r from-primary/10 via-primary/5 to-transparent pt-10 pb-8 md:pt-14 md:pb-12 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
@@ -137,10 +132,10 @@ export default function ContactPage() {
       {/* Contact Methods Grid */}
       <div className="container mx-auto px-4 -mt-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10">
-          {contactMethods.map((method, index) => {
+          {contactMethods?.map((method, index) => {
             const Icon = method.icon;
             return (
-              <a
+              <Link
                 key={index}
                 href={method.link}
                 target={method.icon === MapPin ? "_blank" : undefined}
@@ -148,8 +143,9 @@ export default function ContactPage() {
                 className="group relative bg-white dark:bg-gray-900 rounded-xl p-4 border border-gray-200 dark:border-gray-800 hover:border-primary/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
               >
                 <div className="flex items-start gap-3">
-                  <div className={`p-2.5 rounded-xl ${method.color} bg-opacity-10 group-hover:bg-opacity-20 transition-all`}>
-                    <Icon className={`h-5 w-5 ${method.color.replace('bg-', 'text-')}`} />
+                  <div className={`p-2.5 rounded-xl bg-primary/20 bg-opacity-10`}>
+                    <Icon className="h-5 w-5 text-primary" />
+                    {/* <Icon className={`h-5 w-5 ${method.color.replace('bg-', 'text-')}`} /> */}
                   </div>
                   <div className="flex-1">
                     <h3 className="text-sm font-bold text-gray-900 dark:text-white">{method.title}</h3>
@@ -160,7 +156,7 @@ export default function ContactPage() {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             );
           })}
         </div>
@@ -169,7 +165,7 @@ export default function ContactPage() {
       {/* Main Content Grid */}
       <div className="container mx-auto px-4 pb-12">
         <div className="grid lg:grid-cols-2 gap-6">
-          
+
           {/* Contact Form */}
           <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 md:p-6">
             <div className="flex items-center gap-2 mb-4">
@@ -178,11 +174,11 @@ export default function ContactPage() {
               </div>
               <h2 className="text-lg font-bold text-gray-900 dark:text-white">Send us a Message</h2>
             </div>
-            
+
             <p className="text-xs text-gray-500 mb-4">
               Fill out the form and we&apos;ll get back to you within 2 hours
             </p>
-            
+
             <form onSubmit={handleSubmit} className="space-y-3">
               <div>
                 <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">
@@ -201,7 +197,7 @@ export default function ContactPage() {
                   />
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-3">
                 <div>
                   <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">
@@ -237,7 +233,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-              
+
               <div>
                 <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Message *
@@ -252,7 +248,7 @@ export default function ContactPage() {
                   placeholder="Describe your car issue or service needed..."
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 disabled={formStatus === "sending"}
@@ -273,7 +269,7 @@ export default function ContactPage() {
                 )}
               </button>
             </form>
-            
+
             {/* Response Time Note */}
             <div className="mt-3 flex items-center justify-center gap-1 text-[10px] text-gray-400">
               <Clock className="h-3 w-3" />
@@ -299,27 +295,10 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Quick Services */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-4">
-              <div className="flex items-center gap-2 mb-3">
-                <Wrench className="h-4 w-4 text-primary" />
-                <h3 className="text-sm font-bold text-gray-900 dark:text-white">Quick Services</h3>
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                {quickLinks.map((link, index) => (
-                  <Link
-                    key={index}
-                    href={link.href}
-                    className="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs rounded-lg hover:bg-primary/10 hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
+
 
             {/* Map Preview */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden">
+            {/* <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden">
               <div className="p-4 pb-0">
                 <div className="flex items-center gap-2 mb-2">
                   <Navigation className="h-4 w-4 text-primary" />
@@ -337,19 +316,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </a>
-            </div>
-
-            {/* Trust Badges */}
-            <div className="grid grid-cols-2 gap-2">
-              <div className="flex items-center gap-2 p-2 bg-green-50 dark:bg-green-950/30 rounded-lg">
-                <CheckCircle className="h-4 w-4 text-green-600" />
-                <span className="text-xs text-gray-700 dark:text-gray-300">24/7 Service</span>
-              </div>
-              <div className="flex items-center gap-2 p-2 bg-primary/5 rounded-lg">
-                <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
-                <span className="text-xs text-gray-700 dark:text-gray-300">4.9/5 Rating</span>
-              </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -421,6 +388,8 @@ export default function ContactPage() {
           }}
         />
       </div>
+
+      <Maps />
 
       <style jsx global>{`
         .bg-grid-pattern {

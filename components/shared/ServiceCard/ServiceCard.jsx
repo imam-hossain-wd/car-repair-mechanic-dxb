@@ -3,11 +3,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {ArrowRight,CheckCircle,Sparkles,Zap,Star} from "lucide-react";
+import { ArrowRight, CheckCircle, Sparkles, Zap, Star, Eye, MessageCircle, Phone } from "lucide-react";
+import { SiteConfig } from "@/app/siteConfig";
+import { Button } from "@/components/ui/button";
 
 export const ServiceCard = ({ service, featured = false }) => {
-  
-  const  benefits = ["Warranty Included", "Free Inspection", "Quality Service"]
+
+  const benefits = ["Warranty Included", "Free Inspection", "Quality Service"]
 
 
   return (
@@ -89,7 +91,7 @@ export const ServiceCard = ({ service, featured = false }) => {
             What&apos;s Included
           </p> */}
           <div className="space-y-1.5">
-            {service?.features?.slice(0,4).map((item, index) => (
+            {service?.features?.slice(0, 4).map((item, index) => (
               <div key={index} className="flex items-start gap-2 text-xs text-gray-600 dark:text-gray-400">
                 <CheckCircle className="h-3.5 w-3.5 text-primary shrink-0 mt-0.5" />
                 <span>{item}</span>
@@ -97,19 +99,21 @@ export const ServiceCard = ({ service, featured = false }) => {
             ))}
           </div>
 
-      </div>
+        </div>
 
-      {/* Benefits Tags */}
-      <div className="flex flex-wrap gap-1.5 mb-2">
-        {benefits.map((benefit, index) => (
-          <span key={index} className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full">
-            {benefit}
-          </span>
-        ))}
-      </div>
+        {/* Benefits Tags */}
+        {/* <div className="flex flex-col flex-wrap gap-1.5 mb-2">
+          {benefits.map((benefit, index) => (
+            <span key={index} className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full">
+              {benefit}
+            </span>
+          ))}
+        </div> */}
 
-      {/* Pricing & Action */}
-      {/* <div className="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+
+
+        {/* Pricing & Action */}
+        {/* <div className="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
         <div>
           <p className="text-xs text-gray-500 dark:text-gray-400">Starting from</p>
           <p className="text-lg font-bold text-primary">{service.price}</p>
@@ -123,7 +127,26 @@ export const ServiceCard = ({ service, featured = false }) => {
           <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
         </Link>
       </div> */}
-    </div>
+
+
+        <div className="flex justify-around mt-4">
+
+          <Button className="rounded w-24">
+            <Eye className="h-4 w-4 text-white group-hover/action:text-white" />
+            <span>
+              View
+            </span>
+          </Button>
+
+
+          <Button className="rounded">
+            <Phone className="h-4 w-4 text-white group-hover/action:text-white" />
+            <span>
+              Call Now
+            </span>
+          </Button>
+        </div>
+      </div>
     </div >
   );
 };

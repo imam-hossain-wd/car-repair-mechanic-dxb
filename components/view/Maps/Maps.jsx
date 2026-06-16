@@ -43,16 +43,8 @@ export function Maps() {
         setIsVisible(true);
     }, []);
 
-    // Google Maps Embed URL (replace with your actual embed URL)
-    const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.6556318284447!2d55.305982400000005!3d25.2485213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43c96e6e562f%3A0x49dc867ffb69db4d!2sCar%20Repair%20%26%20Battery%20Replacement%20Service%20Dubai!5e0!3m2!1sen!2sae!4v1769703311745!5m2!1sen!2sae";
 
-    // Service areas data
-    // const serviceAreas = [
-    //     "Al Karama", "Oud Metha", "Al Jaffiliya", "Zabeel",
-    //     "Al Fahidi", "Al Raffa", "Al Mina", "Al Hudaiba",
-    //     "Al Jaddaf", "Al Hamriya", "Business Bay", "Downtown"
-    // ];
-
+    const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7218.300939078021!2d55.31707953907827!3d25.231856465990923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d364e1720cb%3A0x63bbf8d4c3d0263b!2sUmm%20Hurair%20Second%20-%20Dubai%20Healthcare%20City%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sbd!4v1781627532168!5m2!1sen!2sbd";
 
     return (
         <section className="relative py-5 bg-linear-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900 overflow-hidden">

@@ -206,7 +206,7 @@ export function FeaturedServices() {
               className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-primary  text-white font-semibold rounded-lg"
             >
               <Eye className="h-4 w-4" />
-              View All Reviews
+              View All Services
             </Link>
           </div>
 

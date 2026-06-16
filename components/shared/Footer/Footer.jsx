@@ -107,13 +107,13 @@ export function Footer() {
 
 
                             {/* Google Maps Badge */}
-                            <Link href={mapsLink} target="_blank" className="block p-3 bg-white/5 rounded-xl hover:bg-primary/10 transition-all border border-white/10 hover:border-primary/30">
+                            {/* <Link href={mapsLink} target="_blank" className="block p-3 bg-white/5 rounded-xl hover:bg-primary/10 transition-all border border-white/10 hover:border-primary/30">
                                 <div className="flex items-center gap-2">
                                     <MapPin className="h-4 w-4 text-primary" />
                                     <span className="text-xs text-gray-300">Find us on Google Maps</span>
                                 </div>
                                 <p className="text-xs text-primary mt-1">4.9 ★ (500+ reviews)</p>
-                            </Link>
+                            </Link> */}
 
                             <div className="flex items-start gap-3 p-3 bg-white/5 rounded-xl border border-white/10">
                                 <div className="p-2 bg-primary/80 rounded-lg">

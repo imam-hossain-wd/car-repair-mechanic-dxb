@@ -207,23 +207,41 @@ const DesktopNav = ({ pathname }) => {
         onClose={handleDropdownClose}
       />
 
-      <Dropdown
+      {/* <Dropdown
         title="Area We Serve"
         href="/area-we-serve"
         items={areaDropdown}
         isOpen={openDropdown === "areas"}
         onToggle={() => handleDropdownToggle("areas")}
         onClose={handleDropdownClose}
-      />
+      /> */}
 
-      <Dropdown
+      <Link
+        href="/area-we-serve"
+        className={`relative flex justify-center items-center gap-1 px-4 py-2 text-base font-medium transition-all duration-200 hover:text-primary group ${pathname === "/area-we-serve" ? "text-primary font-semibold" : "text-foreground/80"
+          }`}
+      >
+        Area We Serve
+        <span className={`absolute  bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${pathname === "/area-we-serve" ? "w-full" : ""}`} />
+      </Link>
+
+      <Link
+        href="/brands"
+        className={`relative flex justify-center items-center gap-1 px-4 py-2 text-base font-medium transition-all duration-200 hover:text-primary group ${pathname === "/brands" ? "text-primary font-semibold" : "text-foreground/80"
+          }`}
+      >
+        Brands
+        <span className={`absolute  bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${pathname === "/brands" ? "w-full" : ""}`} />
+      </Link>
+
+      {/* <Dropdown
         title="Brands"
         href="/brand-we-serve"
         items={brandsDropdown}
         isOpen={openDropdown === "brands"}
         onToggle={() => handleDropdownToggle("brands")}
         onClose={handleDropdownClose}
-      />
+      /> */}
 
       {/* <Dropdown
         title="Batteries"
@@ -388,7 +406,6 @@ const MobileDrawerNav = ({ isOpen, onClose, pathname }) => {
   );
 };
 
-//  in this project root folder here is a folder named data. inside this data folder here another folder named services.in  this folder there are many car repair services data and this data is another car repair website project data. now already know about my website information.. my business location , services areas and contact and more information. you have to  modify and update these services data for my website . deep research and do it 
 // Get Quote Button
 const CallButton = () => {
   return (
