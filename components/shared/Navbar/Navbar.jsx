@@ -17,9 +17,8 @@ import { MobileDrawerNav } from "./MobileNavDrawer";
 
 // Mobile Drawer Navigation
 
-
 // Get Quote Button
-const CallButton = () => {
+const NavCallButton = () => {
   return (
     <Link
       href={SiteConfig?.numberCallLink}
@@ -108,7 +107,7 @@ export const Navbar = () => {
             <DesktopNav pathname={pathname} />
 
             <div className="flex items-center gap-3">
-              <CallButton />
+              <NavCallButton />
               <MobileMenuButton onClick={() => setIsDrawerOpen(true)} />
             </div>
           </div>

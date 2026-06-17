@@ -32,7 +32,6 @@ import {
   Car,
   Gauge,
   ThumbsUp,
-  TrendingUp
 } from "lucide-react";
 import { SiteConfig } from "@/app/siteConfig";
 
@@ -98,7 +97,7 @@ import { SiteConfig } from "@/app/siteConfig";
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900">
+    <div className="min-h-screen bg-linear-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900">
       
       {/* Hero Section - Cinematic */}
       <section className="relative overflow-hidden">
@@ -113,10 +112,10 @@ import { SiteConfig } from "@/app/siteConfig";
               priority
             />
           ) : (
-            <div className="w-full h-full bg-gradient-to-br from-gray-900 to-gray-800"></div>
+            <div className="w-full h-full bg-linear-to-br from-gray-900 to-gray-800"></div>
           )}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/40"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"></div>
         </div>
 
         {/* Animated Background Elements */}
@@ -167,29 +166,6 @@ import { SiteConfig } from "@/app/siteConfig";
                 );
               })}
             </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-3 mt-8">
-              <Link
-                href={numberCallLink}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 text-sm shadow-lg"
-              >
-                <Phone className="h-4 w-4" />
-                Call Now
-              </Link>
-              <Link
-                href={whatsappCallLink}
-                target="_blank"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 text-sm"
-              >
-                <MessageCircle className="h-4 w-4" />
-                WhatsApp
-              </Link>
-              <button className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl transition-all duration-300 text-sm border border-white/20">
-                <Calendar className="h-4 w-4" />
-                Book Appointment
-              </button>
-            </div>
           </div>
         </div>
 
@@ -227,7 +203,7 @@ import { SiteConfig } from "@/app/siteConfig";
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {service?.features?.slice(0, 6).map((feature, index) => (
                   <div key={index} className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-xl hover:bg-primary/5 transition-all group">
-                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
                     <span className="text-sm text-gray-700 dark:text-gray-300">{feature}</span>
                   </div>
                 ))}
@@ -235,7 +211,7 @@ import { SiteConfig } from "@/app/siteConfig";
             </div>
 
             {/* Why Choose Us */}
-            <div className="bg-gradient-to-r from-primary/5 to-transparent rounded-2xl p-6 border border-primary/10">
+            <div className="bg-linear-to-r from-primary/5 to-transparent rounded-2xl p-6 border border-primary/10">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                 <Award className="h-5 w-5 text-primary" />
                 Why Choose Us
@@ -262,7 +238,7 @@ import { SiteConfig } from "@/app/siteConfig";
                 {service?.ourProcess?.steps?.map((step, index) => (
                   <div key={index} className="group relative">
                     <div className="flex items-start gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary/30 hover:shadow-md transition-all duration-300">
-                      <div className="flex-shrink-0">
+                      <div className="shrink-0">
                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-all">
                           <span className="text-sm font-bold text-primary">{index + 1}</span>
                         </div>
@@ -296,9 +272,9 @@ import { SiteConfig } from "@/app/siteConfig";
                       >
                         <span className="font-medium text-gray-900 dark:text-white text-sm">{item.question}</span>
                         {expandedFaq === index ? (
-                          <ChevronUp className="h-4 w-4 text-primary flex-shrink-0" />
+                          <ChevronUp className="h-4 w-4 text-primary shrink-0" />
                         ) : (
-                          <ChevronDown className="h-4 w-4 text-gray-400 flex-shrink-0" />
+                          <ChevronDown className="h-4 w-4 text-gray-400 shrink-0" />
                         )}
                       </button>
                       {expandedFaq === index && (
@@ -363,13 +339,13 @@ import { SiteConfig } from "@/app/siteConfig";
                 </div>
 
                 {/* CTA Button */}
-                <div className="p-5 bg-gradient-to-r from-primary/10 to-primary/5">
+                <div className="p-5 bg-linear-to-r from-primary/10 to-primary/5">
                   <Link
                     href={numberCallLink}
                     className="flex items-center justify-center gap-2 w-full py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-semibold transition-all duration-300 group"
                   >
                     <Phone className="h-4 w-4" />
-                    <span>Book Now</span>
+                    <span>Call Now</span>
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <p className="text-center text-xs text-gray-500 mt-2">Free estimate • No obligation</p>

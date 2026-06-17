@@ -19,9 +19,9 @@ import { transmissionRepairService } from "./transmissionRepairService";
 export const services = [
     batteryReplacementService,
     jumpStartService,
-    alternatorRepair,
-    fuelPumpRepair,
-    starterMotorRepair,
+    // alternatorRepair,
+    // fuelPumpRepair,
+    // starterMotorRepair,
     acRepair,
     carRaditorRepair,
     absSystemRepairService,

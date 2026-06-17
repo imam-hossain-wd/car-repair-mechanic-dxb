@@ -13,6 +13,7 @@ import { Maps } from "@/components/view/Maps/Maps";
 import { QuickPriceGuide } from "@/components/view/QuickPriceGuide/QuickPriceGuide";
 import { StillHasQuestionSection } from "@/components/view/StillHasQuestionSection/StillHasQuestionSection";
 import { WhyChooseUs } from "@/components/view/WhyChooseUs/WhyChooseUs";
+import { WorkGallery } from "@/components/view/WorkGallery/WorkGallery";
 
 const HomePage = () => {
 
@@ -27,6 +28,7 @@ const HomePage = () => {
       <WhyChooseUs />
       <CarBrandsWeServe />
       <BatteriesWeProvide />
+      <WorkGallery/>
       <FAQ />
       <ClientReviews />
       <Maps />

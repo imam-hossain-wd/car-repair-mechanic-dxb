@@ -14,6 +14,51 @@ import part from "../assets/services/part.png";
 import spareParts from "../assets/services/spare-parts.png";
 import timing from "../assets/services/timing.png";
 
+import carRepair1 from "../assets/working-gellery/alternator-repair.jpeg";
+import carRepair2 from "../assets/working-gellery/alternator.jpeg";
+import carRepair3 from "../assets/working-gellery/battery-replacement-2.jpeg";
+import carRepair4 from "../assets/working-gellery/battery-replacement-3.jpeg";
+import carRepair5 from "../assets/working-gellery/battery-replacement-4.jpeg";
+import carRepair6 from "../assets/working-gellery/battery-replacement.jpeg";
+import carRepair7 from "../assets/working-gellery/breakpad.jpeg";
+import carRepair8 from "../assets/working-gellery/car-mechanic.jpeg";
+import carRepair9 from "../assets/working-gellery/garage-car-repair.jpeg";
+import carRepair10 from "../assets/working-gellery/gas-refill-2.jpeg";
+import carRepair11 from "../assets/working-gellery/gas-refill.jpeg";
+import carRepair12 from "../assets/working-gellery/haalthcarecity-car-repair.jpeg";
+import carRepair13 from "../assets/working-gellery/mechanic-1.jpeg";
+import carRepair14 from "../assets/working-gellery/night-car-repair.jpeg";
+import carRepair15 from "../assets/working-gellery/onsite-battery-replacement.jpeg";
+import carRepair16 from "../assets/working-gellery/parking-car-repair.jpeg";
+import carRepair17 from "../assets/working-gellery/raditor-ac-repair.jpeg";
+import carRepair18 from "../assets/working-gellery/raditor.jpeg";
+import carRepair19 from "../assets/working-gellery/roadsite-assistance.jpeg";
+import carRepair20 from "../assets/working-gellery/underground-parking-car-repair.jpeg";
+
+
+export const workingImages ={
+    carRepair1,
+    carRepair2,
+    carRepair3,
+    carRepair4,
+    carRepair5,
+    carRepair6,
+    carRepair7,
+    carRepair8,
+    carRepair9,
+    carRepair10,
+    carRepair11,
+    carRepair12,
+    carRepair13,
+    carRepair14,
+    carRepair15,
+    carRepair16,
+    carRepair17,
+    carRepair18,
+    carRepair19,
+    carRepair20
+}
+
 
 export const serviceImages = {
     carRepair,
