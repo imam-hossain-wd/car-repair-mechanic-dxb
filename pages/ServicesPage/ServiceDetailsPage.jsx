@@ -37,7 +37,7 @@ import {
 import { SiteConfig } from "@/app/siteConfig";
 
 
-export function ServiceDetailsPage({ service }) {
+ export default function ServiceDetailsPage({ service }) {
   const [activeTab, setActiveTab] = useState("overview");
   const [expandedFaq, setExpandedFaq] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
