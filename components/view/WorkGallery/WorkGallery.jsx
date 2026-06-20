@@ -122,7 +122,7 @@ export function WorkGallery() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
                     {galleryData?.slice(0,8).map((image, index) => (
                         <div
-                            key={image.id}
+                            key={index}
                             className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
                             onMouseEnter={() => setHoveredId(image.id)}
                             onMouseLeave={() => setHoveredId(null)}
@@ -218,7 +218,7 @@ export function WorkGallery() {
                         </p>
                         <div className="flex flex-wrap justify-center gap-3">
                             <Link
-                                href="/dubai/services"
+                                href="/services"
                                 className="inline-flex items-center gap-2 px-6 py-2.5 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-all hover:scale-105"
                             >
                                 View Our Services
@@ -331,3 +331,6 @@ export function WorkGallery() {
         </section>
     );
 }
+
+
+

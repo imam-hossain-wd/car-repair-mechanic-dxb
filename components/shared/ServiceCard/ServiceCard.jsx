@@ -3,8 +3,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle, Sparkles, Zap, Star, Eye, MessageCircle, Phone } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { CheckCircle, Sparkles, Zap, Star, Eye, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const ServiceCard = ({ service, featured = false }) => {
@@ -130,7 +129,7 @@ export const ServiceCard = ({ service, featured = false }) => {
 
 
         <div className="flex justify-around mt-4">
-          <Link href={`services/${service?.slug}`}>
+          <Link className="" href={`services/${service?.slug}`}>
             <Button className="rounded w-24">
               <Eye className="h-4 w-4 text-white group-hover/action:text-white" />
               <span>

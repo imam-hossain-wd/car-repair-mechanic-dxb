@@ -1,4 +1,4 @@
-import { serviceImages } from "@/utils/assets";
+import { ServiceBanner, serviceImages } from "@/utils/assets";
 
 export const alternatorRepair = {
     title: "Car Alternator Repair Dubai | Battery Not Charging Fix Near You",
@@ -18,6 +18,7 @@ export const alternatorRepair = {
     slug: "car-alternator-repair-dubai",
 
     service_image: serviceImages?.spareParts,
+    service_banner: ServiceBanner.alternatorRepair ,
 
     intro: {
         heading: "Professional Car Alternator Repair Service in Dubai",

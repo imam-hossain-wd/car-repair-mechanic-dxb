@@ -3,10 +3,10 @@
 
 import Link from "next/link";
 import { Home, Phone, Search, Wrench, ArrowLeft, Car, Battery } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 
 export default function NotFound() {
-  const { brandName, displayNumber, whatsappCallLink } = SiteConfig;
+  const { displayNumber} = SiteConfig;
 
   const popularLinks = [
     { name: "Home", href: "/", icon: Home },

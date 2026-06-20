@@ -1,4 +1,4 @@
-import { serviceImages } from "@/utils/assets";
+import { ServiceBanner, serviceImages } from "@/utils/assets";
 
 export const acRepair = {
     title: "Car AC Repair Dubai | AC Not Cooling Fix & Gas Refill Near You",
@@ -18,6 +18,7 @@ export const acRepair = {
     slug: "car-ac-repair-dubai",
 
     service_image: serviceImages?.airConditioner,
+    service_banner: ServiceBanner?.acRepair ,
 
     intro: {
         heading: "Professional Car AC Repair Service in Dubai",

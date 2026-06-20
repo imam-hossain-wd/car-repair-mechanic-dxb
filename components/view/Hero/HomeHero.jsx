@@ -19,7 +19,7 @@ import {
   Shield,
   Phone
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 
 export function HomeHero() {
   const [isVisible, setIsVisible] = useState(false);

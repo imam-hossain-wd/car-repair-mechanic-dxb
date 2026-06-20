@@ -14,7 +14,7 @@ import {
     Users,
     Search
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import { carBrandsData } from "@/data/carBrandsPageData";
 
 

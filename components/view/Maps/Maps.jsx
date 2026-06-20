@@ -17,7 +17,7 @@ import {
     Award,
     Users
 } from "lucide-react";
-import { serviceAreas, SiteConfig } from "@/app/siteConfig";
+import { serviceAreas, SiteConfig } from "@/config/siteConfig";
 
 
 export function Maps() {

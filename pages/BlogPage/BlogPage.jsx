@@ -3,12 +3,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { 
   Calendar, 
   User, 
-  Clock, 
-  Tag, 
+  Clock,  
   Search,
   ArrowRight,
   TrendingUp,
@@ -19,16 +17,13 @@ import {
   Shield,
   Car,
   Phone,
-  MessageCircle,
   ChevronRight,
   BookOpen,
   Eye,
-  Heart,
-  Share2,
   Sparkles,
   Filter
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import { blogPosts } from "@/data/blogsData";
 
 
@@ -199,7 +194,7 @@ export default function BlogPage() {
 
                           {/* Title */}
                           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors line-clamp-2">
-                            <Link href={`/dubai/blog/${post.slug}`}>
+                            <Link href={`/blogs/${post.slug}`}>
                               {post.title}
                             </Link>
                           </h2>

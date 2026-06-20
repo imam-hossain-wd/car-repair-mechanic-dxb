@@ -5,7 +5,7 @@ import {
     Award, MapPin, Star, Settings, TrendingUp, Compass,
     ArrowRight, MessageSquare
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 
 // shadcn/ui Components
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";

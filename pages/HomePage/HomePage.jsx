@@ -15,6 +15,7 @@ import { StillHasQuestionSection } from "@/components/view/StillHasQuestionSecti
 import { WhyChooseUs } from "@/components/view/WhyChooseUs/WhyChooseUs";
 import { WorkGallery } from "@/components/view/WorkGallery/WorkGallery";
 
+
 const HomePage = () => {
 
   return (
@@ -28,7 +29,7 @@ const HomePage = () => {
       <WhyChooseUs />
       <CarBrandsWeServe />
       <BatteriesWeProvide />
-      <WorkGallery/>
+      <WorkGallery />
       <FAQ />
       <ClientReviews />
       <Maps />

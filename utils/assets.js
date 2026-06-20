@@ -13,6 +13,7 @@ import maintenance from "../assets/services/maintenance.png";
 import part from "../assets/services/part.png";
 import spareParts from "../assets/services/spare-parts.png";
 import timing from "../assets/services/timing.png";
+import computer from "../assets/services/computer.png";
 
 import carRepair1 from "../assets/working-gellery/alternator-repair.jpeg";
 import carRepair2 from "../assets/working-gellery/alternator.jpeg";
@@ -36,7 +37,32 @@ import carRepair19 from "../assets/working-gellery/roadsite-assistance.jpeg";
 import carRepair20 from "../assets/working-gellery/underground-parking-car-repair.jpeg";
 
 
-export const workingImages ={
+import acRepair from "../assets/service-banner/ac-repair.png"
+import batteryReplacement from "../assets/service-banner/battery-replacement.jpg"
+import breakpad from "../assets/service-banner/breakpad.jpg"
+import jumpstart from "../assets/service-banner/car-battery-jump-start.jpg"
+import computerDiagnostic from "../assets/service-banner/car-computer-diagnostic.jpg"
+import detailing from "../assets/service-banner/car-detailing-service.png"
+import gasRefill from "../assets/service-banner/car-gas-refill.jpg"
+import raditor from "../assets/service-banner/car-raditor-repair.jpg"
+import mechanic from "../assets/service-banner/car-mechanic-service.jpg"
+import emergancyRepair from "../assets/service-banner/emergancy-car-repair-service.jpg"
+
+
+export const ServiceBanner ={
+    acRepair,
+    batteryReplacement,
+    breakpad,
+    jumpstart,
+    computerDiagnostic,
+    detailing,
+    gasRefill,
+    raditor,
+    mechanic,
+    emergancyRepair
+}
+
+export const workingImages = {
     carRepair1,
     carRepair2,
     carRepair3,
@@ -75,5 +101,6 @@ export const serviceImages = {
     maintenance,
     spareParts,
     timing,
-    part
+    part,
+    computer
 }

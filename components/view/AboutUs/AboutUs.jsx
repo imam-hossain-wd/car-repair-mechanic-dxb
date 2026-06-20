@@ -17,7 +17,7 @@ import {
   Briefcase,
   MapPin
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 
 export function AboutUs() {
   const { 

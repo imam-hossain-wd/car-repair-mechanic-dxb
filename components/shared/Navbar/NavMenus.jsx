@@ -92,7 +92,7 @@ export const mobileNavItems = [
     { name: "Brands", href: "/brands" },
     { name: "Contact", href: "/contact" },
     { name: "About", href: "/about" },
-    { name: "Blogs", href: "/blogs" },
+    // { name: "Blogs", href: "/blogs" },
 ];
 
 
@@ -156,14 +156,14 @@ export const DesktopNav = ({ pathname }) => {
                 <span className={`absolute  bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${pathname === "/dubai/about" ? "w-full" : ""}`} />
             </Link>
 
-            <Link
+            {/* <Link
                 href="/blogs"
                 className={`relative flex justify-center items-center gap-1 px-4 py-2 text-base font-medium transition-all duration-200 hover:text-primary group ${pathname === "/dubai/blogs" ? "text-primary font-semibold" : "text-foreground/80"
                     }`}
             >
                 Blogs
                 <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${pathname === "/dubai/blogs" ? "w-full" : ""}`} />
-            </Link>
+            </Link> */}
 
             <Link
                 href="/contact"

@@ -24,8 +24,9 @@ import {
     Calendar,
     CheckCircle
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import Logo from "../Logo/Logo";
+import { services } from "@/data/services/services";
 
 
 export function Footer() {
@@ -40,7 +41,6 @@ export function Footer() {
         mapsLink,
         operatingHours,
         serviceAreas,
-        services,
         footerhrefs,
         socialLinks,
         city,
@@ -178,7 +178,7 @@ export function Footer() {
                                 {services.map((service, index) => (
                                     <Link
                                         key={index}
-                                        href={`/dubai/services/${service.slug}`}
+                                        href={`/services/${service.slug}`}
                                         className="group flex items-center gap-2 text-sm text-gray-300 hover:text-primary transition-all duration-200"
                                     >
                                         <div className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary group-hover:scale-125 transition-all"></div>
@@ -198,14 +198,22 @@ export function Footer() {
                             </h3>
                             <div className="grid grid-cols-1 gap-2">
                                 {serviceAreas.map((area, index) => (
-                                    <Link
+                                    <p
                                         key={index}
-                                        href={area.href}
                                         className="group flex items-center gap-2 text-sm text-gray-300 "
                                     >
                                         <div className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary group-hover:scale-125 transition-all"></div>
                                         <span className="truncate group-hover:translate-x-1 transition-transform">{area.name}</span>
-                                    </Link>
+                                    </p>
+
+                                    // <Link
+                                    //     key={index}
+                                    //     href={area.href}
+                                    //     className="group flex items-center gap-2 text-sm text-gray-300 "
+                                    // >
+                                    //     <div className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary group-hover:scale-125 transition-all"></div>
+                                    //     <span className="truncate group-hover:translate-x-1 transition-transform">{area.name}</span>
+                                    // </Link>
                                 ))}
                             </div>
                         </div>

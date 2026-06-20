@@ -186,12 +186,13 @@ const serviceList = getServiceNameSlug(services);
 export const SiteConfig = {
   authorName: "Md Bappi",
   brandName: "Car Repair Mechanic Dubai",
-  url: "https://carrepairmechanicdubai.com",
+  url: "https://www.carrepairmechanicdubai.com",
   email: "carrepairmechanicdubai@gmail.com",
   description: "Broke down? Get Dubai's #1 mobile mechanic at your doorstep in 5 to 15 mins. We provide 24/7 car repair, battery replacement & AC service across Dubai. Fast, reliable, and affordable auto repair wherever you are in the city.",
-  displayNumber: "+971 56 831 6301",
-  numberCallLink: "tel:+971568316301",
-  whatsappCallLink: "https://wa.me/971568316301",
+  displayNumber: "+971 54 323 7225",
+  // displayNumber: "+971 56 831 6301",
+  numberCallLink: "tel:+971543237225",
+  whatsappCallLink: "https://wa.me/971543237225",
   location: "Dubai Healthcare city, Dubai - UAE",
   // location: "408 26th st, Umm Hurair Second,  Dubai Healthcare city, Dubai - UAE",
   latitude: "",
@@ -328,7 +329,7 @@ serviceAreas: [
   footerhrefs: [
     { title: "About Us", href: "/about" },
     { title: "Contact", href: "/contact" },
-    { title: "Blog", href: "/blogs" },
+    // { title: "Blog", href: "/blogs" },
     { title: "Services", href: "/services" },
     { title: "Privacy Policy", href: "/privacy" },
     { title: "Terms of Service", href: "/terms" },
@@ -344,7 +345,7 @@ serviceAreas: [
   
   contactLinks: [
     { name: "Map", icon: MapPin, href: "" },
-    { name: "Phone", icon: Phone, href: "tel:+971 56 831 6301" },
+    { name: "Phone", icon: Phone, href: "tel:+971 54 323 7225" },
     { name: "Email", icon: Mail, href: "mailto:carrepairmechanicdubai@gmail.com" }
   ]
 };

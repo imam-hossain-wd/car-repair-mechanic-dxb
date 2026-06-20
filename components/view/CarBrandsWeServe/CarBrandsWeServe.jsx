@@ -6,7 +6,7 @@ import {
   Star,
   CheckCircle
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import { carBrands } from "@/data/carBrands";
 
 
@@ -42,35 +42,12 @@ export function CarBrandsWeServe() {
           </p>
         </div>
 
-        {/* Popular Brands Highlight */}
-        <div className="mb-8">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              Most Popular Brands
-            </h3>
-          </div>
-          <div className="w-[80%] mx-auto flex flex-wrap justify-center gap-2">
-            {popularBrands.map((brand, index) => (
-              <span
-                key={index}
-                className="px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-lg"
-              >
-                {brand.name}
-              </span>
-            ))}
-          </div>
-        </div>
-
         {/* Brands Grid by Category */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {/* <div className="space-y-8 "> */}
-          {/* Japanese Brands */}
-          {/* mt-8 p-4 bg-primary/5 rounded-xl text-center border border-primary/20 */}
-          <div className=" rounded-xl p-2 ">
-            <div className="flex items-center gap-2 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">
+          <div className=" rounded-xl border  p-2 ">
+            <div className="flex items-center gap-2 mb-4 pb-2 border-b-2 border-primary">
               <span className="text-xl">🇯🇵</span>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-bold text-black dark:text-white">
                 Japanese Brands
               </h3>
               <span className="text-xs text-gray-500">({carBrands.japanese.length})</span>
@@ -79,27 +56,19 @@ export function CarBrandsWeServe() {
               {carBrands.japanese.map((brand, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-lg border  dark:border-gray-600 border-primary/20"
+                  className="px-3 py-1.5 font-semibold bg-white text-black dark:text-gray-300 text-sm rounded-lg border-b-2 border-primary border-t-2"
                 >
                   {brand.name}
                 </span>
               ))}
-              {/* {carBrands.japanese.map((brand, index) => (
-                <span
-                  key={index}
-                  className="px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:text-primary transition-all duration-200 cursor-default"
-                >
-                  {brand.name}
-                </span>
-              ))} */}
             </div>
           </div>
 
           {/* German Brands */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-2">
-            <div className="flex items-center gap-2 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">
+          <div className="bg-gray-50 border  dark:bg-gray-800 rounded-xl p-2">
+            <div className="flex items-center gap-2 mb-4 pb-2 border-b-2 border-primary dark:border-gray-700">
               <span className="text-xl">🇩🇪</span>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-bold text-black dark:text-white">
                 German Brands
               </h3>
               <span className="text-xs text-gray-500">({carBrands.german.length})</span>
@@ -108,7 +77,7 @@ export function CarBrandsWeServe() {
               {carBrands.german.map((brand, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:text-primary transition-all duration-200 cursor-default"
+                  className="px-3 py-1.5 font-semibold bg-white text-blackdark:text-gray-300 text-sm rounded-lg border-primary border-t-2 border-b-2 cursor-default"
                 >
                   {brand.name}
                 </span>
@@ -117,10 +86,10 @@ export function CarBrandsWeServe() {
           </div>
 
           {/* American Brands */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-2">
-            <div className="flex items-center gap-2 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">
+          <div className="bg-gray-50 border  dark:bg-gray-800 rounded-xl p-2">
+            <div className="flex items-center gap-2 mb-4 pb-2 border-b-2 border-primary dark:border-gray-700">
               <span className="text-xl">🇺🇸</span>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-bold text-black dark:text-white">
                 American Brands
               </h3>
               <span className="text-xs text-gray-500">({carBrands.american.length})</span>
@@ -129,7 +98,7 @@ export function CarBrandsWeServe() {
               {carBrands.american.map((brand, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:text-primary transition-all duration-200 cursor-default"
+                  className="px-3 py-1.5 bg-white font-semibold text-black dark:text-gray-300 text-sm rounded-lg border-primary border-t-2 border-b-2 cursor-default"
                 >
                   {brand.name}
                 </span>
@@ -138,10 +107,10 @@ export function CarBrandsWeServe() {
           </div>
 
           {/* Korean Brands */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-2">
-            <div className="flex items-center gap-2 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">
+          <div className="bg-gray-50 border  dark:bg-gray-800 rounded-xl p-2">
+            <div className="flex items-center gap-2 mb-4 pb-2 border-b-2 border-primary dark:border-gray-700">
               <span className="text-xl">🇰🇷</span>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-bold text-black dark:text-white">
                 Korean Brands
               </h3>
               <span className="text-xs text-gray-500">({carBrands.korean.length})</span>
@@ -150,7 +119,7 @@ export function CarBrandsWeServe() {
               {carBrands.korean.map((brand, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:text-primary transition-all duration-200 cursor-default"
+                  className="px-3 py-1.5 bg-white font-semibold text-black dark:text-gray-300 text-sm rounded-lg border-primary border-t-2 border-b-2 cursor-default"
                 >
                   {brand.name}
                 </span>
@@ -159,10 +128,10 @@ export function CarBrandsWeServe() {
           </div>
 
           {/* European Brands */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-2">
-            <div className="flex items-center gap-2 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">
+          <div className="bg-gray-50 border  dark:bg-gray-800 rounded-xl p-2">
+            <div className="flex items-center gap-2 mb-4 pb-2 border-b-2 border-primary dark:border-gray-700">
               <span className="text-xl">🇪🇺</span>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-bold text-black dark:text-white">
                 European Brands
               </h3>
               <span className="text-xs text-gray-500">({carBrands.european.length})</span>
@@ -171,7 +140,7 @@ export function CarBrandsWeServe() {
               {carBrands.european.map((brand, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:text-primary transition-all duration-200 cursor-default"
+                  className="px-3 py-1.5 bg-white font-semibold text-black dark:text-gray-300 text-sm rounded-lg border-primary border-t-2 border-b-2 cursor-default"
                 >
                   {brand.name}
                 </span>
@@ -180,10 +149,10 @@ export function CarBrandsWeServe() {
           </div>
 
           {/* Chinese Brands */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-2">
-            <div className="flex items-center gap-2 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">
+          <div className="bg-gray-50 border  dark:bg-gray-800 rounded-xl p-2">
+            <div className="flex items-center gap-2 mb-4 pb-2 border-b-2 border-primary dark:border-gray-700">
               <span className="text-xl">🇨🇳</span>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-black dark:text-white">
                 Chinese Brands
               </h3>
               <span className="text-xs text-gray-500">({carBrands.chinese.length})</span>
@@ -192,7 +161,7 @@ export function CarBrandsWeServe() {
               {carBrands.chinese.map((brand, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:text-primary transition-all duration-200 cursor-default"
+                  className="px-3 py-1.5 bg-white font-bold text-black dark:text-gray-300 text-sm rounded-lg border-primary border-t-2 border-b-2 cursor-default"
                 >
                   {brand.name}
                 </span>
@@ -202,7 +171,7 @@ export function CarBrandsWeServe() {
         </div>
 
         {/* Trust Badge */}
-        <div className="mt-8 p-4 bg-primary/5 rounded-xl text-center border border-primary/20">
+        <div className="mt-5 p-4 bg-primary/5 rounded-xl text-center border border-primary/20">
           <div className="flex items-center justify-center gap-2 mb-2">
             <CheckCircle className="h-5 w-5 text-primary" />
             <span className="font-semibold text-gray-900 dark:text-white">

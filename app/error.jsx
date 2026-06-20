@@ -3,11 +3,11 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { AlertCircle, RefreshCw, Home, Phone, Wrench, ArrowLeft, Car } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { AlertCircle, RefreshCw, Home, Phone, Car } from "lucide-react";
+import { SiteConfig } from "@/config/siteConfig";
 
 export default function ErrorPage({ error, reset }) {
-  const { brandName, displayNumber, whatsappCallLink } = SiteConfig;
+  const {  displayNumber, whatsappCallLink } = SiteConfig;
 
   useEffect(() => {
     // Log the error to an error reporting service
@@ -24,7 +24,7 @@ export default function ErrorPage({ error, reset }) {
   const errorMessage = errorMessages[error?.code] || errorMessages.DEFAULT;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-950 via-gray-900 to-gray-900 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-linear-to-br from-red-950 via-gray-900 to-gray-900 flex items-center justify-center px-4">
       
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">

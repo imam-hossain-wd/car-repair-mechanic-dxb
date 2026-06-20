@@ -1,4 +1,4 @@
-import { serviceImages } from "@/utils/assets";
+import { ServiceBanner, serviceImages } from "@/utils/assets";
 
 export const oilChangeService = {
   title: "Car Oil Change Dubai | Engine Oil Replacement & Service",
@@ -18,6 +18,7 @@ export const oilChangeService = {
     slug: "oil-change-service-dubai",
 
     service_image: serviceImages?.engineOil,
+    service_banner: ServiceBanner?.oilChangeService,
 
     intro: {
         heading: "Professional Car Oil Change Service in Dubai",

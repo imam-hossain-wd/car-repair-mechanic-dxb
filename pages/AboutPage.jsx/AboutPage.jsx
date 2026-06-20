@@ -23,7 +23,7 @@ import {
   Handshake,
   Rocket,
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 
 
 export default function AboutPage() {

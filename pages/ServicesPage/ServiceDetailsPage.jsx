@@ -33,7 +33,7 @@ import {
   Gauge,
   ThumbsUp,
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 
 
  export default function ServiceDetailsPage({ service }) {
@@ -103,9 +103,9 @@ import { SiteConfig } from "@/app/siteConfig";
       <section className="relative overflow-hidden">
         {/* Background Image with Gradient Overlay */}
         <div className="absolute inset-0">
-          {service?.service_image ? (
+          {service?.service_banner ? (
             <Image
-              src={service.service_image}
+              src={service?.service_banner}
               alt={service?.title || "Service"}
               fill
               className="object-cover"

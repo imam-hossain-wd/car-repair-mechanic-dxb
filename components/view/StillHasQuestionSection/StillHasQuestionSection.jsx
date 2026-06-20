@@ -1,6 +1,6 @@
 "use client";
 
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import Link from "next/link";
 

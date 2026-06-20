@@ -16,7 +16,7 @@ import {
   Wrench,
   Star,
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import { Maps } from "@/components/view/Maps/Maps";
 
 export const metadata = {

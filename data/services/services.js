@@ -8,6 +8,7 @@ import { carDetailingService } from "./carDetailingService";
 import { carRaditorRepair } from "./carRaditorRepair";
 import { carRepairDubai } from "./carRepairDubai";
 import { carServiceDubai } from "./carServiceDubai";
+import { computerDiagnosticService } from "./computerDiagnosticService";
 import { emergancyCarRepairService } from "./emergancyCarRepairService";
 import { fuelPumpRepair } from "./fuelPumpRepair";
 import { jumpStartService } from "./jumpStartService";
@@ -19,6 +20,7 @@ import { transmissionRepairService } from "./transmissionRepairService";
 export const services = [
     batteryReplacementService,
     jumpStartService,
+    computerDiagnosticService,
     // alternatorRepair,
     // fuelPumpRepair,
     // starterMotorRepair,

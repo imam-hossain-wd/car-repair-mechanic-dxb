@@ -19,7 +19,13 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Professional Car Repair Services in Dubai | Expert Mechanics at Your Service",
   description: "Looking for reliable car repair services in Dubai? Our expert mechanics provide top-notch repairs, maintenance, and diagnostics to keep your vehicle running smoothly. Contact us today for quality service and customer satisfaction.",
+  verification: {
+    google: "oQfV7oG_3g6xnHFtzkU6mp5ahAKnJhCbLir0xMnaadM",
+  },
 };
+
+
+
 
 export default function RootLayout({ children }) {
   return (

@@ -14,7 +14,7 @@ import {
   ArrowRight,
   Calendar
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 
 
 export default function ServiceAreaPage() {

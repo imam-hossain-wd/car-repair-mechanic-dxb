@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from "react";
 import { Star, Quote, ChevronLeft, ChevronRight, Phone, MessageCircle, Wrench, Eye } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import Link from "next/link";
 import { reviews } from "@/data/reviews";
 
@@ -49,7 +49,7 @@ export function ClientReviews() {
 
   return (
     <section className="py-5 bg-linear-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
-      <div className="container mx-auto px-4">
+      <div className="w-[90%] mx-auto">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-8">
@@ -82,7 +82,7 @@ export function ClientReviews() {
         </div>
 
         {/* Reviews Carousel */}
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative ">
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
@@ -102,10 +102,10 @@ export function ClientReviews() {
           
           {/* Reviews Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {currentReviews.map((review, idx) => (
+            {currentReviews.map((review) => (
               <div
                 key={review.id}
-                className="bg-white h-50 dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 "
+                className="bg-white h-60 dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 "
               >
                 {/* Quote Icon */}
                 <div className="flex justify-between items-start mb-3">
@@ -118,7 +118,7 @@ export function ClientReviews() {
                 </div>
                 
                 {/* Review Text */}
-                <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed mb-3 line-clamp-3">
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-3 line-clamp-3">
                   &quot;{review?.review}&quot;
                 </p>
                 

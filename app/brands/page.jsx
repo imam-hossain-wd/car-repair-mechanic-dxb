@@ -1,4 +1,4 @@
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import BrandWeServePage from "@/pages/BrandWeServePage/BrandWeServePage";
 
 export const metadata = {

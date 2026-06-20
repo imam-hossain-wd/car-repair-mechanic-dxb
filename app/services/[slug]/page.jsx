@@ -1,6 +1,6 @@
 import { services } from '@/data/services/services';
 import { notFound } from 'next/navigation'
-import { SiteConfig } from '@/app/siteConfig';
+import { SiteConfig } from '@/config/siteConfig';
 import ServiceDetailsPage from '@/pages/ServicesPage/ServiceDetailsPage';
 
 // Dynamic metadata for SEO

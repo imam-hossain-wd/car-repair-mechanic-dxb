@@ -9,7 +9,7 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import Logo from "../Logo/Logo";
 import { DesktopNav} from "./NavMenus";
 import { MobileDrawerNav } from "./MobileNavDrawer";

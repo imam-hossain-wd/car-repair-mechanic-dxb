@@ -2,7 +2,7 @@
 "use client";
 
 import { Phone, MessageCircle } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 

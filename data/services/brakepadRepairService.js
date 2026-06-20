@@ -1,4 +1,4 @@
-import { serviceImages } from "@/utils/assets";
+import { ServiceBanner, serviceImages } from "@/utils/assets";
 
 export const brakepadRepairService = {
     title: "Brake Pad Repair Dubai | Fast Mobile Brake Service Near You",
@@ -18,6 +18,7 @@ export const brakepadRepairService = {
     slug: "brake-pad-repair-dubai",
 
     service_image: serviceImages?.spareParts,
+    service_banner: ServiceBanner.breakpad,
 
     intro: {
         heading: "Professional Brake Pad Repair Service in Dubai",

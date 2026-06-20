@@ -22,7 +22,7 @@ import {
   Truck,
   Eye
 } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import { Button } from "@/components/ui/button";
 import { ServiceCard } from "@/components/shared/ServiceCard/ServiceCard";
 import { services } from "@/data/services/services";
@@ -95,8 +95,8 @@ export function FeaturedServices() {
         {services?.length > 0 && (
           <div className="container mx-auto px-4 py-">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services?.slice(0, 8)?.map((service) => (
-                <ServiceCard key={service?.id} service={service} featured={true} />
+              {services?.slice(0, 8)?.map((service, index) => (
+                <ServiceCard key={index} service={service} featured={true} />
               ))}
             </div>
           </div>

@@ -2,7 +2,7 @@
 "use client";
 
 import { Battery, Zap, Shield, CheckCircle, Truck, Clock } from "lucide-react";
-import { SiteConfig } from "@/app/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
 import { batteriesData } from "@/data/battriesData";
 
 const allBatteries = [
@@ -13,10 +13,10 @@ const totalBrands = allBatteries.length;
 const popularBrands = allBatteries.filter(b => b.popular === true);
 
 export function BatteriesWeProvide() {
-  const { brandName, city, displayNumber } = SiteConfig;
+  const { brandName} = SiteConfig;
 
   return (
-    <section className="py-10 bg-gray-50 dark:bg-gray-800">
+    <section className="py-5 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         
         {/* Section Header */}
@@ -43,7 +43,7 @@ export function BatteriesWeProvide() {
         <div className="mb-5">
           <div className="flex items-center justify-center gap-1 mb-2">
             <Shield className="h-3 w-3 text-primary" />
-            <span className="text-xs font-medium text-gray-700 dark:text-gray-300">
+            <span className="text-md font-medium text-gray-700 dark:text-gray-300">
               Most Demanded:
             </span>
           </div>
@@ -51,7 +51,7 @@ export function BatteriesWeProvide() {
             {popularBrands.map((brand, index) => (
               <span
                 key={index}
-                className="px-2 py-0.5 bg-primary/10 text-primary text-xs font-medium rounded"
+                className="px-2 py-0.5 bg-primary/10 text-primary text-sm font-medium rounded"
               >
                 {brand.name}
               </span>
@@ -66,16 +66,16 @@ export function BatteriesWeProvide() {
             <div className="flex items-center justify-between mb-2 pb-1 border-b border-gray-200 dark:border-gray-700">
               <div className="flex items-center gap-1.5">
                 <Zap className="h-3.5 w-3.5 text-primary" />
-                <h3 className="text-sm font-bold text-gray-900 dark:text-white">
+                <h3 className="text-md md:text-lg font-bold text-gray-900 dark:text-white">
                   Premium Brands
                 </h3>
               </div>
               <span className="text-xs text-primary font-medium">2 Yrs Warranty</span>
             </div>
-            <div className="space-y-1.5">
+            <div className="space-y-1">
               {batteriesData.premiumBrands.map((brand, index) => (
                 <div key={index} className="flex items-center justify-between">
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <span className="text-md text-gray-700 dark:text-gray-300">
                     {brand.name}
                   </span>
                   <span className="text-xs text-green-600 dark:text-green-400">
@@ -91,16 +91,16 @@ export function BatteriesWeProvide() {
             <div className="flex items-center justify-between mb-2 pb-1 border-b border-gray-200 dark:border-gray-700">
               <div className="flex items-center gap-1.5">
                 <Shield className="h-3.5 w-3.5 text-primary" />
-                <h3 className="text-sm font-bold text-gray-900 dark:text-white">
+                <h3 className="text-md md:text-lg font-bold text-gray-900 dark:text-white">
                   Standard Brands
                 </h3>
               </div>
               <span className="text-xs text-primary font-medium">18 Months</span>
             </div>
-            <div className="space-y-1.5">
+            <div className="space-y-1">
               {batteriesData.standardBrands.map((brand, index) => (
                 <div key={index} className="flex items-center justify-between">
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <span className="text-md text-gray-700 dark:text-gray-300">
                     {brand.name}
                   </span>
                   <span className="text-xs text-green-600 dark:text-green-400">
@@ -121,7 +121,7 @@ export function BatteriesWeProvide() {
             {batteriesData.batteryTypes.map((type, index) => {
               const Icon = type.icon;
               return (
-                <div key={index} className="bg-white dark:bg-gray-900 rounded-lg p-2 text-center border border-gray-200 dark:border-gray-700">
+                <div key={index} className="bg-white dark:bg-gray-900 rounded-lg p-2 text-center border border-primary dark:border-gray-700">
                   <Icon className="h-3.5 w-3.5 text-primary mx-auto mb-1" />
                   <p className="text-xs font-medium text-gray-800 dark:text-gray-200">
                     {type.name}
@@ -139,7 +139,7 @@ export function BatteriesWeProvide() {
         <div className="mb-5">
           <div className="flex items-center justify-center gap-1 mb-2">
             <Truck className="h-3 w-3 text-primary" />
-            <span className="text-xs font-medium text-gray-700 dark:text-gray-300">
+            <span className="text-md font-medium text-gray-700 dark:text-gray-300">
               Compatible With:
             </span>
           </div>
@@ -147,34 +147,17 @@ export function BatteriesWeProvide() {
             {batteriesData.vehicleCompatibility.map((vehicle, index) => (
               <span
                 key={index}
-                className="px-2 py-0.5 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 text-xs rounded border border-gray-200 dark:border-gray-700"
+                className="px-2 py-0.5 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 text-sm rounded border border-gray-200 dark:border-gray-700"
               >
                 {vehicle}
               </span>
             ))}
           </div>
         </div>
-
-        {/* Service Badge */}
-        <div className="grid grid-cols-2 gap-2 mb-4">
-          <div className="flex items-center gap-2 p-2 bg-green-50 dark:bg-green-950/30 rounded-lg">
-            <CheckCircle className="h-3.5 w-3.5 text-green-600" />
-            <span className="text-xs text-gray-700 dark:text-gray-300">
-              Free Installation
-            </span>
-          </div>
-          <div className="flex items-center gap-2 p-2 bg-green-50 dark:bg-green-950/30 rounded-lg">
-            <Clock className="h-3.5 w-3.5 text-green-600" />
-            <span className="text-xs text-gray-700 dark:text-gray-300">
-              30 Min Service
-            </span>
-          </div>
-        </div>
-
         {/* Trust Badge */}
         <div className="p-2.5 bg-primary/5 rounded-lg text-center border border-primary/20">
           <p className="text-xs text-gray-600 dark:text-gray-400">
-            🔋 All batteries come with warranty | Old battery disposal included | On-site installation
+            🔋 All batteries come with warranty | Old battery disposal included | On-site installation | 30 Min Service
           </p>
         </div>
 
