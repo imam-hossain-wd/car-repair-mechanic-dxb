@@ -125,7 +125,7 @@ const quickLinks = [
   { label: "Your Rights", href: "#your-rights" }
 ];
 
-export function PrivacyPage() {
+export default function PrivacyPage() {
   const [isVisible, setIsVisible] = useState(false);
   const [activeSection, setActiveSection] = useState("information-we-collect");
   const { brandName, displayNumber, email, location, url } = SiteConfig;

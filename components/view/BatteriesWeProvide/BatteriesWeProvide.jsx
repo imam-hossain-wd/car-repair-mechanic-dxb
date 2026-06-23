@@ -2,7 +2,6 @@
 "use client";
 
 import { Battery, Zap, Shield, CheckCircle, Truck, Clock } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
 import { batteriesData } from "@/data/battriesData";
 
 const allBatteries = [
@@ -13,7 +12,7 @@ const totalBrands = allBatteries.length;
 const popularBrands = allBatteries.filter(b => b.popular === true);
 
 export function BatteriesWeProvide() {
-  const { brandName} = SiteConfig;
+
 
   return (
     <section className="py-5 bg-gray-50 dark:bg-gray-800">
@@ -160,65 +159,6 @@ export function BatteriesWeProvide() {
             🔋 All batteries come with warranty | Old battery disposal included | On-site installation | 30 Min Service
           </p>
         </div>
-
-        {/* SEO Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "AutoPartsStore",
-              "name": `${brandName} - Battery Services`,
-              "areaServed": SiteConfig.city,
-              "makesOffer": allBatteries.map(battery => ({
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Product",
-                  "name": `${battery.name} Car Battery`,
-                  "brand": {
-                    "@type": "Brand",
-                    "name": battery.name
-                  },
-                  "category": battery.type === "Premium" ? "Premium Automotive Battery" : "Standard Automotive Battery",
-                  "warranty": battery.warranty,
-                  "manufacturer": {
-                    "@type": "Organization",
-                    "name": battery.origin
-                  }
-                },
-                "availability": "https://schema.org/InStock",
-                "priceSpecification": {
-                  "@type": "PriceSpecification",
-                  "priceCurrency": "AED",
-                  "price": "Varies by model"
-                }
-              })),
-              "serviceType": batteriesData.batteryTypes.map(type => type.name),
-              "availableLanguage": ["English", "Arabic", "Urdu", "Hindi"]
-            })
-          }}
-        />
-
-        {/* Product Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              "name": "Car Battery Brands Available in Dubai",
-              "description": `Complete list of genuine battery brands we provide at ${brandName}`,
-              "numberOfItems": totalBrands,
-              "itemListElement": allBatteries.map((battery, index) => ({
-                "@type": "ListItem",
-                "position": index + 1,
-                "name": `${battery.name} Battery`,
-                "url": `https://carrepairmechanic.ae/dubai/battery/${battery.name.toLowerCase()}`,
-                "description": `${battery.name} ${battery.type} car battery with ${battery.warranty} warranty. Available for all car models in ${SiteConfig.city}.`
-              }))
-            })
-          }}
-        />
       </div>
     </section>
   );

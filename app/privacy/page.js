@@ -1,7 +1,7 @@
 // app/dubai/privacy/page.jsx
 
 import { SiteConfig } from "@/config/siteConfig";
-import { PrivacyPage } from "@/pages/PrivacyPage/PrivacyPage";
+import PrivacyPage from "@/pages/PrivacyPage/PrivacyPage";
 
 export const metadata = {
   title: `Privacy Policy | ${SiteConfig.brandName}`,

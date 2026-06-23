@@ -1,8 +1,6 @@
 // components/AboutUs.jsx
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { 
   Wrench, 
   Users, 
@@ -10,11 +8,9 @@ import {
   Clock, 
   CheckCircle,
   Shield,
-  Truck,
   ThumbsUp,
   Target,
   Heart,
-  Briefcase,
   MapPin
 } from "lucide-react";
 import { SiteConfig } from "@/config/siteConfig";
@@ -206,176 +202,6 @@ export function AboutUs() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* SEO & GEO Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "AutoRepair",
-              "name": brandName,
-              "description": description,
-              "image": "https://carrepairmechanic.ae/logo.png",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Al Karama",
-                "addressLocality": city,
-                "addressRegion": "Dubai",
-                "addressCountry": country
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": coordinate?.split(",")[0],
-                "longitude": coordinate?.split(",")[1]
-              },
-              "telephone": displayNumber,
-              "openingHours": "Mo-Su 00:00-23:59",
-              "openingHoursSpecification": operatingHours?.map(hour => ({
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": hour.day,
-                "opens": "00:00",
-                "closes": "23:59"
-              })),
-              "priceRange": "$$",
-              "areaServed": {
-                "@type": "City",
-                "name": city,
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": city,
-                  "addressCountry": country
-                }
-              },
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Car Repair Services",
-                "itemListElement": [
-                  { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Battery Replacement" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AC Repair" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oil Change" } },
-                  { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brake Repair" } }
-                ]
-              },
-              "review": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "523",
-                "bestRating": "5",
-                "worstRating": "1"
-              },
-              "foundingDate": "2011",
-              "numberOfEmployees": { "@type": "QuantitativeValue", "value": "25" },
-              "founder": { "@type": "Person", "name": "Md Bappi" }
-            })
-          }}
-        />
-
-        {/* LocalBusiness Schema for GEO */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": brandName,
-              "description": description,
-              "url": SiteConfig.url,
-              "telephone": displayNumber,
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": city,
-                "addressRegion": "Dubai",
-                "addressCountry": country,
-                "postalCode": "00000"
-              },
-              "areaServed": {
-                "@type": "AdministrativeArea",
-                "name": city,
-                "containedInPlace": {
-                  "@type": "City",
-                  "name": city
-                }
-              },
-              "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": coordinate?.split(",")[0],
-                  "longitude": coordinate?.split(",")[1]
-                },
-                "geoRadius": "50000"
-              },
-              "availableLanguage": ["English", "Arabic", "Urdu", "Hindi"],
-              "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
-              "currenciesAccepted": "AED"
-            })
-          }}
-        />
-
-        {/* FAQ Schema for AEO (Answer Engine Optimization) */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": `Is ${brandName} available 24/7 in ${city}?`,
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": `Yes, ${brandName} provides 24/7 emergency car repair service across all areas of ${city}, ${country}. Our mobile mechanics are available 365 days a year.`
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How fast is your mobile car repair service?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our average response time is 15-30 minutes within Dubai. We prioritize emergency calls and provide estimated arrival times when you book."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": `Do you service all areas of ${city}?`,
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": `Yes, we serve all major areas of ${city} including Al Karama, Business Bay, Damac Hills, Dubai Silicon Oasis, Al Rigga, and 50+ other locations across the city.`
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What car brands do you repair?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We repair all major car brands including Toyota, Nissan, Honda, BMW, Mercedes-Benz, Audi, Lexus, Ford, Chevrolet, and all other makes and models."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do you provide warranty on repairs?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, all our repairs come with warranty. Battery replacement includes 2 years warranty, AC repair includes 6 months, and major repairs include 1 year warranty."
-                  }
-                }
-              ]
-            })
-          }}
-        />
-
-        {/* Geo Location Meta Data */}
-        <div className="sr-only" aria-hidden="true">
-          <span itemScope itemType="https://schema.org/AutoRepair">
-            <span itemProp="name">{brandName}</span>
-            <span itemProp="areaServed">{city}, {country}</span>
-            <span itemProp="address">{location}</span>
-            <span itemProp="telephone">{displayNumber}</span>
-            <span itemProp="openingHours">24/7</span>
-          </span>
         </div>
       </div>
     </section>

@@ -2,69 +2,15 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import {
-  Battery,
-  Wind,
-  Droplet,
-  CircleStop,
-  Activity,
-  Circle,
-  Clock,
-  Shield,
-  MapPin,
-  Phone,
-  ChevronRight,
   Wrench,
-  Calendar,
-  Users,
-  ThumbsUp,
-  Truck,
   Eye
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
-import { Button } from "@/components/ui/button";
 import { ServiceCard } from "@/components/shared/ServiceCard/ServiceCard";
 import { services } from "@/data/services/services";
 
-// Icon mapping for services
-const serviceIcons = {
-  "battery-replacement": Battery,
-  "ac-repair-service": Wind,
-  "oil-change": Droplet,
-  "brake-repair": CircleStop,
-  "engine-diagnostics": Activity,
-  "tire-replacement": Circle,
-  "alternator-repair": Battery,
-  "starter-motor-repair": Wrench,
-  "suspension-repair": Truck,
-  "cooling-system-repair": Wind,
-  "transmission-service": Wrench,
-  "full-car-maintenance": Shield,
-};
 
 export function FeaturedServices() {
-  const { fullServices, displayNumber, numberCallLink } = SiteConfig;
-
-  // Get featured services
-  const featuredServices = fullServices?.filter(service => service.featured === true) || [];
-
-  // Service highlights for quick stats
-  const serviceHighlights = [
-    { icon: Clock, label: "30 Min Response", value: "Fast Service" },
-    { icon: Shield, label: "12 Months Warranty", value: "On All Repairs" },
-    { icon: Users, label: "5000+", value: "Happy Customers" },
-    { icon: ThumbsUp, label: "100%", value: "Satisfaction" },
-  ];
-
-  // Pricing guide
-  const pricingGuide = [
-    { service: "Battery Replacement", price: "From AED 250", time: "30 min" },
-    { service: "AC Repair", price: "From AED 199", time: "1 hour" },
-    { service: "Oil Change", price: "From AED 180", time: "30 min" },
-    { service: "Brake Repair", price: "From AED 350", time: "1.5 hours" },
-  ];
-
   return (
     <section className="py-5 bg-linear-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,33 +117,6 @@ export function FeaturedServices() {
             );
           })}
         </div> */}
-
-        {/* SEO Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              "name": "Car Repair Services in Dubai",
-              "description": "Professional automotive repair and maintenance services",
-              "numberOfItems": featuredServices.length,
-              "itemListElement": featuredServices.map((service, index) => ({
-                "@type": "ListItem",
-                "position": index + 1,
-                "name": service.name,
-                "description": service.description,
-                "url": `https://carrepairmechanic.ae/dubai/services/${service.slug}`,
-                "offers": {
-                  "@type": "Offer",
-                  "price": service.price.replace("From AED ", ""),
-                  "priceCurrency": "AED",
-                  "availability": "https://schema.org/InStock"
-                }
-              }))
-            })
-          }}
-        />
 
         <div className="text-center mt-8">
           <div className="inline-flex flex-col sm:flex-row gap-3">

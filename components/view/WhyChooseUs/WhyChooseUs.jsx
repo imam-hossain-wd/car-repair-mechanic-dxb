@@ -4,21 +4,18 @@
 import { 
   Zap, 
   Shield, 
-  Clock, 
-  Wrench, 
+  Clock,  
   ThumbsUp, 
   Award,
   Truck,
   Users,
   BadgeCheck,
   Sparkles,
-  Headphones,
-  Hammer
 } from "lucide-react";
 import { SiteConfig } from "@/config/siteConfig";
 
 export function WhyChooseUs() {
-  const { brandName, displayNumber, city } = SiteConfig;
+  const { brandName, city } = SiteConfig;
 
   const reasons = [
     {
@@ -150,104 +147,6 @@ export function WhyChooseUs() {
             🏆 Trusted by over 5,000 vehicle owners across {city}
           </p>
         </div>
-
-        {/* SEO Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "AutoRepair",
-              "name": brandName,
-              "areaServed": city,
-              "availableService": reasons.map(reason => ({
-                "@type": "Service",
-                "name": reason.title,
-                "description": reason.description,
-                "provider": {
-                  "@type": "AutoRepair",
-                  "name": brandName
-                }
-              })),
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "523",
-                "bestRating": "5",
-                "ratingExplanation": "Based on customer satisfaction surveys and verified reviews across multiple platforms"
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                "opens": "00:00",
-                "closes": "23:59",
-                "validFrom": "2011-01-01",
-                "validThrough": "2030-12-31"
-              },
-              "makesOffer": [
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Emergency Mobile Repair",
-                    "description": "24/7 roadside assistance and mobile car repair"
-                  },
-                  "availability": "https://schema.org/InStock",
-                  "priceSpecification": {
-                    "@type": "PriceSpecification",
-                    "priceCurrency": "AED",
-                    "price": "Varies by service"
-                  }
-                }
-              ]
-            })
-          }}
-        />
-
-        {/* FAQ Schema for Voice Search */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": `Why should I choose ${brandName} over other car repair services in ${city}?`,
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": `Customers choose ${brandName} for our 15-30 minute rapid response, certified mechanics, 24/7 availability, comprehensive warranty, mobile doorstep service, and 5000+ satisfied customers with 4.9/5 rating.`
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What makes your car repair service different?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We offer mobile on-site service, transparent pricing, genuine parts with warranty, certified technicians, 24/7 emergency support, and a 100% satisfaction guarantee on all repairs."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is your mobile car repair service reliable?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, with over 13 years of experience and 5000+ successful repairs, we have maintained a 4.9/5 customer rating. All our mechanics are certified and background-checked."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do you provide warranty on your car repair services?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, all our repairs come with warranty. Battery replacement includes 2 years warranty, AC repair includes 6 months, and mechanical repairs include up to 12 months warranty."
-                  }
-                }
-              ]
-            })
-          }}
-        />
       </div>
     </section>
   );

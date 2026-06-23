@@ -14,7 +14,7 @@ import {
   ArrowRight,
   Calendar
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+import { numberCallLink, SiteConfig } from "@/config/siteConfig";
 
 
 export default function ServiceAreaPage() {
@@ -127,13 +127,13 @@ export default function ServiceAreaPage() {
                   <span>24/7 emergency service available</span>
                 </div>
               </div>
-              <a
-                href={`tel:${displayNumber}`}
+              <Link
+                href={numberCallLink}
                 className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary/90 transition-all"
               >
                 <Phone className="h-4 w-4" />
                 Call for Immediate Service
-              </a>
+              </Link>
             </div>
             <div className="bg-gray-100 dark:bg-gray-900 p-6 flex items-center justify-center min-h-75">
               <div className="text-center">
@@ -169,9 +169,9 @@ export default function ServiceAreaPage() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {popularAreas.map((area, index) => (
-              <Link
+              <p
                 key={index}
-                href={area.href}
+                // href={area.href}
                 className="group bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700 hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="flex items-start justify-between mb-2">
@@ -192,11 +192,11 @@ export default function ServiceAreaPage() {
                 <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mb-2">
                   {area.highlight || "Full car repair services available"}
                 </p>
-                <div className="flex items-center gap-1 text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                {/* <div className="flex items-center gap-1 text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity">
                   <span>View Details</span>
                   <ArrowRight className="h-3 w-3" />
-                </div>
-              </Link>
+                </div> */}
+              </p>
             ))}
           </div>
         </div>
@@ -219,16 +219,16 @@ export default function ServiceAreaPage() {
               </div>
               <div className="space-y-2">
                 {centralDubai.map((area, idx) => (
-                  <Link
+                  <p
                     key={idx}
-                    href={area.href}
+                    // href={area.href}
                     className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all group"
                   >
                     <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary">
                       {area.name}
                     </span>
                     <span className="text-xs text-gray-400">{area.responseTime || "15-20 min"}</span>
-                  </Link>
+                  </p>
                 ))}
               </div>
             </div>
@@ -244,16 +244,16 @@ export default function ServiceAreaPage() {
               </div>
               <div className="space-y-2">
                 {residentialDubai.map((area, idx) => (
-                  <Link
+                  <p
                     key={idx}
-                    href={area.href}
+                    // href={area.href}
                     className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all group"
                   >
                     <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary">
                       {area.name}
                     </span>
                     <span className="text-xs text-gray-400">{area.responseTime || "18-25 min"}</span>
-                  </Link>
+                  </p>
                 ))}
               </div>
             </div>
@@ -269,16 +269,16 @@ export default function ServiceAreaPage() {
               </div>
               <div className="space-y-2">
                 {waterfrontDubai.map((area, idx) => (
-                  <Link
+                  <p
                     key={idx}
-                    href={area.href}
+                    // href={area.href}
                     className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all group"
                   >
                     <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary">
                       {area.name}
                     </span>
                     <span className="text-xs text-gray-400">{area.responseTime || "20-25 min"}</span>
-                  </Link>
+                  </p>
                 ))}
               </div>
             </div>
@@ -294,16 +294,16 @@ export default function ServiceAreaPage() {
               </div>
               <div className="space-y-2">
                 {deiraAreas.map((area, idx) => (
-                  <Link
+                  <p
                     key={idx}
-                    href={area.href}
+                    // href={area.href}
                     className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all group"
                   >
                     <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary">
                       {area.name}
                     </span>
                     <span className="text-xs text-gray-400">{area.responseTime || "16-22 min"}</span>
-                  </Link>
+                  </p>
                 ))}
               </div>
             </div>
@@ -338,15 +338,15 @@ export default function ServiceAreaPage() {
             Our team is ready to serve you at any location in {city}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href={`tel:${displayNumber}`}
+            <Link
+              href={numberCallLink}
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-all"
             >
               <Phone className="h-4 w-4" />
               Call Now: {displayNumber}
-            </a>
+            </Link>
             <Link
-              href="/dubai/contact"
+              href="/contact"
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 hover:border-primary text-gray-700 dark:text-white rounded-lg font-medium transition-all"
             >
               <Calendar className="h-4 w-4" />

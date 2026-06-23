@@ -92,7 +92,11 @@ export const mobileNavItems = [
     { name: "Brands", href: "/brands" },
     { name: "Contact", href: "/contact" },
     { name: "About", href: "/about" },
-    // { name: "Blogs", href: "/blogs" },
+
+    // { name: "gallery", href: "/gallery" },
+    // { name: "privacy", href: "/privacy" },
+    // { name: "terms", href: "/terms" },
+    // { name: "Vehicle We Serve", href: "/vehicle-we-serve" },
 ];
 
 

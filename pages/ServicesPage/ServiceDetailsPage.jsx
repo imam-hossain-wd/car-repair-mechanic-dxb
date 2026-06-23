@@ -36,6 +36,7 @@ import {
 import { SiteConfig } from "@/config/siteConfig";
 
 
+
  export default function ServiceDetailsPage({ service }) {
   const [activeTab, setActiveTab] = useState("overview");
   const [expandedFaq, setExpandedFaq] = useState(null);
@@ -155,13 +156,13 @@ import { SiteConfig } from "@/config/siteConfig";
 
             {/* Quick Stats */}
             <div className="flex flex-wrap gap-4">
-              {quickStats.map((stat, index) => {
+              {quickStats?.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
                   <div key={index} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-white/10">
                     <Icon className="h-4 w-4 text-primary" />
-                    <span className="text-sm font-medium text-white">{stat.value}</span>
-                    <span className="text-xs text-white/60">{stat.label}</span>
+                    <span className="text-sm font-medium text-white">{stat?.value}</span>
+                    <span className="text-xs text-white/60">{stat?.label}</span>
                   </div>
                 );
               })}
@@ -217,12 +218,12 @@ import { SiteConfig } from "@/config/siteConfig";
                 Why Choose Us
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {service?.whyChooseUs?.points?.slice(0, 6).map((point, index) => (
+                {service?.whyChooseUs?.points?.slice(0, 6)?.map((point, index) => (
                   <div key={index} className="flex items-center gap-3 p-2">
                     <div className="p-1.5 bg-primary/10 rounded-lg">
                       {index % 2 === 0 ? <Wrench className="h-4 w-4 text-primary" /> : <Shield className="h-4 w-4 text-primary" />}
                     </div>
-                    <span className="text-sm text-gray-700 dark:text-gray-300">{point.replace('✅', '').trim()}</span>
+                    <span className="text-sm text-gray-700 dark:text-gray-300">{point?.replace('✅', '').trim()}</span>
                   </div>
                 ))}
               </div>
@@ -264,13 +265,13 @@ import { SiteConfig } from "@/config/siteConfig";
                   Frequently Asked Questions
                 </h2>
                 <div className="space-y-3">
-                  {service.faq.map((item, index) => (
+                  {service?.faq?.map((item, index) => (
                     <div key={index} className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden">
                       <button
                         onClick={() => toggleFaq(index)}
                         className="w-full px-5 py-3 text-left flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-all"
                       >
-                        <span className="font-medium text-gray-900 dark:text-white text-sm">{item.question}</span>
+                        <span className="font-medium text-gray-900 dark:text-white text-sm">{item?.question}</span>
                         {expandedFaq === index ? (
                           <ChevronUp className="h-4 w-4 text-primary shrink-0" />
                         ) : (
@@ -279,7 +280,7 @@ import { SiteConfig } from "@/config/siteConfig";
                       </button>
                       {expandedFaq === index && (
                         <div className="px-5 pb-4 pt-1 border-t border-gray-100 dark:border-gray-700">
-                          <p className="text-sm text-gray-600 dark:text-gray-400">{item.answer}</p>
+                          <p className="text-sm text-gray-600 dark:text-gray-400">{item?.answer}</p>
                         </div>
                       )}
                     </div>
@@ -326,14 +327,14 @@ import { SiteConfig } from "@/config/siteConfig";
                     Service Areas
                   </h4>
                   <div className="flex flex-wrap gap-1.5">
-                    {SiteConfig.serviceAreas?.slice(0, 8).map((area, index) => (
-                      <Link
+                    {SiteConfig?.serviceAreas?.slice(0, 8)?.map((area, index) => (
+                      <p
                         key={index}
-                        href={area.href}
+                        // href={area.href}
                         className="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded hover:bg-primary/10 hover:text-primary transition-colors"
                       >
                         {area.name}
-                      </Link>
+                      </p>
                     ))}
                   </div>
                 </div>

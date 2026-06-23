@@ -163,28 +163,6 @@ export function FAQ() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-
-        {/* Local Business Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "AutoRepair",
-              "name": brandName,
-              "telephone": displayNumber,
-              "email": email,
-              "areaServed": city,
-              "openingHours": "Mo-Su 00:00-23:59",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": displayNumber,
-                "contactType": "customer service",
-                "availableLanguage": ["English", "Arabic", "Urdu", "Hindi"]
-              }
-            })
-          }}
-        />
       </div>
     </section>
   );

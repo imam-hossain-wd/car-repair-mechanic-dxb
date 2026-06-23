@@ -1,7 +1,7 @@
 // components/Navbar.jsx
 "use client";
 
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { SiteConfig } from "@/config/siteConfig";
 import Logo from "../Logo/Logo";
-import { DesktopNav} from "./NavMenus";
+import { DesktopNav } from "./NavMenus";
 import { MobileDrawerNav } from "./MobileNavDrawer";
 
 
@@ -25,7 +25,7 @@ const NavCallButton = () => {
       className="flex items-center justify-center gap-2 px-2 py-2 bg-primary text-white font-semibold rounded"
     >
       <Phone className="h-3 w-3 group-hover:rotate-12 transition-transform" />
-      <span className="text-[10px] md:text-md">054 323 7225</span>
+      <span className="text-[10px] md:text-md">{SiteConfig?.displayNumber}</span>
     </Link>
   );
 };
@@ -102,7 +102,9 @@ export const Navbar = () => {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            <Logo />
+            <Link href="/">
+              <Logo />
+            </Link>
 
             <DesktopNav pathname={pathname} />
 

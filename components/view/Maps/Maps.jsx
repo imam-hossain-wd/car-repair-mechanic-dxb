@@ -9,15 +9,13 @@ import {
     Mail,
     Navigation,
     Clock,
-    Shield,
     Truck,
     Wrench,
     CheckCircle,
     Compass,
-    Award,
-    Users
 } from "lucide-react";
-import { serviceAreas, SiteConfig } from "@/config/siteConfig";
+import { SiteConfig } from "@/config/siteConfig";
+import Logo from "@/components/shared/Logo/Logo";
 
 
 export function Maps() {
@@ -25,13 +23,12 @@ export function Maps() {
         brandName,
         displayNumber,
         numberCallLink,
-        whatsappCallLink,
         email,
         location,
         mapsLink,
-        operatingHours,
         city,
         coordinate,
+        embedMap,
         description
     } = SiteConfig;
 
@@ -42,9 +39,6 @@ export function Maps() {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setIsVisible(true);
     }, []);
-
-
-    const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7218.300939078021!2d55.31707953907827!3d25.231856465990923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d364e1720cb%3A0x63bbf8d4c3d0263b!2sUmm%20Hurair%20Second%20-%20Dubai%20Healthcare%20City%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sbd!4v1781627532168!5m2!1sen!2sbd";
 
     return (
         <section className="relative py-5 bg-linear-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900 overflow-hidden">
@@ -90,17 +84,10 @@ export function Maps() {
                             <div className="absolute bottom-0 left-0 w-40 h-40 bg-primary/10 rounded-full blur-2xl"></div>
 
                             {/* Brand Info */}
-                            <div className="relative flex items-center gap-3 mb-5">
-                                <div className="relative">
-                                    <div className="absolute inset-0 bg-primary/30 rounded-full blur-xl"></div>
-                                    <div className="relative w-12 h-12 rounded-xl bg-primary flex items-center justify-center shadow-lg">
-                                        <Wrench className="h-6 w-6 text-white" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <h3 className="text-lg font-bold">{brandName}</h3>
-                                    <p className="text-white/60 text-sm">{location}</p>
-                                </div>
+                            <div className="relative flex items-center gap-3 mb-5 bg-white p-4 rounded">
+                                <Link href={SiteConfig?.GMB?.mapsLink} target="_blank">
+                                <Logo />
+                                </Link>
                             </div>
 
                             {/* Contact Details */}
@@ -217,7 +204,7 @@ export function Maps() {
                             {/* Map Iframe */}
                             <iframe
                                 title={`${brandName} - Location Map`}
-                                src={mapUrl}
+                                src={embedMap}
                                 width="100%"
                                 height="450"
                                 className={`transition-opacity duration-500 ${isMapLoaded ? 'opacity-100' : 'opacity-0'}`}
@@ -250,7 +237,7 @@ export function Maps() {
                                 </div>
                             </div>
                         </div>
-                        
+
                         {/* Mobile Service Note */}
                         <div className="mt-5 p-4 bg-linear-to-r from-primary/10 to-primary/5 rounded-xl border border-primary/20 flex items-center justify-between flex-wrap gap-3">
                             <div className="flex items-center gap-3">
@@ -269,36 +256,6 @@ export function Maps() {
                         </div>
                     </div>
                 </div>
-
-                {/* SEO Structured Data */}
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            "@context": "https://schema.org",
-                            "@type": "AutoRepair",
-                            "name": brandName,
-                            "description": description,
-                            "address": {
-                                "@type": "PostalAddress",
-                                "streetAddress": "Al Karama",
-                                "addressLocality": city,
-                                "addressCountry": "UAE"
-                            },
-                            "geo": {
-                                "@type": "GeoCoordinates",
-                                "latitude": coordinate?.split(",")[0],
-                                "longitude": coordinate?.split(",")[1]
-                            },
-                            "telephone": displayNumber,
-                            "email": email,
-                            "openingHours": "Mo-Su 00:00-23:59",
-                            "areaServed": city,
-                            "priceRange": "$$",
-                            "hasMap": mapsLink
-                        })
-                    }}
-                />
             </div>
         </section>
     );

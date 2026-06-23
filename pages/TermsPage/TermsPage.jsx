@@ -72,7 +72,7 @@ const termsSections = [
   }
 ];
 
-export function TermsPage() {
+export default function TermsPage() {
   const [isVisible, setIsVisible] = useState(false);
   const { brandName, displayNumber, email, location, url } = SiteConfig;
   const currentDate = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });

@@ -11,22 +11,12 @@ import {
   MessageCircle,
   Send,
   CheckCircle,
-  Navigation,
   User,
-  Wrench,
-  Star,
 } from "lucide-react";
 import { SiteConfig } from "@/config/siteConfig";
 import { Maps } from "@/components/view/Maps/Maps";
+import Image from "next/image";
 
-export const metadata = {
-  title: "Contact Us | 24/7 Car Repair Service in Dubai",
-  description: "Get in touch with our expert team. Call us, WhatsApp, email, or visit our location. 24/7 emergency mobile car repair service across Dubai.",
-  keywords: "contact car repair dubai, mobile mechanic contact, emergency car service dubai",
-  alternates: {
-    canonical: "https://carrepairmechanic.ae/dubai/contact",
-  },
-};
 
 export default function ContactPage() {
   const {
@@ -96,7 +86,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Visit Us",
-      value: location,
+      value: "Umm Hurair Rd, Oud Metha, Dubai, UAE",
       link: mapsLink,
       color: "bg-red-500",
       description: "Get Directions",
@@ -150,7 +140,7 @@ export default function ContactPage() {
                   <div className="flex-1">
                     <h3 className="text-sm font-bold text-gray-900 dark:text-white">{method.title}</h3>
                     <p className="text-xs text-gray-500 mt-0.5">{method.description}</p>
-                    <p className="text-sm font-medium text-gray-800 dark:text-gray-200 mt-1 truncate">{method.value}</p>
+                    <p className="text-sm flex flex-wrap font-medium text-gray-800 dark:text-gray-200 mt-1 truncate">{method.value}</p>
                     <span className="inline-block mt-2 text-xs text-primary font-medium group-hover:underline">
                       {method.action} →
                     </span>
@@ -328,7 +318,7 @@ export default function ContactPage() {
               {socialLinks?.map((social, index) => {
                 const Icon = social.icon;
                 return (
-                  <a
+                  <Link
                     key={index}
                     href={social.href}
                     target="_blank"
@@ -336,8 +326,8 @@ export default function ContactPage() {
                     className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-primary hover:text-white transition-all duration-300"
                     aria-label={social.name}
                   >
-                    <Icon className="h-4 w-4" />
-                  </a>
+                    <Image className="w-7 h-7" src={social.icon} alt={social.name}/>
+                  </Link>
                 );
               })}
             </div>

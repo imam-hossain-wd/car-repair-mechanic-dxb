@@ -48,6 +48,18 @@ import raditor from "../assets/service-banner/car-raditor-repair.jpg"
 import mechanic from "../assets/service-banner/car-mechanic-service.jpg"
 import emergancyRepair from "../assets/service-banner/emergancy-car-repair-service.jpg"
 
+import facebook from "../assets/social-icon/facebook.png"
+import instagram from "../assets/social-icon/instagram.png"
+import pinterest from "../assets/social-icon/pinterest.png"
+import youtube from "../assets/social-icon/youtube.png"
+
+
+export const socialIcons = {
+facebook,
+instagram,
+pinterest, 
+youtube
+}
 
 export const ServiceBanner ={
     acRepair,

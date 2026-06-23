@@ -2,9 +2,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Star, Quote, ChevronLeft, ChevronRight, Phone, MessageCircle, Wrench, Eye } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
-import Link from "next/link";
+import { Star, Quote, ChevronLeft, ChevronRight} from "lucide-react";
 import { reviews } from "@/data/reviews";
 
 
@@ -185,39 +183,6 @@ export function ClientReviews() {
             </Link>
           </div>
         </div> */}
-
-        {/* SEO Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": SiteConfig.brandName,
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": averageRating,
-                "reviewCount": totalReviews,
-                "bestRating": "5",
-                "worstRating": "1"
-              },
-              "review": reviews.map(review => ({
-                "@type": "Review",
-                "reviewRating": {
-                  "@type": "Rating",
-                  "ratingValue": review.rating,
-                  "bestRating": "5"
-                },
-                "author": {
-                  "@type": "Person",
-                  "name": review.name
-                },
-                "reviewBody": review.review,
-                "datePublished": review.date
-              }))
-            })
-          }}
-        />
       </div>
     </section>
   );

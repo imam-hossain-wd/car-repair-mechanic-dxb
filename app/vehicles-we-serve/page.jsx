@@ -10,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: "Vehicles We Service | All Types | Dubai's Premier Auto Repair",
         description: "Expert repair for Sedans, SUVs, Trucks, Luxury Cars, EVs & Commercial Vehicles. 24/7 mobile service at your doorstep.",
-        url: "https://carrepairmechanic.ae/dubai/vehicles-we-serve",
+        url: "https://carrepairmechanic.com/vehicles-we-serve",
         siteName: SiteConfig.brandName,
         locale: "en_AE",
         type: "website",

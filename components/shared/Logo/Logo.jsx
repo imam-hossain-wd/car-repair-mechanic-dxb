@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Logo() {
     return (
-        <Link href="/" className="group relative">
+        <div className="group relative">
             <div className="flex items-center gap-2.5">
                 {/* Icon with animation */}
                 <div className="relative">
@@ -28,6 +28,6 @@ export default function Logo() {
 
             {/* Underline effect on hover */}
             <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-linear-to-r from-primary/0 via-primary to-primary/0 scale-x-100 transition-transform duration-500"></div>
-        </Link>
+        </div>
     )
 }

@@ -27,6 +27,7 @@ import {
 import { SiteConfig } from "@/config/siteConfig";
 import Logo from "../Logo/Logo";
 import { services } from "@/data/services/services";
+import Image from "next/image";
 
 
 export function Footer() {
@@ -71,17 +72,20 @@ export function Footer() {
                     {/* Column 1: Brand & Contact - 4 columns */}
                     <div className="lg:col-span-3 space-y-6">
                         {/* Brand Logo & Name */}
-                        <div className="w-[55%] md:w-[70%] space-y-4 bg-white p-4  rounded">
-                            <Logo />
+                        <Link href={SiteConfig?.GMB?.mapsLink} target="_blank" >
+                            <div className="w-[55%] md:w-full space-y-4 bg-white p-4  rounded">
+
+                                <Logo />
 
 
-                        </div>
+                            </div>
+                        </Link>
 
                         <dib className="">
-                            <p className="text-xs text-white ">Professional Auto Care</p>
+                            <p className="text-md text-white mt-2">Professional Auto Care</p>
 
-                            <p className="text-sm text-white mt-2 mb-5">
-                                {description || "Your trusted mobile car repair service in Dubai. Professional, reliable, and available 24/7 for all your automotive needs."}
+                            <p className="text-sm text-white mt-1 mb-5">
+                                Your trusted mobile car repair service in Dubai. Professional, reliable, and available 24/7 for all your automotive needs.
                             </p>
                         </dib>
 
@@ -203,7 +207,7 @@ export function Footer() {
                                         className="group flex items-center gap-2 text-sm text-gray-300 "
                                     >
                                         <div className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary group-hover:scale-125 transition-all"></div>
-                                        <span className="truncate group-hover:translate-x-1 transition-transform">{area.name}</span>
+                                        <span className="truncate group-hover:translate-x-1 transition-transform">{area?.name}</span>
                                     </p>
 
                                     // <Link
@@ -251,7 +255,7 @@ export function Footer() {
                             </h3>
                             <div className="flex  gap-3">
                                 {socialLinks?.map((social, index) => {
-                                    const Icon = social.icon;
+                                    // const Icon = social.icon;
                                     return (
                                         <Link
                                             key={index}
@@ -262,7 +266,8 @@ export function Footer() {
                                             aria-label={social.name}
                                         >
                                             <div className="p-3 bg-white/5 rounded-xl hover:bg-primary transition-all duration-300 hover:scale-110 border border-white/10 hover:border-primary/50">
-                                                <Icon className="h-5 w-5 text-gray-300 group-hover:text-white transition-colors" />
+                                                {/* <Icon className="h-5 w-5 text-gray-300 group-hover:text-white transition-colors" /> */}
+                                                <Image className="w-7 h-7" src={social?.icon} width={30} height={30} alt={social.name} />
                                             </div>
                                         </Link>
                                     );
