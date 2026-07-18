@@ -1,4 +1,4 @@
-import { serviceImages } from "@/utils/assets";
+import { ServiceBanner, serviceImages } from "@/utils/assets";
 
 export const carServiceDubai = {
   title: "Car Service Dubai | Full Car Repair & Maintenance at Your Doorstep",
@@ -20,6 +20,7 @@ export const carServiceDubai = {
   slug: "car-service-dubai",
 
   service_image: serviceImages?.maintenance,
+  service_banner: ServiceBanner.carService,
 
   intro: {
     heading: "Complete Car Service in Dubai at Your Doorstep",

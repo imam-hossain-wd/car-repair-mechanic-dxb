@@ -18,7 +18,7 @@ export const brakepadRepairService = {
     slug: "brake-pad-repair-dubai",
 
     service_image: serviceImages?.spareParts,
-    service_banner: ServiceBanner.breakpad,
+    service_banner: ServiceBanner.breakPad,
 
     intro: {
         heading: "Professional Brake Pad Repair Service in Dubai",

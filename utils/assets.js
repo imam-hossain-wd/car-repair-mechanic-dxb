@@ -1,3 +1,5 @@
+
+//service icons
 import carRepair from "../assets/services/car-repair.png";
 import airConditioner from "../assets/services/air-conditioner.png";
 import autoRepair from "../assets/services/auto-repair.png";
@@ -15,6 +17,7 @@ import spareParts from "../assets/services/spare-parts.png";
 import timing from "../assets/services/timing.png";
 import computer from "../assets/services/computer.png";
 
+//gellery images
 import carRepair1 from "../assets/working-gellery/alternator-repair.jpeg";
 import carRepair2 from "../assets/working-gellery/alternator.jpeg";
 import carRepair3 from "../assets/working-gellery/battery-replacement-2.jpeg";
@@ -36,7 +39,7 @@ import carRepair18 from "../assets/working-gellery/raditor.jpeg";
 import carRepair19 from "../assets/working-gellery/roadsite-assistance.jpeg";
 import carRepair20 from "../assets/working-gellery/underground-parking-car-repair.jpeg";
 
-
+//service banners
 import acRepair from "../assets/service-banner/ac-repair.png"
 import batteryReplacement from "../assets/service-banner/battery-replacement.jpg"
 import breakpad from "../assets/service-banner/breakpad.jpg"
@@ -46,8 +49,19 @@ import detailing from "../assets/service-banner/car-detailing-service.png"
 import gasRefill from "../assets/service-banner/car-gas-refill.jpg"
 import raditor from "../assets/service-banner/car-raditor-repair.jpg"
 import mechanic from "../assets/service-banner/car-mechanic-service.jpg"
+import oilChange from "../assets/service-banner/oil-change-service.jpg"
 import emergancyRepair from "../assets/service-banner/emergancy-car-repair-service.jpg"
+import windowMotor from "../assets/service-banner/car-window-motor.webp"
+import carStarterMotor from "../assets/service-banner/starter-motor.jpg"
+import fuelPump from "../assets/service-banner/fuel-pump.jpg"
+import altarnator from "../assets/service-banner/altarnator.jpg"
+import breakPad from "../assets/service-banner/breakpad-repair.jpg"
+import transmission from "../assets/service-banner/transmission.jpg"
+import carService from "../assets/service-banner/car-service.jpg"
+import carrepair from "../assets/service-banner/ac-repair.png"
 
+
+//social icons
 import facebook from "../assets/social-icon/facebook.png"
 import instagram from "../assets/social-icon/instagram.png"
 import pinterest from "../assets/social-icon/pinterest.png"
@@ -71,7 +85,16 @@ export const ServiceBanner ={
     gasRefill,
     raditor,
     mechanic,
-    emergancyRepair
+    emergancyRepair,
+    oilChange,
+    windowMotor,
+    carStarterMotor,
+    fuelPump,
+    altarnator,
+    breakPad,
+    transmission,
+    carService,
+    carrepair
 }
 
 export const workingImages = {

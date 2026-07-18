@@ -1,4 +1,4 @@
-import { serviceImages } from "@/utils/assets";
+import { ServiceBanner, serviceImages } from "@/utils/assets";
 
 export const fuelPumpRepair = {
     title: "Car Fuel Pump Repair Dubai | Engine Not Starting & Fuel Issue Fix Near You",
@@ -18,6 +18,7 @@ export const fuelPumpRepair = {
     slug: "car-fuel-pump-repair-dubai",
 
     service_image: serviceImages?.spareParts,
+    service_banner: ServiceBanner.fuelPump,
 
     intro: {
         heading: "Professional Car Fuel Pump Repair Service in Dubai",

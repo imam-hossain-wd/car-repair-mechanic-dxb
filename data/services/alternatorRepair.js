@@ -18,7 +18,7 @@ export const alternatorRepair = {
     slug: "car-alternator-repair-dubai",
 
     service_image: serviceImages?.spareParts,
-    service_banner: ServiceBanner.alternatorRepair ,
+    service_banner: ServiceBanner.altarnator ,
 
     intro: {
         heading: "Professional Car Alternator Repair Service in Dubai",

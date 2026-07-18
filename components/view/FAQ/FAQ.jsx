@@ -6,15 +6,6 @@ import {
   ChevronDown, 
   HelpCircle, 
   Phone, 
-  Mail, 
-  MessageCircle,
-  Shield,
-  Clock,
-  Wrench,
-  Car,
-  Battery,
-  MapPin,
-  Star
 } from "lucide-react";
 import { SiteConfig } from "@/config/siteConfig";
 import { faqData } from "@/data/faq";

@@ -16,6 +16,7 @@ import { mechanicService } from "./mechanicService";
 import { oilChangeService } from "./oilChangeService";
 import { starterMotorRepair } from "./starterMotorRepair";
 import { transmissionRepairService } from "./transmissionRepairService";
+import { windowMotorRepair } from "./windowMotorRepair";
 
 export const services = [
     batteryReplacementService,
@@ -25,6 +26,7 @@ export const services = [
     fuelPumpRepair,
     starterMotorRepair,
     acRepair,
+    windowMotorRepair,
     carRaditorRepair,
     absSystemRepairService,
     brakepadRepairService,
