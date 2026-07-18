@@ -60,6 +60,8 @@ import transmission from "../assets/service-banner/transmission.jpg"
 import carService from "../assets/service-banner/car-service.jpg"
 import carrepair from "../assets/service-banner/ac-repair.png"
 
+import serviceHero from "../assets/hero/car-repair.jpg"
+
 
 //social icons
 import facebook from "../assets/social-icon/facebook.png"
@@ -69,13 +71,13 @@ import youtube from "../assets/social-icon/youtube.png"
 
 
 export const socialIcons = {
-facebook,
-instagram,
-pinterest, 
-youtube
+    facebook,
+    instagram,
+    pinterest,
+    youtube
 }
 
-export const ServiceBanner ={
+export const ServiceBanner = {
     acRepair,
     batteryReplacement,
     breakpad,
@@ -95,6 +97,10 @@ export const ServiceBanner ={
     transmission,
     carService,
     carrepair
+}
+
+export const Hero = {
+    serviceHero
 }
 
 export const workingImages = {

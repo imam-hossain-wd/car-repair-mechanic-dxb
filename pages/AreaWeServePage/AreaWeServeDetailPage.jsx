@@ -1,3 +1,5 @@
+import { AreaOverview } from "@/components/view/ServiceAreaComponent/AreaOverview";
+import { ServiceAreaHomeBanner } from "@/components/view/ServiceAreaComponent/ServiceAreaHomeBanner";
 
 
 export default function AreaWeServeDetailPage({
@@ -6,7 +8,12 @@ export default function AreaWeServeDetailPage({
 
     return (
         <div className="">
-            this is area we serve detail page.....
+            <ServiceAreaHomeBanner
+                area={area}
+            />
+            <AreaOverview
+                area={area}
+            />
         </div>
     );
 }
