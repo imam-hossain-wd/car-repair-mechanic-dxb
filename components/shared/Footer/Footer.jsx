@@ -28,6 +28,7 @@ import { SiteConfig } from "@/config/siteConfig";
 import Logo from "../Logo/Logo";
 import { services } from "@/data/services/services";
 import Image from "next/image";
+import { getServiceAreasNameSlug } from "@/utils/getServiceAreasNameSlug";
 
 
 export function Footer() {
@@ -41,13 +42,15 @@ export function Footer() {
         location,
         mapsLink,
         operatingHours,
-        serviceAreas,
         footerhrefs,
         socialLinks,
         city,
         country,
         coordinate
     } = SiteConfig;
+
+
+    const serviceAreas = getServiceAreasNameSlug()
 
 
 
@@ -202,13 +205,13 @@ export function Footer() {
                             </h3>
                             <div className="grid grid-cols-1 gap-2">
                                 {serviceAreas.map((area, index) => (
-                                    <p
+                                    <Link href={`/area-we-serve/${area.slug}`}
                                         key={index}
                                         className="group flex items-center gap-2 text-sm text-gray-300 "
                                     >
                                         <div className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary group-hover:scale-125 transition-all"></div>
                                         <span className="truncate group-hover:translate-x-1 transition-transform">{area?.name}</span>
-                                    </p>
+                                    </Link>
 
                                     // <Link
                                     //     key={index}

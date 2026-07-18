@@ -1,6 +1,4 @@
-
 "use client";
-// app/dubai/area-we-serve/page.jsx
 import Link from "next/link";
 import { 
   MapPin, 
@@ -11,7 +9,6 @@ import {
   Wrench,
   Star,
   CheckCircle,
-  ArrowRight,
   Calendar
 } from "lucide-react";
 import { numberCallLink, SiteConfig } from "@/config/siteConfig";
@@ -19,34 +16,8 @@ import { numberCallLink, SiteConfig } from "@/config/siteConfig";
 
 export default function ServiceAreaPage() {
   const { serviceAreas, displayNumber, city, brandName } = SiteConfig;
-
-  // Group areas by district
-  const centralDubai = serviceAreas?.filter(area => 
-    ["Al Karama", "Al Rigga", "Al Raffa", "Zaa'beel First", "Business Bay"].includes(area.name)
-  ) || [];
-  
-  const residentialDubai = serviceAreas?.filter(area => 
-    ["Damac Hills", "Damac Hills 2", "Dubai Silicon Oasis", "Dubai Maria", "Al Rashidiya", "Nadd Al Hamar"].includes(area.name)
-  ) || [];
-  
-  const waterfrontDubai = serviceAreas?.filter(area => 
-    ["Dubai Creek", "Dubai Festival City", "Dubai Maria"].includes(area.name)
-  ) || [];
-  
-  const deiraAreas = serviceAreas?.filter(area => 
-    ["Al Rigga", "Al Raffa", "Al Jadaf", "Nadd Shamma"].includes(area.name)
-  ) || [];
-
-  const popularAreas = serviceAreas?.slice(0, 8) || [];
   const totalAreas = serviceAreas?.length || 0;
 
-  // Features stats
-  const stats = [
-    { value: totalAreas, label: "Service Locations", icon: MapPin },
-    { value: "15-30", label: "Min Response Time", icon: Clock },
-    { value: "24/7", label: "Emergency Service", icon: Phone },
-    { value: "100%", label: "Coverage", icon: Navigation },
-  ];
 
   // Service promises
   const promises = [
@@ -81,19 +52,6 @@ export default function ServiceAreaPage() {
               We come to your doorstep with 15-30 minute response time.
             </p>
             
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-              {stats.map((stat, index) => {
-                const Icon = stat.icon;
-                return (
-                  <div key={index} className="bg-primary/10 dark:bg-gray-800 rounded-xl p-3 text-center border border-primary/20 dark:border-gray-700">
-                    <Icon className="h-5 w-5 text-primary mx-auto mb-1" />
-                    <div className="text-xl font-bold text-gray-900 dark:text-white">{stat.value}</div>
-                    <div className="text-xs text-gray-500">{stat.label}</div>
-                  </div>
-                );
-              })}
-            </div>
           </div>
         </div>
       </section>
@@ -314,7 +272,7 @@ export default function ServiceAreaPage() {
                   "name": `What areas in ${city} do you serve?`,
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": `We serve ${totalAreas}+ locations across ${city} including ${popularAreas.slice(0, 5).map(a => a.name).join(", ")} and many more areas.`
+                    "text": `We serve ${totalAreas}+ locations across ${city} including ${serviceAreas.slice(0, 5).map(a => a.name).join(", ")} and many more areas.`
                   }
                 },
                 {

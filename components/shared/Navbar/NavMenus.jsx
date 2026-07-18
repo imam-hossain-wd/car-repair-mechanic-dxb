@@ -80,7 +80,7 @@ const Dropdown = ({ title, items, icon: Icon, href, isOpen, onToggle, onClose })
     );
 };
 
-const navServiceItems = services?.slice(0, 10).map((service) => ({
+const navServiceItems = services.map((service) => ({
     name: service.name,
     slug: service.slug,
 }))
