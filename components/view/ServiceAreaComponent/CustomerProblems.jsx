@@ -22,7 +22,8 @@ import {
     Shield,
     Clock,
 } from "lucide-react";
-import { SiteConfig } from "@/config/site";
+import { SiteConfig } from "@/config/siteConfig";
+
 
 export function CustomerProblems({ area }) {
     const problems = area?.customerProblemsSection?.problems || [];
