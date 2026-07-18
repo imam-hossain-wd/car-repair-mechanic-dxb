@@ -196,7 +196,7 @@ export const ServiceCard = ({ service, featured = false }) => {
           {featured && (
             <div className="flex items-center gap-1 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-lg">
               <Star className="h-2.5 w-2.5 fill-white" />
-              Featured
+              Popular
             </div>
           )}
 

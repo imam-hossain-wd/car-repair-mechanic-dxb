@@ -86,7 +86,7 @@ export default function ServiceAreaPage() {
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
-                  <div key={index} className="bg-white dark:bg-gray-800 rounded-xl p-3 text-center border border-gray-200 dark:border-gray-700">
+                  <div key={index} className="bg-primary/10 dark:bg-gray-800 rounded-xl p-3 text-center border border-primary/20 dark:border-gray-700">
                     <Icon className="h-5 w-5 text-primary mx-auto mb-1" />
                     <div className="text-xl font-bold text-gray-900 dark:text-white">{stat.value}</div>
                     <div className="text-xs text-gray-500">{stat.label}</div>
@@ -156,23 +156,23 @@ export default function ServiceAreaPage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                Popular Service <span className="text-primary">Areas</span>
+                Complete Coverage Across <span className="text-primary">Dubai </span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
                 Most requested locations with fastest response times
               </p>
             </div>
             <div className="hidden md:block">
-              <span className="text-sm text-primary font-medium">{popularAreas.length}+ locations</span>
+              <span className="text-sm text-primary font-medium">{serviceAreas.length}+ locations</span>
             </div>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {popularAreas.map((area, index) => (
-              <p
+            {serviceAreas.map((area, index) => (
+              <div
                 key={index}
                 // href={area.href}
-                className="group bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700 hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                className="group bg-primary/10 rounded-xl p-4 border border-primary/10 dark:border-gray-700 hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="flex items-start justify-between mb-2">
                   <div className="flex items-center gap-2">
@@ -189,129 +189,17 @@ export default function ServiceAreaPage() {
                     </span>
                   )}
                 </div>
-                <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mb-2">
-                  {area.highlight || "Full car repair services available"}
-                </p>
-                {/* <div className="flex items-center gap-1 text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span>View Details</span>
-                  <ArrowRight className="h-3 w-3" />
-                </div> */}
-              </p>
+       
+
+              </div>
             ))}
           </div>
         </div>
 
-        {/* Categorized Areas */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-            Complete <span className="text-primary">Coverage</span> Across {city}
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Central Dubai */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <div className="flex items-center gap-2 mb-3 pb-2 border-b border-gray-200 dark:border-gray-700">
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-lg">🏙️</span>
-                </div>
-                <h3 className="font-bold text-gray-900 dark:text-white">Central Dubai</h3>
-                <span className="text-xs text-gray-500">({centralDubai.length})</span>
-              </div>
-              <div className="space-y-2">
-                {centralDubai.map((area, idx) => (
-                  <p
-                    key={idx}
-                    // href={area.href}
-                    className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all group"
-                  >
-                    <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary">
-                      {area.name}
-                    </span>
-                    <span className="text-xs text-gray-400">{area.responseTime || "15-20 min"}</span>
-                  </p>
-                ))}
-              </div>
-            </div>
 
-            {/* Residential Areas */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <div className="flex items-center gap-2 mb-3 pb-2 border-b border-gray-200 dark:border-gray-700">
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-lg">🏡</span>
-                </div>
-                <h3 className="font-bold text-gray-900 dark:text-white">Residential Communities</h3>
-                <span className="text-xs text-gray-500">({residentialDubai.length})</span>
-              </div>
-              <div className="space-y-2">
-                {residentialDubai.map((area, idx) => (
-                  <p
-                    key={idx}
-                    // href={area.href}
-                    className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all group"
-                  >
-                    <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary">
-                      {area.name}
-                    </span>
-                    <span className="text-xs text-gray-400">{area.responseTime || "18-25 min"}</span>
-                  </p>
-                ))}
-              </div>
-            </div>
-
-            {/* Waterfront Areas */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <div className="flex items-center gap-2 mb-3 pb-2 border-b border-gray-200 dark:border-gray-700">
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-lg">🌊</span>
-                </div>
-                <h3 className="font-bold text-gray-900 dark:text-white">Waterfront & Marina</h3>
-                <span className="text-xs text-gray-500">({waterfrontDubai.length})</span>
-              </div>
-              <div className="space-y-2">
-                {waterfrontDubai.map((area, idx) => (
-                  <p
-                    key={idx}
-                    // href={area.href}
-                    className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all group"
-                  >
-                    <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary">
-                      {area.name}
-                    </span>
-                    <span className="text-xs text-gray-400">{area.responseTime || "20-25 min"}</span>
-                  </p>
-                ))}
-              </div>
-            </div>
-
-            {/* Deira & Old Dubai */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-              <div className="flex items-center gap-2 mb-3 pb-2 border-b border-gray-200 dark:border-gray-700">
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-lg">🕌</span>
-                </div>
-                <h3 className="font-bold text-gray-900 dark:text-white">Deira & Old Dubai</h3>
-                <span className="text-xs text-gray-500">({deiraAreas.length})</span>
-              </div>
-              <div className="space-y-2">
-                {deiraAreas.map((area, idx) => (
-                  <p
-                    key={idx}
-                    // href={area.href}
-                    className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all group"
-                  >
-                    <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary">
-                      {area.name}
-                    </span>
-                    <span className="text-xs text-gray-400">{area.responseTime || "16-22 min"}</span>
-                  </p>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Service Promises */}
-        <div className="bg-linear-to-r from-primary/10 to-primary/5 rounded-2xl p-6 mb-12">
+        <div className="bg-primary/10 border border-primary/10 rounded-2xl p-6 mb-12">
           <div className="text-center mb-4">
             <h3 className="text-lg font-bold text-gray-900 dark:text-white">What We Promise</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">Professional service guaranteed at every location</p>
@@ -330,7 +218,7 @@ export default function ServiceAreaPage() {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-primary/5 rounded-2xl p-6 text-center border border-primary/20">
+        <div className="bg-primary/10 rounded-2xl p-6 text-center border border-primary/20">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
             Need Immediate Assistance?
           </h3>
