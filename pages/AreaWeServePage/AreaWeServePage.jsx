@@ -1,23 +1,25 @@
 "use client";
 import Link from "next/link";
-import { 
-  MapPin, 
-  Clock, 
-  Phone, 
-  Navigation, 
-  Shield, 
+import {
+  MapPin,
+  Clock,
+  Phone,
+  Navigation,
+  Shield,
   Wrench,
   Star,
   CheckCircle,
   Calendar
 } from "lucide-react";
 import { numberCallLink, SiteConfig } from "@/config/siteConfig";
+import { getServiceAreasNameSlug } from "@/utils/getServiceAreasNameSlug";
 
 
 export default function ServiceAreaPage() {
-  const { serviceAreas, displayNumber, city, brandName } = SiteConfig;
-  const totalAreas = serviceAreas?.length || 0;
+  const { displayNumber, city, brandName } = SiteConfig;
 
+  const serviceAreas = getServiceAreasNameSlug()
+  const totalAreas = serviceAreas?.length || 0;
 
   // Service promises
   const promises = [
@@ -29,7 +31,7 @@ export default function ServiceAreaPage() {
 
   return (
     <div className="min-h-screen bg-linear-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
-      
+
       {/* Hero Section */}
       <section className="relative bg-linear-to-r from-primary/10 via-primary/5 to-transparent py-12 lg:py-16 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
@@ -42,23 +44,23 @@ export default function ServiceAreaPage() {
                 Service Coverage
               </span>
             </div>
-            
+
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               Car Repair Service Areas in <span className="text-primary">{city}</span>
             </h1>
-            
+
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              Professional mobile car repair service available across {totalAreas}+ locations in {city}. 
+              Professional mobile car repair service available across {totalAreas}+ locations in {city}.
               We come to your doorstep with 15-30 minute response time.
             </p>
-            
+
           </div>
         </div>
       </section>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
-        
+
         {/* Location Map Card */}
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden mb-12 border border-gray-200 dark:border-gray-700">
           <div className="grid md:grid-cols-2 gap-0">
@@ -124,12 +126,12 @@ export default function ServiceAreaPage() {
               <span className="text-sm text-primary font-medium">{serviceAreas.length}+ locations</span>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {serviceAreas.map((area, index) => (
-              <div
+              <Link
                 key={index}
-                // href={area.href}
+                href={`area-we-serve/${area.slug}`}
                 className="group bg-primary/10 rounded-xl p-4 border border-primary/10 dark:border-gray-700 hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="flex items-start justify-between mb-2">
@@ -147,9 +149,7 @@ export default function ServiceAreaPage() {
                     </span>
                   )}
                 </div>
-       
-
-              </div>
+              </Link>
             ))}
           </div>
         </div>
