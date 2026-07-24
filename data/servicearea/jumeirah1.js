@@ -5,7 +5,7 @@ export const jumeirah1Area = {
 
   slug: "jumeirah-1",
 
-  href: "/dubai/area-we-serve/jumeirah-1",
+  href: "/area-we-serve/jumeirah-1",
 
   name: "Jumeirah 1",
 
@@ -42,6 +42,10 @@ export const jumeirah1Area = {
     ctaSecondary:
       "WhatsApp Mobile Mechanic",
 
+    phone: "055 183 1901",
+
+    whatsapp: "https://wa.me/971551831901",
+
     stats: [
       {
         label: "Response Time",
@@ -62,10 +66,10 @@ export const jumeirah1Area = {
 
   seo: {
     title:
-      "Mobile Mechanic Jumeirah 1 | Premium Car Repair & Roadside Help",
+      "Mobile Mechanic Jumeirah 1 | Car Repair Mechanic Dubai",
 
     description:
-      "Professional 24/7 on-site car repair and mobile mechanic service in Jumeirah 1 Dubai. Expert emergency battery replacement, European car diagnostics, and car AC repair at your villa or roadside.",
+      "Professional 24/7 on-site car repair and mobile mechanic service in Jumeirah 1 Dubai by Car Repair Mechanic Dubai. Expert emergency battery replacement, European car diagnostics, and car AC repair at your villa or roadside.",
 
     primaryKeyword:
       "car repair jumeirah 1",
@@ -116,7 +120,7 @@ export const jumeirah1Area = {
       "Trusted On-Site Mechanic & Elite Roadside Assistance in Jumeirah 1 Dubai",
 
     description:
-      "Fix Car Dubai delivers premium, ultra-fast mobile mechanic and emergency roadside assistance services throughout Jumeirah 1. As home to prestigious historic villa communities, beachfront lifestyle developments, and high-footfall spots like Mercato Mall, vehicles in Jumeirah 1 deserve fast, dealership-grade field repairs without the friction of flatbed towing.",
+      "Car Repair Mechanic Dubai delivers premium, ultra-fast mobile mechanic and emergency roadside assistance services throughout Jumeirah 1. As home to prestigious historic villa communities, beachfront lifestyle developments, and high-footfall spots like Mercato Mall, vehicles in Jumeirah 1 deserve fast, dealership-grade field repairs without the friction of flatbed towing.",
 
     descriptionTwo:
       "We specialize in on-demand battery swap and coding, multi-zone AC repair, check engine light diagnostics, performance brake servicing, and alternator restoration. Whether your car fails to start in a private villa driveway near Jumeirah Mosque or encounters an issue near Pearl Jumeira, our seasoned technicians respond within 15 minutes with complete technical gear.",
@@ -256,7 +260,7 @@ export const jumeirah1Area = {
 
   whyChooseUsSection: {
     title:
-      "Why Drivers in Jumeirah 1 Choose Fix Car Dubai",
+      "Why Drivers in Jumeirah 1 Choose Car Repair Mechanic Dubai",
 
     subtitle:
       "The premier on-demand automotive specialist across the Jumeirah 1 residential and shopping district.",
@@ -633,5 +637,11 @@ export const jumeirah1Area = {
 
     priceRange:
       "$$$",
+
+    provider: {
+      name: "Car Repair Mechanic Dubai",
+      telephone: "055 183 1901",
+      url: "https://www.carrepairmechanicdubai.com",
+    },
   },
 };

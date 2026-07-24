@@ -5,7 +5,7 @@ export const jumeirah2Area = {
 
   slug: "jumeirah-2",
 
-  href: "/dubai/area-we-serve/jumeirah-2",
+  href: "/area-we-serve/jumeirah-2",
 
   name: "Jumeirah 2",
 
@@ -42,6 +42,10 @@ export const jumeirah2Area = {
     ctaSecondary:
       "WhatsApp Mobile Mechanic",
 
+    phone: "055 183 1901",
+
+    whatsapp: "https://wa.me/971551831901",
+
     stats: [
       {
         label: "Response Time",
@@ -62,10 +66,10 @@ export const jumeirah2Area = {
 
   seo: {
     title:
-      "Mobile Mechanic Jumeirah 2 | Premium Car Repair & Roadside Help",
+      "Mobile Mechanic Jumeirah 2 | Car Repair Mechanic Dubai",
 
     description:
-      "Expert 24/7 on-site car repair and mobile mechanic solutions across Jumeirah 2 Dubai. Specializing in luxury vehicle diagnostic checks, professional AC restoration, and rapid battery swaps.",
+      "Expert 24/7 on-site car repair and mobile mechanic solutions across Jumeirah 2 Dubai by Car Repair Mechanic Dubai. Specializing in luxury vehicle diagnostic checks, professional AC restoration, and rapid battery swaps.",
 
     primaryKeyword:
       "car repair jumeirah 2",
@@ -116,7 +120,7 @@ export const jumeirah2Area = {
       "Trusted On-Site Mechanic & Elite Roadside Assistance in Jumeirah 2 Dubai",
 
     description:
-      "Fix Car Dubai provides ultra-precise mobile mechanic and premium roadside emergency assistance across Jumeirah 2. Serving sprawling high-end custom villa zones, trendy commercial districts like Boxpark, and exclusive offshore communities like Jumeirah Bay Island, our mechanics are trained to process complex automotive issues directly on site.",
+      "Car Repair Mechanic Dubai provides ultra-precise mobile mechanic and premium roadside emergency assistance across Jumeirah 2. Serving sprawling high-end custom villa zones, trendy commercial districts like Boxpark, and exclusive offshore communities like Jumeirah Bay Island, our mechanics are trained to process complex automotive issues directly on site.",
 
     descriptionTwo:
       "We replace complex AGM/EFB batteries, clear advanced diagnostic system blocks, rebuild failing AC air distribution units, and swap worn brake assemblies. We save you the extreme downtime of arranging flatbeds and dealing with rigid multi-day dealership queues by bringing calibrated diagnostic technology straight to your driveway.",
@@ -256,7 +260,7 @@ export const jumeirah2Area = {
 
   whyChooseUsSection: {
     title:
-      "Why Drivers in Jumeirah 2 Choose Fix Car Dubai",
+      "Why Drivers in Jumeirah 2 Choose Car Repair Mechanic Dubai",
 
     subtitle:
       "The premier on-demand automotive specialist across Jumeirah 2's elite neighborhoods.",
@@ -559,7 +563,7 @@ export const jumeirah2Area = {
           "Car AC Repair",
 
         text:
-          "The climate controls in my luxury SUV stopped cooling while parked near Boxpark. The Fix Car team arrived rapidly, identified a faulty relay, and optimized the refrigerant loops right on the driveway.",
+          "The climate controls in my luxury SUV stopped cooling while parked near Boxpark. The Car Repair Mechanic Dubai team arrived rapidly, identified a faulty relay, and optimized the refrigerant loops right on the driveway.",
       },
     ],
   },
@@ -602,7 +606,7 @@ export const jumeirah2Area = {
 
         slug:
           "al-wasl",
-    },
+      },
     ],
   },
 
@@ -633,5 +637,11 @@ export const jumeirah2Area = {
 
     priceRange:
       "$$$",
+
+    provider: {
+      name: "Car Repair Mechanic Dubai",
+      telephone: "055 183 1901",
+      url: "https://www.carrepairmechanicdubai.com",
+    },
   },
 };

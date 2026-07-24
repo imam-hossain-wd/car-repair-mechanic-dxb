@@ -82,7 +82,7 @@ export const zaabeel2Area = {
       "Za'abeel Second Roadside Help",
       "Premium Car Jump Start",
       "Dealership-Grade Diagnostics",
-      "Mobile Mechanic Despatch",
+      "Mobile Mechanic Dispatch",
       "Brake Overhaul & Release",
       "Emergency Cooling Loop Repair",
       "Exotic Car Breakdown Recovery",

@@ -38,12 +38,11 @@ export function EmergencyContent({ area }) {
         {/* Section Header */}
         <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
           {/* Emergency Badge */}
-          <div className="inline-flex items-center gap-2 bg-red-100 rounded-full px-4 py-1.5 mb-5">
-            <AlertTriangle className="w-4 h-4 text-red-600" />
-            <span className="text-xs font-bold text-red-600 uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 bg-primary/20 rounded-full px-4 py-1.5 mb-5">
+            <AlertTriangle className="w-4 h-4 text-primary" />
+            <span className="text-xs font-bold text-primary uppercase tracking-wider">
               24/7 EMERGENCY RESPONSE
             </span>
-            <div className="w-1.5 h-1.5 bg-red-400 rounded-full animate-pulse"></div>
           </div>
 
           {/* Title */}
@@ -117,17 +116,13 @@ export function EmergencyContent({ area }) {
               {/* Call Now Card */}
               <Link
                 href="/dubai/book-appointment"
-                className="group bg-gradient-to-br from-red-600 to-red-700 rounded-xl p-5 text-center hover:shadow-xl transition-shadow duration-200"
+                className="group bg-primary rounded-xl p-5 text-center hover:shadow-xl transition-shadow duration-200"
               >
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <p className="text-white font-bold text-lg mb-1">Call Now</p>
                 <p className="text-white/80 text-xs">24/7 Emergency Line</p>
-                <div className="mt-3 inline-flex items-center gap-1 text-white/90 text-xs font-medium">
-                  <span>Book Dispatch</span>
-                  <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-200" />
-                </div>
               </Link>
 
               {/* WhatsApp Support Card */}
@@ -140,10 +135,6 @@ export function EmergencyContent({ area }) {
                 </div>
                 <p className="text-white font-bold text-lg mb-1">WhatsApp</p>
                 <p className="text-white/80 text-xs">Instant Support</p>
-                <div className="mt-3 inline-flex items-center gap-1 text-white/90 text-xs font-medium">
-                  <span>Send Message</span>
-                  <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-200" />
-                </div>
               </Link>
             </div>
           </div>

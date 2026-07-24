@@ -5,7 +5,7 @@ export const jumeirah3Area = {
 
   slug: "jumeirah-3",
 
-  href: "/dubai/area-we-serve/jumeirah-3",
+  href: "/area-we-serve/jumeirah-3",
 
   name: "Jumeirah 3",
 
@@ -42,6 +42,10 @@ export const jumeirah3Area = {
     ctaSecondary:
       "WhatsApp Mobile Mechanic",
 
+    phone: "055 183 1901",
+
+    whatsapp: "https://wa.me/971551831901",
+
     stats: [
       {
         label: "Response Time",
@@ -62,10 +66,10 @@ export const jumeirah3Area = {
 
   seo: {
     title:
-      "Mobile Mechanic Jumeirah 3 | Premium Car Repair & Roadside Help",
+      "Mobile Mechanic Jumeirah 3 | Car Repair Mechanic Dubai",
 
     description:
-      "Professional 24/7 on-site car repair and mobile mechanic services in Jumeirah 3 Dubai. Specializing in high-performance automotive diagnostics, battery replacement, and brake care near Kite Beach.",
+      "Professional 24/7 on-site car repair and mobile mechanic services in Jumeirah 3 Dubai by Car Repair Mechanic Dubai. Specializing in high-performance automotive diagnostics, battery replacement, and brake care near Kite Beach.",
 
     primaryKeyword:
       "car repair jumeirah 3",
@@ -115,7 +119,7 @@ export const jumeirah3Area = {
       "Trusted On-Site Mechanic & Elite Roadside Assistance in Jumeirah 3 Dubai",
 
     description:
-      "Fix Car Dubai runs top-tier, on-demand mobile mechanic and luxury roadside support across Jumeirah 3. This area features large family estates, high-end private villas, and highly visited coastline spots like Kite Beach and Sunset Beach. Our mobile workshops are fully optimized to complete complex auto services on-site, skipping the traditional need to visit an off-site workshop.",
+      "Car Repair Mechanic Dubai runs top-tier, on-demand mobile mechanic and luxury roadside support across Jumeirah 3. This area features large family estates, high-end private villas, and highly visited coastline spots like Kite Beach and Sunset Beach. Our mobile workshops are fully optimized to complete complex auto services on-site, skipping the traditional need to visit an off-site workshop.",
 
     descriptionTwo:
       "Our services include professional battery replacements with battery management system matching, advanced AC leak tracing, engine oil extractions, mechanical troubleshooting, and brake pad swaps. We maintain an expert local crew that understands the specific challenges of salt air exposure and extreme coastal heat on luxury vehicles.",
@@ -255,7 +259,7 @@ export const jumeirah3Area = {
 
   whyChooseUsSection: {
     title:
-      "Why Drivers in Jumeirah 3 Choose Fix Car Dubai",
+      "Why Drivers in Jumeirah 3 Choose Car Repair Mechanic Dubai",
 
     subtitle:
       "The premier on-demand automotive specialist across Jumeirah 3's premium coastal zones.",
@@ -558,7 +562,7 @@ export const jumeirah3Area = {
           "Car AC Repair",
 
         text:
-          "The dual climate control system in my SUV failed while parked near Kite Beach. Fix Car Dubai responded beautifully—refilled the coolant loops and addressed a minor compressor valve problem right there in the car park. Super convenient.",
+          "The dual climate control system in my SUV failed while parked near Kite Beach. Car Repair Mechanic Dubai responded beautifully—refilled the coolant loops and addressed a minor compressor valve problem right there in the car park. Super convenient.",
       },
     ],
   },
@@ -593,7 +597,7 @@ export const jumeirah3Area = {
 
         slug:
           "al-safa-2",
-    },
+      },
 
       {
         name:
@@ -632,5 +636,11 @@ export const jumeirah3Area = {
 
     priceRange:
       "$$$",
+
+    provider: {
+      name: "Car Repair Mechanic Dubai",
+      telephone: "055 183 1901",
+      url: "https://www.carrepairmechanicdubai.com",
+    },
   },
 };

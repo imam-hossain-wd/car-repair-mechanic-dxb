@@ -5,7 +5,7 @@ export const businessBayArea = {
 
   slug: "business-bay",
 
-  href: "/dubai/area-we-serve/business-bay",
+  href: "/area-we-serve/business-bay",
 
   name: "Business Bay",
 
@@ -65,7 +65,7 @@ export const businessBayArea = {
       "Car Repair & Mobile Mechanic in Business Bay Dubai | 24/7 Roadside Assistance",
 
     description:
-      "Trusted car repair and mobile mechanic service in Business Bay Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and on-site vehicle maintenance across Business Bay and Downtown Dubai.",
+      "Trusted car repair and mobile mechanic service in Business Bay Dubai by Car Repair Mechanic Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and on-site vehicle maintenance across Business Bay and Downtown Dubai.",
 
     primaryKeyword:
       "car repair business bay",
@@ -117,7 +117,7 @@ export const businessBayArea = {
       "Fast On-Site Mechanic & Emergency Roadside Assistance",
 
     description:
-      "Fix Car Dubai provides professional mobile mechanic and emergency car repair services throughout Business Bay Dubai. Our experienced automotive technicians regularly assist drivers near Business Bay Metro Station, Bay Avenue, Dubai Canal, office towers, residential apartments, hotel parking areas, and major roads connecting Downtown Dubai and Sheikh Zayed Road.",
+      "Car Repair Mechanic Dubai provides professional mobile mechanic and emergency car repair services throughout Business Bay Dubai. Our experienced automotive technicians regularly assist drivers near Business Bay Metro Station, Bay Avenue, Dubai Canal, office towers, residential apartments, hotel parking areas, and major roads connecting Downtown Dubai and Sheikh Zayed Road.",
 
     descriptionTwo:
       "We specialize in emergency battery replacement, roadside assistance, diagnostics, car AC repair, brake repair, alternator repair, radiator repair, oil change, engine diagnostics, and complete on-site vehicle maintenance. Whether your car breaks down in office parking, basement parking areas, valet zones, or roadside locations, our mobile mechanics arrive quickly with advanced diagnostic equipment and professional repair tools.",
@@ -268,7 +268,7 @@ export const businessBayArea = {
 
   whyChooseUsSection: {
     title:
-      "Why Drivers in Business Bay Choose Fix Car Dubai",
+      "Why Drivers in Business Bay Choose Car Repair Mechanic Dubai",
 
     subtitle:
       "Trusted mobile mechanic and emergency roadside assistance service across Business Bay Dubai.",

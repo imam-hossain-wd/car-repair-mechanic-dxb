@@ -3,7 +3,7 @@ export const alMankhoolArea = {
 
   slug: "al-mankhool",
 
-  href: "/dubai/area-we-serve/al-mankhool",
+  href: "/area-we-serve/al-mankhool",
 
   name: "Al Mankhool",
 
@@ -63,7 +63,7 @@ export const alMankhoolArea = {
       "Car Repair & Mobile Mechanic in Al Mankhool Dubai | 24/7 Roadside Assistance",
 
     description:
-      "Trusted car repair and mobile mechanic service in Al Mankhool Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and complete on-site vehicle repair.",
+      "Trusted car repair and mobile mechanic service in Al Mankhool Dubai by Car Repair Mechanic Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and complete on-site vehicle repair.",
 
     primaryKeyword:
       "car repair al mankhool",
@@ -102,7 +102,7 @@ export const alMankhoolArea = {
       "Professional On-Site Car Mechanic & Roadside Assistance in Al Mankhool",
 
     description:
-      "Fix Car Dubai provides fast and professional mobile car repair services throughout Al Mankhool Dubai. Our experienced mechanics regularly assist drivers near BurJuman, residential towers, apartment basement parking areas, hotels, office locations, and busy roadside areas across Al Mankhool.",
+      "Car Repair Mechanic Dubai provides fast and professional mobile car repair services throughout Al Mankhool Dubai. Our experienced mechanics regularly assist drivers near BurJuman, residential towers, apartment basement parking areas, hotels, office locations, and busy roadside areas across Al Mankhool.",
 
     descriptionTwo:
       "We specialize in emergency battery replacement, mobile mechanic service, diagnostics, AC repair, brake service, radiator repair, alternator repair, oil change, and complete roadside assistance. Whether your vehicle fails to start, overheats in Dubai traffic, or experiences electrical issues, our technicians arrive quickly with advanced repair equipment and diagnostic tools.",
@@ -242,7 +242,7 @@ export const alMankhoolArea = {
 
   whyChooseUsSection: {
     title:
-      "Why Drivers in Al Mankhool Choose Fix Car Dubai",
+      "Why Drivers in Al Mankhool Choose Car Repair Mechanic Dubai",
 
     subtitle:
       "Reliable emergency roadside assistance and mobile mechanic services trusted by Dubai drivers.",
@@ -477,7 +477,7 @@ export const alMankhoolArea = {
           "Car Battery Replacement Dubai",
 
         href:
-          "/dubai/services/car-battery-replacement",
+          "/services/car-battery-replacement",
       },
 
       {
@@ -485,7 +485,7 @@ export const alMankhoolArea = {
           "Mobile Mechanic Dubai",
 
         href:
-          "/dubai/services/mobile-mechanic",
+          "/services/mobile-mechanic",
       },
 
       {
@@ -493,168 +493,8 @@ export const alMankhoolArea = {
           "Car AC Repair Dubai",
 
         href:
-          "/dubai/services/car-ac-repair",
-      },
-
-      {
-        name:
-          "Brake Pad Replacement Dubai",
-
-        href:
-          "/dubai/services/brake-pad-replacement",
-      },
-
-      {
-        name:
-          "Car Diagnostics Dubai",
-
-        href:
-          "/dubai/services/car-diagnostics",
-      },
-
-      {
-        name:
-          "Roadside Assistance Dubai",
-
-        href:
-          "/dubai/services/roadside-assistance",
+          "/services/car-ac-repair",
       },
     ],
-  },
-
-  reviewsSection: {
-    title:
-      "Customer Reviews",
-
-    subtitle:
-      "What drivers in Al Mankhool Dubai say about our mobile mechanic and roadside assistance services.",
-
-    reviews: [
-      {
-        name:
-          "Imran S.",
-
-        rating: 5,
-
-        service:
-          "Battery Replacement",
-
-        text:
-          "Very fast battery replacement service near BurJuman. The mechanic arrived quickly and completed the job professionally.",
-      },
-
-      {
-        name:
-          "Rizwan A.",
-
-        rating: 5,
-
-        service:
-          "Car AC Repair",
-
-        text:
-          "Professional AC repair service in Al Mankhool. My car cooling issue was fixed on-site.",
-      },
-
-      {
-        name:
-          "David K.",
-
-        rating: 5,
-
-        service:
-          "Roadside Assistance",
-
-        text:
-          "Excellent roadside assistance and honest pricing. Highly recommended mobile mechanic service in Dubai.",
-      },
-    ],
-  },
-
-  nearbyAreasSection: {
-    title:
-      "Nearby Areas We Serve",
-
-    subtitle:
-      "Our mobile mechanics also provide emergency roadside assistance and car repair services in nearby Dubai locations.",
-
-    areas: [
-      {
-        name:
-          "Al Karama",
-
-        slug:
-          "al-karama",
-      },
-
-      {
-        name:
-          "Bur Dubai",
-
-        slug:
-          "bur-dubai",
-      },
-
-      {
-        name:
-          "Oud Metha",
-
-        slug:
-          "oud-metha",
-      },
-
-      {
-        name:
-          "Al Raffa",
-
-        slug:
-          "al-raffa",
-      },
-
-      {
-        name:
-          "Dubai Healthcare City",
-
-        slug:
-          "dubai-healthcare-city",
-      },
-    ],
-  },
-
-  relatedBlogs: [
-    {
-      title:
-        "Signs Your Car Battery Needs Replacement in Dubai",
-
-      slug:
-        "signs-your-car-battery-needs-replacement",
-    },
-
-    {
-      title:
-        "Why Car AC Systems Fail During Dubai Summer",
-
-      slug:
-        "car-ac-problems-dubai-summer",
-    },
-
-    {
-      title:
-        "Emergency Roadside Assistance Tips for Dubai Drivers",
-
-      slug:
-        "dubai-roadside-assistance-guide",
-    },
-  ],
-
-  schema: {
-    serviceType:
-      "Mobile Car Repair Service",
-
-    areaServed:
-      "Al Mankhool Dubai",
-
-    priceRange:
-      "$$",
   },
 };

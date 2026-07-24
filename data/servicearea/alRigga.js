@@ -65,7 +65,7 @@ export const alRiggaArea = {
       "Car Repair & Mobile Mechanic in Al Rigga Dubai | 24/7 Roadside Assistance",
 
     description:
-      "Professional car repair and mobile mechanic service in Al Rigga Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and on-site vehicle maintenance throughout Deira and Al Rigga.",
+      "Professional car repair and mobile mechanic service in Al Rigga Dubai by Car Repair Mechanic Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and on-site vehicle maintenance throughout Deira and Al Rigga.",
 
     primaryKeyword:
       "car repair al rigga",
@@ -117,7 +117,7 @@ export const alRiggaArea = {
       "Trusted On-Site Mechanic & Emergency Roadside Assistance",
 
     description:
-      "Fix Car Dubai provides professional mobile mechanic and emergency roadside assistance services throughout Al Rigga Dubai. Our experienced automotive technicians regularly assist drivers near Al Rigga Metro Station, Rigga Road, Al Ghurair Centre, Deira Clocktower, hotels, office buildings, residential apartments, and busy roadside locations.",
+      "Car Repair Mechanic Dubai provides professional mobile mechanic and emergency roadside assistance services throughout Al Rigga Dubai. Our experienced automotive technicians regularly assist drivers near Al Rigga Metro Station, Rigga Road, Al Ghurair Centre, Deira Clocktower, hotels, office buildings, residential apartments, and busy roadside locations.",
 
     descriptionTwo:
       "We specialize in emergency battery replacement, roadside assistance, diagnostics, AC repair, brake repair, alternator repair, radiator repair, jump start, oil change, and complete on-site vehicle maintenance. Whether your car breaks down in basement parking, hotel parking, residential streets, or roadside areas, our mobile mechanics arrive quickly with professional diagnostic equipment and repair tools.",
@@ -257,7 +257,7 @@ export const alRiggaArea = {
 
   whyChooseUsSection: {
     title:
-      "Why Drivers in Al Rigga Choose Fix Car Dubai",
+      "Why Drivers in Al Rigga Choose Car Repair Mechanic Dubai",
 
     subtitle:
       "Trusted mobile mechanic and emergency roadside assistance service across Al Rigga and Deira Dubai.",

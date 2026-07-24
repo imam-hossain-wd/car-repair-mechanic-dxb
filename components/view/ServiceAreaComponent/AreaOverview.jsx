@@ -91,7 +91,7 @@ export function AreaOverview({ area }) {
             )}
 
             {/* Emergency Contact CTA */}
-            <div className="mt-8 bg-primary/5 rounded-2xl p-5 md:p-6 border border-primary/10">
+            <div className="mt-4 bg-primary/10 rounded-2xl p-5 md:p-6 border border-primary/10">
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-primary/15 rounded-full flex items-center justify-center">
@@ -102,13 +102,6 @@ export function AreaOverview({ area }) {
                     <p className="text-xl font-bold text-gray-900">24/7 Available</p>
                   </div>
                 </div>
-                <Link
-                  href="/dubai/book-appointment"
-                  className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-primary/90 transition-colors text-sm"
-                >
-                  <Wrench className="w-4 h-4" />
-                  Book Mobile Mechanic
-                </Link>
               </div>
             </div>
           </div>
