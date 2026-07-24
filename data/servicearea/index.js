@@ -17,12 +17,12 @@ import { zaabeel1Area } from "./zaabeel1";
 import { zaabeel2Area } from "./zaabeel2";
 
 export const serviceAeas = [
+  oudMethaArea,
+  alRiggaArea,
+  businessBayArea,
   alJadafArea,
   alKaramaArea,
   alMankhoolArea,
-  alRiggaArea,
-  businessBayArea,
-  oudMethaArea,
   downtownDubaiArea,
   dubaiLandArea,
   dubaiSiliconOasisArea,

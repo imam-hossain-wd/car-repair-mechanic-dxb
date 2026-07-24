@@ -66,7 +66,7 @@ export function HomeHero() {
 
   return (
     <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
-      
+
       {/* Animated Background Elements - Same as Footer */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -77,15 +77,6 @@ export function HomeHero() {
       {/* Grid Pattern Overlay - Same as Footer */}
       <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjAuNSIvPjwvc3ZnPg==')]"></div>
 
-      {/* Simplified Floating Icons */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 left-10 animate-float opacity-20">
-          <Wrench className="h-8 w-8 text-primary" />
-        </div>
-        <div className="absolute bottom-10 right-10 animate-float-delayed opacity-20">
-          <Wrench className="h-8 w-8 text-primary" />
-        </div>
-      </div>
 
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
@@ -100,19 +91,22 @@ export function HomeHero() {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl  font-bold leading-tight">
               <span className="text-white">Fast & Relaible Car </span>
               <br />
               <span className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                Repair Mechanic 
+                Repair Mechanic
               </span>
               <br />
               <span className="text-white">Dubai At Your Doorstep</span>
             </h1>
 
             {/* Description */}
-            <p className="text-base text-gray-300 max-w-lg leading-relaxed">
+            {/* <p className="text-base text-gray-300 max-w-lg leading-relaxed">
               {SiteConfig.description || "Professional mobile car repair service anywhere, anytime in Dubai. Certified mechanics at your doorstep within 30 minutes."}
+            </p> */}
+            <p className="text-base text-gray-300 max-w-lg leading-relaxed">
+              Dubai&lsquo;s top-rated mobile mechanic service brought directly to your doorstep. On-site car battery replacement, auto AC repair, engine diagnostics, and 24/7 emergency roadside support in 15–30 minutes.
             </p>
 
             {/* Features Grid */}
@@ -125,7 +119,7 @@ export function HomeHero() {
               ))}
             </div>
 
-    
+
 
             {/* Popular Services */}
             <div className="pt-2">
@@ -174,7 +168,7 @@ export function HomeHero() {
                         <span className={`text-sm md:text-base text-gray-200 ${item.highlight ? "font-medium" : "font-normal"}`}>
                           {item.text}
                         </span>
-                
+
                       </div>
                     );
                   })}

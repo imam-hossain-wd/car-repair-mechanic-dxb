@@ -85,15 +85,13 @@ export function Footer() {
                         </Link>
 
                         <dib className="">
-                            <p className="text-md text-white mt-2">Professional Auto Care</p>
-
-                            <p className="text-sm text-white mt-1 mb-5">
-                                Your trusted mobile car repair service in Dubai. Professional, reliable, and available 24/7 for all your automotive needs.
+                            <p className="text-sm text-white mt-2 mb-5">
+                              Car Repair Mechanic Dubai is a leading 24/7 mobile auto repair and emergency roadside assistance provider based in Oud Metha, Dubai. Serving areas across Bur Dubai, Deira, Business Bay, Downtown, and Jumeirah, our certified mobile mechanics deliver fast on-site services including car battery replacement, AC repair, auto electrical diagnostics, brake repair, and oil changes. We bring complete workshop solutions directly to your location with transparent pricing and guaranteed warranty
                             </p>
                         </dib>
 
                         {/* Trust Badges */}
-                        <div className="flex flex-wrap gap-2">
+                        {/* <div className="flex flex-wrap gap-2">
                             <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
                                 <Clock className="h-3.5 w-3.5 text-primary" />
                                 <span className="text-xs text-gray-300">24/7 Emergency</span>
@@ -106,7 +104,7 @@ export function Footer() {
                                 <Truck className="h-3.5 w-3.5 text-primary" />
                                 <span className="text-xs text-gray-300">Mobile Service</span>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Contact Information Cards */}
                         <div className="space-y-3">
@@ -228,7 +226,7 @@ export function Footer() {
 
                     {/* Column 4: Newsletter & Social - 2 columns */}
                     <div className="lg:col-span-3 space-y-5">
-                        {/* Quick Links */}
+                        
                         <div className="">
                             <h3 className="text-lg font-bold flex items-center gap-2 mb-4">
                                 <Award className="h-5 w-5 text-primary" />
@@ -258,7 +256,7 @@ export function Footer() {
                             </h3>
                             <div className="flex  gap-3">
                                 {socialLinks?.map((social, index) => {
-                                    // const Icon = social.icon;
+                         
                                     return (
                                         <Link
                                             key={index}
@@ -269,7 +267,7 @@ export function Footer() {
                                             aria-label={social.name}
                                         >
                                             <div className="p-3 bg-white/5 rounded-xl hover:bg-primary transition-all duration-300 hover:scale-110 border border-white/10 hover:border-primary/50">
-                                                {/* <Icon className="h-5 w-5 text-gray-300 group-hover:text-white transition-colors" /> */}
+                                     
                                                 <Image className="w-7 h-7" src={social?.icon} width={30} height={30} alt={social.name} />
                                             </div>
                                         </Link>
@@ -297,8 +295,7 @@ export function Footer() {
                             </p>
                         </div>
 
-                        {/* Newsletter Subscription */}
-                        <div className="p-5 bg-linear-to-br from-primary/15 to-primary/5 rounded-2xl border border-primary/20">
+                        {/* <div className="p-5 bg-linear-to-br from-primary/15 to-primary/5 rounded-2xl border border-primary/20">
                             <h3 className="text-sm font-semibold mb-2 flex items-center gap-2">
                                 <Send className="h-4 w-4 text-primary" />
                                 Newsletter
@@ -324,10 +321,12 @@ export function Footer() {
                             <p className="text-xs text-gray-400 mt-2">
                                 No spam, unsubscribe anytime.
                             </p>
-                        </div>
+                        </div> */}
 
 
                     </div>
+
+
                 </div>
 
                 {/* SEO Structured Data (Hidden but accessible) */}
