@@ -58,69 +58,6 @@ export function AreaReview({ area }) {
           <div className="w-20 h-1 bg-primary/30 rounded-full mx-auto mt-6"></div>
         </div>
 
-        {/* Rating Summary Card */}
-        <div className="bg-gradient-to-r from-gray-900 to-primary rounded-2xl p-6 md:p-8 text-white shadow-xl mb-12">
-          <div className="grid md:grid-cols-3 gap-6 items-center">
-            {/* Left - Rating */}
-            <div className="text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
-                <span className="text-4xl md:text-5xl font-bold">{averageRating}</span>
-                <div className="flex">
-                  {[1,2,3,4,5].map((star) => (
-                    <Star
-                      key={star}
-                      className={`w-5 h-5 ${star <= Math.round(averageRating) ? 'fill-yellow-400 text-yellow-400' : 'text-white/30'}`}
-                    />
-                  ))}
-                </div>
-              </div>
-              <p className="text-white/80 text-sm">
-                Based on {reviews.length} customer reviews
-              </p>
-              {fiveStarCount > 0 && (
-                <p className="text-white/70 text-xs mt-1">
-                  {fiveStarCount} five-star ratings
-                </p>
-              )}
-            </div>
-
-            {/* Center - Rating Bars */}
-            <div className="space-y-2">
-              {[5, 4, 3, 2, 1].map((ratingValue) => {
-                const count = reviews.filter(r => r.rating === ratingValue).length;
-                const percentage = reviews.length > 0 ? (count / reviews.length) * 100 : 0;
-                return (
-                  <div key={ratingValue} className="flex items-center gap-2">
-                    <span className="text-sm w-8">{ratingValue} ★</span>
-                    <div className="flex-1 bg-white/20 rounded-full h-2 overflow-hidden">
-                      <div
-                        className="bg-yellow-400 h-2 rounded-full"
-                        style={{ width: `${percentage}%` }}
-                      />
-                    </div>
-                    <span className="text-sm w-12 text-white/80">{count}</span>
-                  </div>
-                );
-              })}
-            </div>
-
-            {/* Right - CTA */}
-            <div className="text-center">
-              <Link
-                href="https://g.page/r/CdrwD2SVrLO7EAI/review"
-                target="_blank"
-                className="inline-flex items-center gap-2 bg-white text-gray-900 px-5 py-2.5 rounded-lg hover:bg-gray-100 transition-colors font-semibold text-sm"
-              >
-                <ThumbsUp className="w-4 h-4" />
-                Write a Review
-              </Link>
-              <p className="text-white/70 text-xs mt-2">
-                Share your experience with us
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* Reviews Grid */}
         {reviews.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -255,19 +192,6 @@ export function AreaReview({ area }) {
                 </div>
               </div>
             ))}
-          </div>
-        )}
-
-        {/* View All Reviews CTA */}
-        {reviews.length > 0 && (
-          <div className="text-center mt-10">
-            <Link
-              href="/dubai/reviews"
-              className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-primary/90 transition-colors"
-            >
-              View All Reviews
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </div>
         )}
 

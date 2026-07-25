@@ -26,6 +26,7 @@ export function ServiceAreaFaq({ area }) {
   const faqs = area?.faqSection?.faqs || [];
   const name = area?.name || "Al Karama";
   const city = area?.city || "Dubai";
+
   const responseTime = area?.hero?.stats?.find(s => s?.label === "Response Time")?.value || "15-20";
   const rating = area?.hero?.stats?.find(s => s?.label === "Customer Rating")?.value || "4.9/5";
 
@@ -33,13 +34,7 @@ export function ServiceAreaFaq({ area }) {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Quick answers data
-  const quickAnswers = [
-    { question: "Response Time", answer: responseTime, icon: Clock },
-    { question: "Service Hours", answer: "24/7 Emergency", icon: Clock },
-    { question: "Customer Rating", answer: rating, icon: Star },
-    { question: "Coverage Area", answer: name, icon: MapPin },
-  ];
+
 
   return (
     <section className="w-full py-6 bg-white">
@@ -68,22 +63,6 @@ export function ServiceAreaFaq({ area }) {
 
           {/* Divider */}
           <div className="w-20 h-1 bg-primary/30 rounded-full mx-auto mt-6"></div>
-        </div>
-
-        {/* Quick Answers Bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-          {quickAnswers.map((item, idx) => (
-            <div
-              key={idx}
-              className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-4 text-center border border-gray-100"
-            >
-              <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
-                <item.icon className="w-5 h-5 text-primary" />
-              </div>
-              <p className="text-xs text-gray-500 mb-1">{item.question}</p>
-              <p className="text-sm font-bold text-gray-900">{item.answer}</p>
-            </div>
-          ))}
         </div>
 
         {/* FAQ Grid */}
@@ -267,62 +246,6 @@ export function ServiceAreaFaq({ area }) {
                 <span className="text-gray-300">24/7 Emergency Support</span>
               </div>
             </div>
-
-            {/* Quick Service Info */}
-            <div className="bg-white rounded-2xl p-6 border border-gray-200">
-              <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <Car className="w-5 h-5 text-primary" />
-                Quick Service Information
-              </h3>
-              
-              <div className="space-y-3">
-                <div className="flex items-center justify-between py-2 border-b border-gray-100">
-                  <span className="text-sm text-gray-500">Average Response Time</span>
-                  <span className="text-sm font-semibold text-gray-900">{responseTime}</span>
-                </div>
-                <div className="flex items-center justify-between py-2 border-b border-gray-100">
-                  <span className="text-sm text-gray-500">Service Availability</span>
-                  <span className="text-sm font-semibold text-gray-900">24 Hours / 7 Days</span>
-                </div>
-                <div className="flex items-center justify-between py-2 border-b border-gray-100">
-                  <span className="text-sm text-gray-500">Customer Rating</span>
-                  <div className="flex items-center gap-1">
-                    <span className="text-sm font-semibold text-gray-900">{rating}</span>
-                    <div className="flex">
-                      {[1,2,3,4,5].map((star) => (
-                        <Star key={star} className="w-3.5 h-3.5 fill-primary text-primary" />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between py-2">
-                  <span className="text-sm text-gray-500">Coverage Area</span>
-                  <span className="text-sm font-semibold text-gray-900">{name}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Still Have Questions Banner */}
-        <div className="mt-12 bg-primary/5 rounded-2xl p-6 text-center border border-primary/10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-primary/15 rounded-full flex items-center justify-center">
-                <ThumbsUp className="w-5 h-5 text-primary" />
-              </div>
-              <div className="text-left">
-                <p className="font-semibold text-gray-900">Can&apos;t find your question?</p>
-                <p className="text-sm text-gray-500">We&apos;re here to help with any specific concerns</p>
-              </div>
-            </div>
-            <Link
-              href="/dubai/contact"
-              className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-primary/90 transition-colors"
-            >
-              <MessageCircle className="w-4 h-4" />
-              Contact Support
-            </Link>
           </div>
         </div>
       </div>

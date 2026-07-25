@@ -260,20 +260,6 @@ export function AreaServicesGrid({ area }) {
             </div>
           </div>
         </div>
-
-        {/* CTA Section */}
-        <div className="mt-12 text-center">
-          <Link
-            href="/dubai/services"
-            className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-primary/90 transition-colors shadow-lg"
-          >
-            View All Services
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-          <p className="text-xs text-gray-400 mt-3">
-            Need a specific service? Call us for immediate assistance
-          </p>
-        </div>
       </div>
 
       {/* JSON-LD Schema for Services */}

@@ -37,7 +37,7 @@ export function WhyChooseUs({ area }) {
   return (
     <section className="w-full py-6 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        
+
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
           {/* Badge */}
@@ -49,9 +49,10 @@ export function WhyChooseUs({ area }) {
           </div>
 
           {/* Title */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            {area?.whyChooseUsSection?.title ||
-              `Why Drivers in ${name} Choose Fix Car Dubai`}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 leading-tight">
+            {/* {area?.whyChooseUsSection?.title ||
+              `Why Drivers in ${name} Choose Car Repair Mechanic Dubai`} */}
+            {area?.whyChooseUsSection?.title}
           </h2>
 
           {/* Subtitle */}
@@ -66,7 +67,7 @@ export function WhyChooseUs({ area }) {
 
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
-          
+
           {/* LEFT COLUMN - Why Choose Items Grid */}
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -85,11 +86,11 @@ export function WhyChooseUs({ area }) {
                       {idx === 5 && <MapPin className="w-6 h-6 text-primary" />}
                       {(idx > 5) && <CheckCircle className="w-6 h-6 text-primary" />}
                     </div>
-                    
+
                     <h3 className="text-lg font-bold text-gray-900 mb-2">
                       {item.title}
                     </h3>
-                    
+
                     <p className="text-gray-600 text-sm leading-relaxed">
                       {item.description}
                     </p>
@@ -201,7 +202,7 @@ export function WhyChooseUs({ area }) {
                   <p className="text-3xl font-bold text-white">98%</p>
                 </div>
                 <div className="flex gap-0.5">
-                  {[1,2,3,4,5].map((star) => (
+                  {[1, 2, 3, 4, 5].map((star) => (
                     <Star key={star} className="w-5 h-5 fill-primary text-primary" />
                   ))}
                 </div>
@@ -219,13 +220,13 @@ export function WhyChooseUs({ area }) {
                 Join thousands of satisfied customers who trust us with their vehicles
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Link
+                {/* <Link
                   href="/dubai/book-appointment"
                   className="inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-primary/90 transition-colors text-sm"
                 >
                   <Phone className="w-4 h-4" />
                   Book Appointment
-                </Link>
+                </Link> */}
                 <Link
                   href="/dubai/reviews"
                   className="inline-flex items-center justify-center gap-2 border border-gray-300 text-gray-700 font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-50 transition-colors text-sm"
@@ -243,23 +244,6 @@ export function WhyChooseUs({ area }) {
                 100% Satisfaction Guarantee • No Hidden Fees • Warranty on All Repairs
               </p>
             </div>
-          </div>
-        </div>
-
-        {/* Bottom Stats Bar */}
-        <div className="mt-16 pt-8 border-t border-gray-200">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {[
-              { value: "11+", label: "Years Experience", suffix: "" },
-              { value: "5,000+", label: "Cars Serviced", suffix: "" },
-              { value: responseTime, label: "Min Response Time", suffix: "min" },
-              { value: "24/7", label: "Emergency Support", suffix: "" },
-            ].map((stat, idx) => (
-              <div key={idx} className="p-4">
-                <p className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</p>
-                <p className="text-xs text-gray-500 mt-1">{stat.label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>
