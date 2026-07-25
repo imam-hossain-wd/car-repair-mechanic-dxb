@@ -4,8 +4,10 @@ import { AreaServicesGrid } from "@/components/view/ServiceAreaComponent/AreaSer
 import { CommonCarProblems } from "@/components/view/ServiceAreaComponent/CommonCarProblems";
 import { CustomerProblems } from "@/components/view/ServiceAreaComponent/CustomerProblems";
 import { EmergencyContent } from "@/components/view/ServiceAreaComponent/EmergencyContent";
+import { HowWeSolveProblemsCompact, HowWeSolveProblemsMinimal } from "@/components/view/ServiceAreaComponent/HowWeSolveProblems";
 import { InternalLinks } from "@/components/view/ServiceAreaComponent/InternalLinks";
 import { NearbyLandmarks } from "@/components/view/ServiceAreaComponent/NearbyLandmarks";
+import { OurRepairProcess } from "@/components/view/ServiceAreaComponent/OurRepairProcess";
 import { ServiceAreaFaq } from "@/components/view/ServiceAreaComponent/ServiceAreaFaq";
 import { ServiceAreaHomeBanner } from "@/components/view/ServiceAreaComponent/ServiceAreaHomeBanner";
 import { WhatWeCanDoForDrivers } from "@/components/view/ServiceAreaComponent/WhatWeCanDoForDrivers";
@@ -27,35 +29,41 @@ export default function AreaWeServeDetailPage({
             <CommonCarProblems
                 area={area}
             />
+            <HowWeSolveProblemsMinimal
+                area={area}
+            />
+            <OurRepairProcess
+                area={area}
+            />
         </div>
     );
 }
 
 
-    //  <AreaOverview
-    //             area={area}
-    //         />
-    //         <EmergencyContent
-    //             area={area}
-    //         />
-    //         <AreaServicesGrid
-    //             area={area}
-    //         />
-    //         <WhyChooseUs
-    //             area={area}
-    //         />
-    //         <CustomerProblems
-    //             area={area}
-    //         />
-    //         <NearbyLandmarks
-    //             area={area}
-    //         />
-    //         <ServiceAreaFaq
-    //             area={area}
-    //         />
-    //         <InternalLinks
-    //             area={area}
-    //         />
-    //         <AreaReview
-    //             area={area}
-    //         />
+//  <AreaOverview
+//             area={area}
+//         />
+//         <EmergencyContent
+//             area={area}
+//         />
+//         <AreaServicesGrid
+//             area={area}
+//         />
+//         <WhyChooseUs
+//             area={area}
+//         />
+//         <CustomerProblems
+//             area={area}
+//         />
+//         <NearbyLandmarks
+//             area={area}
+//         />
+//         <ServiceAreaFaq
+//             area={area}
+//         />
+//         <InternalLinks
+//             area={area}
+//         />
+//         <AreaReview
+//             area={area}
+//         />
