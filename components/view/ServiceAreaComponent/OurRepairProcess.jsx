@@ -75,7 +75,7 @@ export function OurRepairProcess({ area }) {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-900/50">
+    <section className="py-6 bg-gray-50 dark:bg-gray-900/50">
       <div className="container mx-auto px-4">
         
         {/* Section Header */}
@@ -109,7 +109,7 @@ export function OurRepairProcess({ area }) {
               return (
                 <div
                   key={index}
-                  className="group relative bg-white dark:bg-gray-900 rounded-xl p-5 text-center border border-gray-200 dark:border-gray-700 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                  className="group relative bg-white dark:bg-gray-900 rounded-xl p-5 text-center border-2 border-primary/30"
                 >
                   {/* Step Number */}
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -126,7 +126,7 @@ export function OurRepairProcess({ area }) {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-sm font-bold text-gray-900 dark:text-white mt-3 mb-1">
+                  <h3 className="text-md font-bold text-gray-900 dark:text-white mt-3 mb-1">
                     {step.title}
                   </h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
@@ -134,10 +134,10 @@ export function OurRepairProcess({ area }) {
                   </p>
 
                   {/* Duration Badge */}
-                  <div className="mt-2 inline-flex items-center gap-1 text-[10px] text-gray-400 bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">
+                  {/* <div className="mt-2 inline-flex items-center gap-1 text-[10px] text-gray-400 bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">
                     <Clock className="h-2.5 w-2.5" />
                     <span>{step.duration}</span>
-                  </div>
+                  </div> */}
 
                   {/* Arrow Indicator */}
                   {index < steps.length - 1 && (
@@ -172,9 +172,9 @@ export function OurRepairProcess({ area }) {
         </div>
 
         {/* Process Summary */}
-        <div className="max-w-3xl mx-auto mt-10 p-4 bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 text-center">
-          <div className="flex flex-wrap justify-center items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-            <span className="flex items-center gap-1">
+        <div className="max-w-3xl mx-auto mt-10 p-4 bg-whiterounded-xl border-2 border-primary/20 rounded-lg  text-center">
+          <div className="flex flex-wrap justify-center items-center gap-2 text-md">
+            <span className="flex  items-center gap-1">
               <Phone className="h-3.5 w-3.5 text-primary" /> Call
             </span>
             <ArrowRight className="h-3 w-3 text-gray-400" />

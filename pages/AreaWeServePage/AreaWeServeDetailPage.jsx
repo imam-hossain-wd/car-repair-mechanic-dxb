@@ -10,13 +10,16 @@ import { NearbyLandmarks } from "@/components/view/ServiceAreaComponent/NearbyLa
 import { OurRepairProcess } from "@/components/view/ServiceAreaComponent/OurRepairProcess";
 import { ServiceAreaFaq } from "@/components/view/ServiceAreaComponent/ServiceAreaFaq";
 import { ServiceAreaHomeBanner } from "@/components/view/ServiceAreaComponent/ServiceAreaHomeBanner";
+import { AreaServices } from "@/components/view/ServiceAreaComponent/ServiceCard/AreaServices";
 import { WhatWeCanDoForDrivers } from "@/components/view/ServiceAreaComponent/WhatWeCanDoForDrivers";
 import { WhyChooseUs } from "@/components/view/ServiceAreaComponent/WhyChooseUs";
+
 
 
 export default function AreaWeServeDetailPage({
     area,
 }) {
+
 
     return (
         <div className="">
@@ -26,15 +29,22 @@ export default function AreaWeServeDetailPage({
             <WhatWeCanDoForDrivers
                 area={area}
             />
+            <OurRepairProcess
+                area={area}
+            />
+
+            <AreaServices
+                area={area}
+            />
+
             <CommonCarProblems
                 area={area}
             />
             <HowWeSolveProblemsMinimal
                 area={area}
             />
-            <OurRepairProcess
-                area={area}
-            />
+
+
         </div>
     );
 }

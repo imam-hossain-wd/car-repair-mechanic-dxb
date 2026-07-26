@@ -69,7 +69,7 @@ export function HowWeSolveProblemsMinimal({ area }) {
   ];
 
   return (
-    <section className="py-12 bg-white dark:bg-gray-950">
+    <section className="py-5 bg-white dark:bg-gray-950">
       <div className="container mx-auto px-4">
         
         {/* Header */}
@@ -113,7 +113,7 @@ export function HowWeSolveProblemsMinimal({ area }) {
             return (
               <div
                 key={solution.id}
-                className="group bg-gray-50 dark:bg-gray-900/50 rounded-xl p-4 border border-gray-200 dark:border-gray-700 hover:border-primary/30 hover:shadow-md transition-all duration-300"
+                className="group bg-primary/5 rounded-xl p-4 border-2 border-primary/20 hover:border-primary/30 hover:shadow-md transition-all duration-300"
               >
                 <div className="flex items-center gap-2 mb-3">
                   <div className="p-1.5 rounded-lg bg-primary/10 group-hover:scale-110 transition-transform">
@@ -125,9 +125,9 @@ export function HowWeSolveProblemsMinimal({ area }) {
                 </div>
                 <ul className="space-y-1">
                   {solution.steps.map((step, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-400">
-                      <span className="w-4 h-4 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center flex-shrink-0">
-                        <span className="text-[8px] font-bold text-gray-500">{idx + 1}</span>
+                    <li key={idx} className="flex items-center  gap-2 text-sm text-gray-600 dark:text-gray-400">
+                      <span className="w-4 h-4 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                        <span className="text-[10px] mt- font-bold text-white">{idx + 1}</span>
                       </span>
                       {step}
                     </li>

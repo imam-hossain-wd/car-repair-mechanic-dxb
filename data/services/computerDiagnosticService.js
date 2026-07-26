@@ -2,7 +2,7 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 
 export const computerDiagnosticService = {
     title: "Car Computer Diagnostic Service Dubai | Mobile ECU Scan Near You",
-    name: "Car Computer Diagnostic Service",
+    name: "Car Computer Diagnostic",
     metaTitle: "Car Computer Diagnostic Service Dubai | ECU & Engine Scan",
     metaDescription:
         "Looking for car computer diagnostics in Dubai? Get advanced ECU scanning, engine fault detection, ABS, transmission and electrical diagnostics at your location. Fast mobile diagnostic service available 24/7.",
