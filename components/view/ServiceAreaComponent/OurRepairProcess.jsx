@@ -117,8 +117,14 @@ export function OurRepairProcess({ area }) {
                       Step {index + 1}
                     </div>
                   </div>
-
+   {/* color: "from-blue-500/20 to-blue-500/5",
+      iconColor: "text-blue-500", */}
                   {/* Icon */}
+                  {/* <div className="flex justify-center mt-2">
+                    <div className={`p-3 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className={`h-6 w-6 text-blue-500`} />
+                    </div>
+                  </div> */}
                   <div className="flex justify-center mt-2">
                     <div className={`p-3 rounded-xl bg-gradient-to-br ${step.color} group-hover:scale-110 transition-transform duration-300`}>
                       <Icon className={`h-6 w-6 ${step.iconColor}`} />

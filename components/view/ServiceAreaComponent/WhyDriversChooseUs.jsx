@@ -25,7 +25,7 @@ export function WhyDriversChooseUs({ area }) {
     {
       icon: Clock,
       title: "15–30 Minute Arrival",
-      description: `Our mobile mechanics are strategically positioned across ${areaName} to reach you within 15–30 minutes, ensuring you're never stranded for long.`,
+      description: `Our mobile mechanics are strategically positioned across ${areaName} to reach you within 5–15 minutes, ensuring you're never stranded for long.`,
       color: "from-blue-500/20 to-blue-500/5",
       iconColor: "text-blue-500",
       badge: "Fastest in Dubai"
@@ -93,11 +93,11 @@ export function WhyDriversChooseUs({ area }) {
     { label: "Average Response Time", value: "15-30 min", icon: Clock },
     { label: "Customer Rating", value: "4.9/5", icon: Star },
     { label: "Years Experience", value: "13+ Years", icon: Award },
-    { label: "Warranty Coverage", value: "Up to 2 Years", icon: Shield },
+    { label: "Warranty Coverage", value: "Up to 12 Months", icon: Shield },
   ];
 
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-900/50">
+    <section className="py-5 bg-gray-50 dark:bg-gray-900/50">
       <div className="container mx-auto px-4">
         
         {/* Section Header */}
@@ -168,9 +168,9 @@ export function WhyDriversChooseUs({ area }) {
                       {reason.title}
                     </h3>
                     
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+                    {/* <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
                       {reason.description}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
