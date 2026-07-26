@@ -1,6 +1,7 @@
 import { AreaOverview } from "@/components/view/ServiceAreaComponent/AreaOverview";
 import { AreaReview } from "@/components/view/ServiceAreaComponent/AreaReview";
 import { AreaServicesGrid } from "@/components/view/ServiceAreaComponent/AreaServicesGrid";
+import { AreasWeHelpDrivers } from "@/components/view/ServiceAreaComponent/AreasWeHelpDrivers";
 import { CommonCarProblems } from "@/components/view/ServiceAreaComponent/CommonCarProblems";
 import { CustomerProblems } from "@/components/view/ServiceAreaComponent/CustomerProblems";
 import { EmergencyContent } from "@/components/view/ServiceAreaComponent/EmergencyContent";
@@ -13,6 +14,7 @@ import { ServiceAreaHomeBanner } from "@/components/view/ServiceAreaComponent/Se
 import { AreaServices } from "@/components/view/ServiceAreaComponent/ServiceCard/AreaServices";
 import { WhatWeCanDoForDrivers } from "@/components/view/ServiceAreaComponent/WhatWeCanDoForDrivers";
 import { WhyChooseUs } from "@/components/view/ServiceAreaComponent/WhyChooseUs";
+import { WhyDriversChooseUs } from "@/components/view/ServiceAreaComponent/WhyDriversChooseUs";
 
 
 
@@ -41,6 +43,12 @@ export default function AreaWeServeDetailPage({
                 area={area}
             />
             <HowWeSolveProblemsMinimal
+                area={area}
+            />
+            <AreasWeHelpDrivers
+                area={area}
+            />
+            <WhyDriversChooseUs
                 area={area}
             />
 
