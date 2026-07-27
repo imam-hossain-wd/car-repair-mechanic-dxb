@@ -51,7 +51,7 @@ export function WhatWeCanDoForDrivers({ area }) {
       <div className="container mx-auto px-4">
         
         {/* Section Header */}
-        <div className="max-w-4xl mx-auto mb-10">
+        <div className="max-w-4xl mx-auto mb-3">
           <div className="inline-flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full mb-4">
             <span className="text-xs font-medium text-primary uppercase tracking-wide">
               What We Offer
@@ -65,8 +65,8 @@ export function WhatWeCanDoForDrivers({ area }) {
         </div>
 
         {/* Main Description */}
-        <div className="max-w-4xl mx-auto mb-5">
-          <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+        <div className="max-w-4xl mx-auto mb-4">
+          <p className="text-md md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
             We help {audiences.map(a => a.label.toLowerCase()).join(", ")} and daily commuters keep their vehicles 
             safe and reliable without visiting a garage. Whether your vehicle stops in an underground parking garage, 
             residential tower, office basement, hotel entrance, or roadside, our mobile mechanics come directly to 
@@ -75,18 +75,18 @@ export function WhatWeCanDoForDrivers({ area }) {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-1 w-full md:max-w-3xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div 
                 key={index}
-                className="flex items-center gap-4 p-2 rounded-xl"
+                className="flex items-center gap-3 p-1 rounded-xl"
               >
-                <div className={`p-2 rounded-lg ${service.color} group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="h-4 w-4" />
+                <div className={`p-2 rounded-lg bg-primary text-white group-hover:scale-110 transition-transform duration-300`}>
+                  <Icon className="h-3 w-3 md:w-4 md:h-4" />
                 </div>
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                <span className="text-sm font-medium text-gray-700">
                   {service.label}
                 </span>
               </div>

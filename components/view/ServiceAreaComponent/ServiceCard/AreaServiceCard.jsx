@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export function AreaServiceCard({service}) {
   return (
-    <div className="group relative flex flex-col items-center gap-2 p-4 backdrop-blur-sm rounded-xl">
+    <div className="group relative flex flex-col items-center gap-2 p-4 backdrop-blur-sm rounded-xl border border-primary/20">
       {/* remove background opacity-0 or all kind of opacity remove */}
       {/* Glow Effect */}
       <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-transparent rounded-xl opacity-100"></div>
 
       <div className="relative">
-        <div className="w-16 h-16 rounded-xl bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-all duration-300">
+        <div className="w-16 h-16 rounded-xl bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center border-2 border-primary">
           {service.icon && <Image
             src={service.icon}
             alt={service.name}

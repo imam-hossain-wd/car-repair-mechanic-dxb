@@ -75,7 +75,7 @@ export function OurRepairProcess({ area }) {
   ];
 
   return (
-    <section className="py-6 bg-gray-50 dark:bg-gray-900/50">
+    <section className="py-3 bg-gray-50 dark:bg-gray-900/50">
       <div className="container mx-auto px-4">
         
         {/* Section Header */}
@@ -117,17 +117,10 @@ export function OurRepairProcess({ area }) {
                       Step {index + 1}
                     </div>
                   </div>
-   {/* color: "from-blue-500/20 to-blue-500/5",
-      iconColor: "text-blue-500", */}
-                  {/* Icon */}
-                  {/* <div className="flex justify-center mt-2">
-                    <div className={`p-3 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 group-hover:scale-110 transition-transform duration-300`}>
-                      <Icon className={`h-6 w-6 text-blue-500`} />
-                    </div>
-                  </div> */}
+
                   <div className="flex justify-center mt-2">
-                    <div className={`p-3 rounded-xl bg-gradient-to-br ${step.color} group-hover:scale-110 transition-transform duration-300`}>
-                      <Icon className={`h-6 w-6 ${step.iconColor}`} />
+                    <div className={`p-3 rounded-xl bg-primary group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className={`h-6 w-6 text-white`} />
                     </div>
                   </div>
 
@@ -138,12 +131,6 @@ export function OurRepairProcess({ area }) {
                   <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
                     {step.description}
                   </p>
-
-                  {/* Duration Badge */}
-                  {/* <div className="mt-2 inline-flex items-center gap-1 text-[10px] text-gray-400 bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">
-                    <Clock className="h-2.5 w-2.5" />
-                    <span>{step.duration}</span>
-                  </div> */}
 
                   {/* Arrow Indicator */}
                   {index < steps.length - 1 && (
@@ -157,29 +144,9 @@ export function OurRepairProcess({ area }) {
           </div>
         </div>
 
-        {/* Mobile Timeline Flow */}
-        <div className="md:hidden mt-8 flex flex-col items-center">
-          {steps.map((step, index) => (
-            <div key={index} className="flex items-center gap-3 w-full max-w-xs">
-              <div className="flex-shrink-0">
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-xs font-bold text-primary">{index + 1}</span>
-                </div>
-              </div>
-              <div className="flex-1">
-                <p className="text-sm font-medium text-gray-900 dark:text-white">{step.title}</p>
-                <p className="text-xs text-gray-500">{step.duration}</p>
-              </div>
-              {index < steps.length - 1 && (
-                <ArrowRight className="h-4 w-4 text-gray-300 rotate-90" />
-              )}
-            </div>
-          ))}
-        </div>
-
         {/* Process Summary */}
-        <div className="max-w-3xl mx-auto mt-10 p-4 bg-whiterounded-xl border-2 border-primary/20 rounded-lg  text-center">
-          <div className="flex flex-wrap justify-center items-center gap-2 text-md">
+        <div className="max-w-3xl mx-auto mt-5 p-4 bg-whiterounded-xl border-2 border-primary/20 rounded-lg  text-center">
+          <div className="flex flex-wrap justify-center items-center gap-2 text-sm md:text-md">
             <span className="flex  items-center gap-1">
               <Phone className="h-3.5 w-3.5 text-primary" /> Call
             </span>
