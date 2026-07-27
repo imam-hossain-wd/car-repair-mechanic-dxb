@@ -8,7 +8,6 @@ import {
   Clock3,
   Star,
   ShieldCheck,
-  MapPin,
   Award,
   Zap,
 } from "lucide-react";
@@ -21,7 +20,7 @@ export function ServiceAreaHomeBanner({ area }) {
   return (
     <section className="relative w-full bg-gray-900">
       {/* Background Image Container */}
-      <div className="relative w-full h-160 overflow-hidden">
+      <div className="relative w-full h-160 md:h-120 overflow-hidden">
 
         {/* Background Image */}
         <div className="absolute inset-0">
@@ -44,19 +43,15 @@ export function ServiceAreaHomeBanner({ area }) {
 
         {/* Main Content Container */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="min-h-175 md:min-h-200 lg:min-h-225 flex flex-col justify-center">
+          <div className="min-h-230 md:min-h-200 lg:min-h-190 flex flex-col justify-center">
             <div className="max-w-4xl -mt-40">
 
               {/* Trust Badge - Top Indicator */}
               <div className="mb-3 -mt-20">
                 <div className="inline-flex items-center gap-2.5 bg-gray-800/80 backdrop-blur-sm border border-gray-700 rounded-full px-4 py-2">
-                  <ShieldCheck className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-medium text-gray-200 tracking-wide">
+                  <ShieldCheck className="w-4 h-4 md:w-5 md:h-5 text-primary" />
+                  <span className="text-xs md:text-sm font-medium text-gray-200 tracking-wide">
                     {area?.hero?.badge || "24/7 Emergency Mobile Mechanic"}
-                  </span>
-                  <div className="w-1 h-1 bg-primary rounded-full"></div>
-                  <span className="text-sm text-gray-400">
-                    Google Verified
                   </span>
                 </div>
               </div>
@@ -80,7 +75,7 @@ export function ServiceAreaHomeBanner({ area }) {
                 {/* Primary Call Button */}
                 <Link
                   href={SiteConfig?.numberCallLink}
-                  className="inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-white font-bold text-base sm:text-lg px-8 py-4 rounded-xl transition-colors duration-200 shadow-xl"
+                  className="inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-white font-bold text-base sm:text-lg px-4 py-2 rounded-xl transition-colors duration-200 shadow-xl"
                   aria-label={`Call ${area?.name} mobile mechanic - 24/7 emergency service`}
                 >
                   <Phone className="w-5 h-5 text-white" />
@@ -89,10 +84,10 @@ export function ServiceAreaHomeBanner({ area }) {
 
                 {/* Secondary WhatsApp Button */}
                 <Link
-                  href={SiteConfig?.whatsappCallLink || "https://wa.me/971501234567"}
+                  href={SiteConfig?.whatsappCallLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 bg-gray-800/80 backdrop-blur-sm border border-gray-700 hover:bg-gray-700 text-white font-semibold text-base sm:text-lg px-8 py-4 rounded-xl transition-colors duration-200"
+                  className="inline-flex items-center justify-center gap-3 bg-gray-800/80 backdrop-blur-sm border border-gray-700  text-white font-semibold text-sm px-4 py-2 rounded-xl transition-colors duration-200"
                   aria-label={`WhatsApp ${area?.name} mobile mechanic for emergency car repair`}
                 >
                   <MessageCircle className="w-5 h-5 text-primary" />
@@ -100,36 +95,6 @@ export function ServiceAreaHomeBanner({ area }) {
                 </Link>
               </div>
 
-              {/* Trust Indicators / Stats Grid */}
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl">
-                {area?.hero?.stats?.map((stat, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-4"
-                  >
-                    <div className="flex items-center gap-2 mb-2">
-                      {stat?.label === "Response Time" && (
-                        <Clock3 className="w-4 h-4 text-primary" />
-                      )}
-                      {stat?.label === "Customer Rating" && (
-                        <Star className="w-4 h-4 text-primary fill-primary" />
-                      )}
-                      {stat?.label === "Emergency Support" && (
-                        <Zap className="w-4 h-4 text-primary" />
-                      )}
-                      {stat?.label === "Satisfaction Rate" && (
-                        <Award className="w-4 h-4 text-primary" />
-                      )}
-                      <span className="text-xs text-gray-400 uppercase tracking-wide">
-                        {stat?.label}
-                      </span>
-                    </div>
-                    <p className="text-lg font-bold text-white">
-                      {stat?.value}
-                    </p>
-                  </div>
-                ))}
-              </div>
               {area?.coordinates && (
                 <div className="hidden" aria-hidden="true">
                   <span itemProp="latitude">{area.coordinates.lat}</span>

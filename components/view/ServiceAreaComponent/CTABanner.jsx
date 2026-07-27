@@ -23,9 +23,9 @@ export function CTABanner({ area }) {
 
   return (
     <section className="py-5 bg-gray-50 dark:bg-gray-900/50">
-      <div className="container mx-auto px-4">
+      <div className="container md:w-[90%] mx-auto px-4">
         
-        <div className="max-w-5xl mx-auto">
+        <div className="">
           {/* Main Card */}
           <div className="relative bg-linear-to-br from-primary/10 via-primary/5 to-transparent rounded-2xl p-6 md:p-8 border border-primary/20 overflow-hidden">
             
@@ -46,7 +46,7 @@ export function CTABanner({ area }) {
               </div>
 
               {/* Features */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+              <div className="w-full md:w-[70%] mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
                 {features.map((feature, index) => {
                   const Icon = feature.icon;
                   return (
@@ -74,17 +74,17 @@ export function CTABanner({ area }) {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Link
                   href={numberCallLink}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 text-sm w-full sm:w-auto"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 text-xs md:text-sm  w-full sm:w-auto"
                 >
                   <Phone className="h-4 w-4" />
-                  Call {displayNumber}
+                  {displayNumber}
                 </Link>
                 
                 <Link
                   href={whatsappCallLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 text-sm w-full sm:w-auto"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 text-xs w-full sm:w-auto"
                 >
                   <MessageCircle className="h-4 w-4" />
                   WhatsApp Us
