@@ -5,6 +5,7 @@ import { ClientReviews } from "@/components/view/ClientReviews/ClientReviews";
 import { FAQ } from "@/components/view/FAQ/FAQ";
 import { FeaturedServices } from "@/components/view/FeaturedServices/FeaturedServices";
 import { HomeHero } from "@/components/view/Hero/HomeHero";
+import { TrustedBadges } from "@/components/view/Hero/TrustedBadges";
 import { Maps } from "@/components/view/Maps/Maps";
 import { StillHasQuestionSection } from "@/components/view/StillHasQuestionSection/StillHasQuestionSection";
 import { WhyChooseUs } from "@/components/view/WhyChooseUs/WhyChooseUs";
@@ -16,6 +17,7 @@ const HomePage = () => {
   return (
     <div>
       <HomeHero />
+      <TrustedBadges />
       <FeaturedServices />
       <AboutUs />
       <WhyChooseUs />

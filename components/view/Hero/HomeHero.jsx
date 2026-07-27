@@ -1,29 +1,20 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import {
   Wrench,
   Clock,
-  Award,
-  ArrowRight,
-  CheckCircle,
-  Star,
-  Truck,
   Battery,
   Wind,
   Car,
   Zap,
   Navigation,
   Activity,
-  Shield,
-  Phone
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+
 
 export function HomeHero() {
   const [isVisible, setIsVisible] = useState(false);
-  const { services, displayNumber, numberCallLink, whatsappCallLink } = SiteConfig;
 
   useEffect(() => {
     const animationFrame = requestAnimationFrame(() => {
@@ -32,24 +23,11 @@ export function HomeHero() {
     return () => cancelAnimationFrame(animationFrame);
   }, []);
 
-  const stats = [
-    { value: "13+", label: "Years Experience", icon: Award },
-    { value: "5000+", label: "Customers", icon: Star },
-    { value: "24/7", label: "Emergency", icon: Clock },
-    { value: "15min", label: "Response", icon: Truck },
-  ];
-
-  const features = [
-    { icon: CheckCircle, text: "Certified Mechanics" },
-    { icon: CheckCircle, text: "On-Site Service" },
-    { icon: Shield, text: "Best Price" },
-    { icon: CheckCircle, text: "Genuine Parts" },
-  ];
 
   // Professional service checklist
   const serviceChecklist = [
     { icon: Clock, text: "24/7 Emergency Car Repair", highlight: true },
-    { icon: Zap, text: "15–30 Minute Response Time", highlight: true },
+    { icon: Zap, text: "5–15 Minute Response Time", highlight: true },
     { icon: Navigation, text: "Mobile Mechanic at Your Location", highlight: false },
     { icon: Battery, text: "Battery Replacement & Jump Start", highlight: false },
     { icon: Car, text: "Roadside Assistance Across Dubai", highlight: false },
@@ -57,15 +35,9 @@ export function HomeHero() {
     { icon: Wrench, text: "Engine Diagnostics On-Site", highlight: false },
   ];
 
-  const popularServices = services?.slice(0, 4) || [
-    { name: "Battery Replacement", slug: "battery-replacement" },
-    { name: "AC Repair", slug: "ac-repair" },
-    { name: "Oil Change", slug: "oil-change" },
-    { name: "Brake Repair", slug: "brake-repair" },
-  ];
 
   return (
-    <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+    <section className="relative bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
 
       {/* Animated Background Elements - Same as Footer */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -101,42 +73,9 @@ export function HomeHero() {
               <span className="text-white">Dubai At Your Doorstep</span>
             </h1>
 
-            {/* Description */}
-            {/* <p className="text-base text-gray-300 max-w-lg leading-relaxed">
-              {SiteConfig.description || "Professional mobile car repair service anywhere, anytime in Dubai. Certified mechanics at your doorstep within 30 minutes."}
-            </p> */}
-            <p className="text-base text-gray-300 max-w-lg leading-relaxed">
+            <p className="text-md text-white max-w-lg">
               Dubai&lsquo;s top-rated mobile mechanic service brought directly to your doorstep. On-site car battery replacement, auto AC repair, engine diagnostics, and 24/7 emergency roadside support in 15–30 minutes.
             </p>
-
-            {/* Features Grid */}
-            <div className="grid grid-cols-2 gap-3">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-2">
-                  <feature.icon className="h-4 w-4 text-primary shrink-0" />
-                  <span className="text-sm text-gray-300">{feature.text}</span>
-                </div>
-              ))}
-            </div>
-
-
-
-            {/* Popular Services */}
-            <div className="pt-2">
-              <p className="text-xs text-gray-400 mb-2">Popular Services:</p>
-              <div className="flex flex-wrap gap-2">
-                {popularServices.map((service, index) => (
-                  <Link
-                    key={index}
-                    href={`/dubai/services/${service.slug}`}
-                    className="inline-flex items-center gap-1 px-3 py-1.5 bg-white/10 hover:bg-primary/20 rounded-lg text-sm text-gray-300 hover:text-white transition-all duration-300 group"
-                  >
-                    <span>{service.name}</span>
-                    <ArrowRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-all group-hover:translate-x-0.5" />
-                  </Link>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Right Column - Professional Service Checklist */}
@@ -144,23 +83,23 @@ export function HomeHero() {
 
             {/* Service Checklist Card */}
             <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden hover:border-primary/30 transition-all duration-300">
-              <div className="bg-gradient-to-r from-primary/20 to-primary/5 px-4 py-3 border-b border-white/10">
+              <div className="bg-linear-to-r from-primary/20 to-primary/5 px-4 py-3 border-b border-white/10">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center justify-center w-8 h-8 rounded-full bg-white">
                     <Activity className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-base md:text-lg font-semibold text-white">Emergency Services We Offer</h3>
-                  <span className="text-xs md:text-sm text-white ml-auto font-medium">24/7 Available</span>
+                  <h3 className="text-sm md:text-lg font-semibold text-white">Emergency Services We Offer</h3>
+                  {/* <span className="text-xs md:text-sm text-white ml-auto font-medium">24/7 Available</span> */}
                 </div>
               </div>
               <div className="p-4">
-                <div className="space-y-3">
+                <div className="space-y-2">
                   {serviceChecklist.map((item, index) => {
                     const Icon = item.icon;
                     return (
                       <div
                         key={index}
-                        className={`flex items-center gap-3`}
+                        className={`flex items-center gap-4`}
                       >
                         <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center bg-primary `}>
                           <Icon className="h-4 w-4 text-white" />
@@ -168,7 +107,6 @@ export function HomeHero() {
                         <span className={`text-sm md:text-base text-gray-200 ${item.highlight ? "font-medium" : "font-normal"}`}>
                           {item.text}
                         </span>
-
                       </div>
                     );
                   })}
@@ -177,7 +115,7 @@ export function HomeHero() {
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-4 gap-3">
+            {/* <div className="grid grid-cols-4 gap-3">
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
@@ -191,14 +129,14 @@ export function HomeHero() {
                   </div>
                 );
               })}
-            </div>
+            </div> */}
 
             {/* Quick Service Note */}
-            <div className="bg-linear-to-r from-primary/10 to-primary/5 rounded-xl p-3 text-center border border-primary/20">
+            {/* <div className="bg-linear-to-r from-primary/10 to-primary/5 rounded-xl p-3 text-center border border-primary/20">
               <p className="text-sm text-gray-300">
                 ⚡ No towing fees • Free inspection • Warranty on all repairs
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
