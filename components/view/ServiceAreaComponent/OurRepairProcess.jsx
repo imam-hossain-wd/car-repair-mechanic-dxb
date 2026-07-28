@@ -9,8 +9,6 @@ import {
   Gauge,
   Shield,
   Clock,
-  MapPin,
-  CheckCircle2,
   ArrowRight
 } from "lucide-react";
 

@@ -14,7 +14,6 @@ import {
   Gauge,
   Thermometer,
   AlertCircle,
-  CheckCircle2,
   Users,
   Building,
   MapPin,

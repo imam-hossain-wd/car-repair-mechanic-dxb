@@ -5,11 +5,7 @@ import Link from "next/link";
 import {
   Phone,
   MessageCircle,
-  Clock3,
-  Star,
   ShieldCheck,
-  Award,
-  Zap,
 } from "lucide-react";
 
 import { SiteConfig } from "@/config/siteConfig";

@@ -4,6 +4,7 @@ import { Navbar } from "@/components/shared/Navbar/Navbar";
 import { Footer } from "@/components/shared/Footer/Footer";
 import { MobileFloatingButtons } from "@/components/shared/FloatingButtons/FloatingButtons";
 import OrganizationSchema from "@/seo/schemas/OrganizationSchema";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const geistSans = Geist({
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="min-h-full flex flex-col">
         <main>
+          <SpeedInsights />
           <OrganizationSchema />
           <Navbar />
           {children}

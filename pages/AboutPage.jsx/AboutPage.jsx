@@ -374,10 +374,7 @@ export default function AboutPage() {
               "value": "25"
             },
             "areaServed": city,
-            "sameAs": [
-              "https://facebook.com/fixcardubai",
-              "https://instagram.com/fixcardubai"
-            ],
+            "sameAs": SiteConfig.socialLinks.map((social) => social.href),
             "knowsLanguage": ["English", "Arabic", "Urdu", "Hindi"],
             "statistics": stats.map(stat => ({
               "@type": "StatisticalValue",

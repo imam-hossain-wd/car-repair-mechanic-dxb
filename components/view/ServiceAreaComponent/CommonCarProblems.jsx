@@ -3,8 +3,6 @@
 
 import {
     Battery,
-    Wind,
-    Thermometer,
     Car,
     AlertCircle,
     Zap,
@@ -14,7 +12,6 @@ import {
     Gauge,
     Fuel,
     Droplet,
-    Shield,
     Flame,
     Snowflake
 } from "lucide-react";

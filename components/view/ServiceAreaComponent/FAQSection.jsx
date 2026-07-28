@@ -6,24 +6,24 @@ import {
   ChevronDown,
   HelpCircle,
 } from "lucide-react";
-import { SiteConfig } from "@/config/siteConfig";
+
 
 export function FAQSection({ area }) {
   const [openIndex, setOpenIndex] = useState(null);
   const areaName = area?.name || "Dubai";
   const faqs = area?.faqSection?.faqs || [];
 
+  console.log(faqs, 'faqs---')
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const displayFaqs = faqs.length > 0 ? faqs : defaultFaqs;
 
   // FAQ Schema for SEO
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": displayFaqs.map(faq => ({
+    "mainEntity": faqs.map(faq => ({
       "@type": "Question",
       "name": faq.question,
       "acceptedAnswer": {
@@ -57,7 +57,7 @@ export function FAQSection({ area }) {
 
         {/* FAQ Accordion */}
         <div className="max-w-3xl mx-auto space-y-2.5">
-          {displayFaqs.map((faq, index) => (
+          {faqs.map((faq, index) => (
             <div
               key={index}
               className="bg-gray-50 dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden transition-all duration-300 hover:border-primary/30"

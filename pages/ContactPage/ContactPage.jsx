@@ -361,7 +361,7 @@ export default function ContactPage() {
               "email": email,
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Al Karama",
+                "streetAddress": SiteConfig.streetAddress,
                 "addressLocality": city,
                 "addressCountry": "UAE"
               },

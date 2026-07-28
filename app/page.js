@@ -11,24 +11,27 @@ import { siteMetadata } from "@/seo/siteMetadata/siteMetadata";
 // };
 
 
-export const metadata = {
-  title: siteMetadata.home.title,
-  description: siteMetadata.home.description,
-  alternates: {
-    canonical: siteMetadata.home.canonical,
-  },
-  // Recommended additions for local SEO visibility
-  openGraph: {
-    title: siteMetadata.home.title,
-    description: siteMetadata.home.description,
-    url: siteMetadata.home.canonical,
-    siteName: "Car Repair Mechanic Dubai",
-    locale: "en_AE",
-    type: "website",
-  }
-};
+// export const metadata = {
+//   title: siteMetadata.home.title,
+//   description: siteMetadata.home.description,
+//   alternates: {
+//     canonical: siteMetadata.home.canonical,
+//   },
+//   // Recommended additions for local SEO visibility
+//   openGraph: {
+//     title: siteMetadata.home.title,
+//     description: siteMetadata.home.description,
+//     url: siteMetadata.home.canonical,
+//     siteName: "Car Repair Mechanic Dubai",
+//     locale: "en_AE",
+//     type: "website",
+//   }
+// };
+
+export const metadata = siteMetadata.home;
 
 
+console.log(siteMetadata.home, 'siteMetadata.home')
 export default function Home() {
   return <HomePage />;
 }

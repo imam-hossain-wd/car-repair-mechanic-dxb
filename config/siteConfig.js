@@ -10,6 +10,7 @@ export const SiteConfig = {
   email: "carrepairmechanicdubai@gmail.com",
   description: "Car Repair Mechanic Dubai is a leading 24/7 mobile auto repair and emergency roadside assistance provider based in Oud Metha, Dubai. Serving areas across Bur Dubai, Deira, Business Bay, Downtown, and Jumeirah, our certified mobile mechanics deliver fast on-site services including car battery replacement, AC repair, auto electrical diagnostics, brake repair, and oil changes. We bring complete workshop solutions directly to your location with transparent pricing and guaranteed warranty.",
   displayNumber: "+971 55 183 1901",
+  phoneNumber: "+971551831901",
   // displayNumber: "055 183 1901",
   numberCallLink: "tel:+971551831901",
   whatsappCallLink: "https://wa.me/971551831901",

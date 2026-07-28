@@ -199,7 +199,7 @@ export function AreaOverview({ area }) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "AutoRepair",
-            "name": `Fix Car Dubai - ${name} Mobile Car Repair`,
+            "name": `${SiteConfig.brandName} - ${name} Mobile Car Repair`,
             "description": area?.overviewSection?.description || `Professional mobile car repair and roadside assistance service in ${name} ${city}. 24/7 emergency support.`,
             "address": {
               "@type": "PostalAddress",

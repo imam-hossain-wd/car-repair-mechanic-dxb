@@ -1,13 +1,17 @@
 import Script from "next/script";
-import { SiteConfig } from "@/config/siteConfig";
+import { SiteConfig, serviceAreas } from "@/config/siteConfig";
 
 export default function LocalBusinessSchema() {
+  const telephoneNumber = SiteConfig.displayNumber
+    ? SiteConfig.displayNumber.replace(/\s+/g, "")
+    : "+971551831901";
+
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "AutoRepair",
-        "@id": `${SiteConfig.url}/#localbusiness`,
+        "@id": `${SiteConfig.url}/#organization`,
         "name": SiteConfig.brandName,
         "url": SiteConfig.url,
         "logo": {
@@ -20,49 +24,48 @@ export default function LocalBusinessSchema() {
           `${SiteConfig.url}/og-image.jpg`
         ],
         "description": SiteConfig.description,
-        "telephone": "+971551831901",
+        "telephone": telephoneNumber,
         "priceRange": "$$",
         "email": SiteConfig.email,
-        "hasMap": SiteConfig.GMB.mapsLink,
+        "hasMap": SiteConfig.GMB?.mapsLink || SiteConfig.mapsLink || SiteConfig.url,
         
         "address": {
           "@type": "PostalAddress",
           "streetAddress": SiteConfig.streetAddress,
           "addressLocality": SiteConfig.city,
-          "addressRegion": SiteConfig.addressRegion,
-          "addressCountry": SiteConfig.addressCountry,
-          "postalCode": SiteConfig.postalCode
+          "addressRegion": SiteConfig.addressRegion || SiteConfig.city,
+          "addressCountry": SiteConfig.addressCountry || "AE",
+          "postalCode": SiteConfig.postalCode || "00000"
         },
         
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": SiteConfig.GMB.latitude,
-          "longitude": SiteConfig.GMB.longitude
+          "latitude": SiteConfig.GMB?.latitude || "25.24398130",
+          "longitude": SiteConfig.GMB?.longitude || "55.31207400"
         },
         
-        // 🛠️ Highly Optimized 24/7 Structure for Google Maps
         "openingHoursSpecification": SiteConfig.operatingHours.map((item) => ({
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": item.day,
           "opens": "00:00",
-          "closes": "00:00" 
+          "closes": "23:59"
         })),
         
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+971551831901",
+          "telephone": telephoneNumber,
           "contactType": "customer service",
           "availableLanguage": ["English", "Arabic"]
         },
         
-        "areaServed": SiteConfig.serviceAreas.map((area) => ({
+        "areaServed": (serviceAreas || SiteConfig.serviceAreas || []).map((area) => ({
           "@type": "AdministrativeArea",
           "name": `${area.name}, ${SiteConfig.city}`
         })),
         
         "sameAs": [
           ...SiteConfig.socialLinks.map((social) => social.href),
-          `https://www.google.com/maps?cid=${SiteConfig.GMB.CID}`
+          `https://www.google.com/maps?cid=${SiteConfig.GMB?.CID || "17371170169148373037"}`
         ]
       }
     ]

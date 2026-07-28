@@ -297,7 +297,7 @@ export default function BrandWeServePage() {
                                 "@type": "ListItem",
                                 "position": index + 1,
                                 "name": brand.name,
-                                "url": `https://carrepairmechanic.ae/dubai/brands/${brand.slug}`,
+                                "url": `${SiteConfig.url}/brands#${brand.slug}`,
                                 "description": `Expert ${brand.name} repair and maintenance in ${city}`
                             }))
                         })

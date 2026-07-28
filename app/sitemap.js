@@ -1,4 +1,5 @@
 import { SiteConfig } from "@/config/siteConfig"; // Adjust this import path based on your folder structure
+import { serviceAeas } from "@/data/servicearea";
 // import { blogPosts } from "@/data/blogsData";
 import { services } from "@/data/services/services";
 // Adjust this import path based on your folder structure
@@ -8,6 +9,8 @@ export default async function sitemap() {
     ? SiteConfig.url.slice(0, -1)
     : SiteConfig.url;
 
+    console.log(baseUrl, 'baseUrl')
+
   // 1. Core Static Routes
   const staticRoutes = [
     { url: `${baseUrl}/`, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
@@ -15,12 +18,12 @@ export default async function sitemap() {
     { url: `${baseUrl}/area-we-serve`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/brands`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/gallery`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/policy`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/privacy`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/terms`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/vehicles-we-serve`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
-    { url: `${baseUrl}/blogs`, lastModified: new Date(), changeFrequency: "daily", priority: 0.7 },
+    // { url: `${baseUrl}/blogs`, lastModified: new Date(), changeFrequency: "daily", priority: 0.7 },
   ];
 
   // 2. Dynamic Service Routes (Derived from fullServices)
@@ -29,6 +32,14 @@ export default async function sitemap() {
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.9, // High priority as these generate leads
+  }));
+
+  // 3. Dynamic Area We Serve Routes (Derived from fullServices)
+  const areaRoutes = serviceAeas.map((area) => ({
+    url: `${baseUrl}/area-we-serve/${area.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.9,
   }));
 
 
@@ -44,6 +55,7 @@ export default async function sitemap() {
   return [
     ...staticRoutes,
     ...serviceRoutes,
+    ...areaRoutes,
     // ...blogRoutes,
   ];
 }
