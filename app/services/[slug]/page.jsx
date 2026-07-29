@@ -7,6 +7,7 @@ import ServiceDetailsPage from '@/pages/ServicesPage/ServiceDetailsPage';
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const service = services?.find((s) => s?.slug === slug);
+
   if (!service) {
     return {
       title: "Service Not Found | Car Repair Mechanic Dubai",
@@ -14,8 +15,8 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const title = service.metaTitle || `${service.name} in Dubai | Car Repair Mechanic Dubai`;
-  const description = service.metaDescription || service?.intro?.content;
+  const title = service.metaTitle;
+  const description = service.metaDescription;
   const canonical = `${SiteConfig.url}/services/${service.slug}`;
 
   return {
@@ -34,6 +35,7 @@ export async function generateMetadata({ params }) {
     },
   };
 }
+
 
 export default async function ServiceDetailPage({ params }) {
   const { slug } = await params;

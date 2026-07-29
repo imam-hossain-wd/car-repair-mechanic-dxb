@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const brakepadRepairService = {
     title: "Brake Pad Repair Dubai | Fast Mobile Brake Service Near You",
     name: "Brake Pad Repair",
-    metaTitle: "Brake Pad Repair Dubai – Brake Replacement & Emergency Service",
-    metaDescription: "Brake pads worn out? Get expert brake pad replacement and inspection in Dubai with Car Repair Mechanic Dubai. Fast 5 to 15 minutes mobile service, emergency brake repair, and quality parts to ensure safe driving.",
+    metaTitle: "Mobile Brake Pad Replacement Dubai | On-Site Brake Service",
+    metaDescription: "Squeaking brakes? Quick mobile brake pad replacement, disc rotor resurfacing, and brake fluid top-up at your location in Dubai. 100% genuine parts.",
 
     features: [
         "Brake pad replacement and inspection",

@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const alternatorRepair = {
     title: "Car Alternator Repair Dubai | Battery Not Charging Fix Near You",
     name: "Car Alternator Repair",
-    metaTitle: "Car Alternator Repair Dubai – Battery Not Charging? Fix Near Me",
-    metaDescription: "Facing battery drain or charging issues? Get expert car alternator repair in Dubai with Car Repair Mechanic Dubai fast mobile service. 24/7 onsite diagnostics and replacement available.",
+    metaTitle: "Car Alternator Repair & Replacement Dubai | Mobile Mechanic",
+    metaDescription: "Car battery light on or electrical loss? Fast on-site alternator testing, repair, and replacement in Dubai by certified mobile auto electricians 24/7.",
 
     features: [
         "Alternator diagnostics and repair",

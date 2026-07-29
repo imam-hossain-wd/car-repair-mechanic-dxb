@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const acGasRefillService = {
     title: "Car AC Gas Refill Dubai | Mobile & Professional AC Recharge Service",
     name: "Car AC Gas Refill Service",
-    metaTitle: "Car AC Gas Refill Dubai – Mobile Auto AC Recharge & Service",
-    metaDescription: "Keep your car cool in Dubai heat with Car Repair Mechanic Dubai. Professional Car AC Gas Refill, mobile recharge, leak check, and full system inspection at your location.",
+    metaTitle: "Car AC Gas Refill & Recharging Dubai | On-Site Freon Fill",
+    metaDescription: "Weak AC cooling? Fast doorstep R134a & R1234yf AC gas refilling, vacuum testing, and leak inspection across Dubai. Cool down your car today!",
 
     features: [
         "AC gas refill for all car models",

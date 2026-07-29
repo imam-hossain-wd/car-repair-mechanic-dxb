@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const jumpStartService = {
     title: "Car Jump Start Service Dubai | 24/7 Emergency Battery Boost Near You",
     name: "Jump Start Car",
-    metaTitle: "Car Jump Start Service Dubai – 24/7 Emergency Battery Boost Near Me",
-    metaDescription: "Need a car jump start in Dubai? Get fast 24/7 emergency jump start service with Car Repair Mechanic Dubai. Safe battery boosting by expert mobile mechanics in 5 to 15 minutes anywhere in Dubai.",
+    metaTitle: "24/7 Emergency Car Jump Start Dubai | 15-Min Mobile Service",
+    metaDescription: "Car won't start? Fast roadside jump start service anywhere in Dubai. Our mobile mechanics arrive in 5-15 mins with heavy-duty boost packs. Call now!",
     features: [
         "24/7 car jump start service in Dubai",
         "Safe battery boosting",

@@ -31,7 +31,7 @@ import { siteMetadata } from "@/seo/siteMetadata/siteMetadata";
 export const metadata = siteMetadata.home;
 
 
-console.log(siteMetadata.home, 'siteMetadata.home')
+
 export default function Home() {
   return <HomePage />;
 }

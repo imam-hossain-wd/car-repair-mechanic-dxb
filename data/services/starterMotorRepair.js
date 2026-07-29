@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const starterMotorRepair = {
     title: "Car Starter Motor Repair Dubai | Engine Not Starting Fix Near You",
     name: "Car Starter Motor Repair",
-    metaTitle: "Car Starter Motor Repair Dubai – Car Not Starting? Fix Near Me",
-    metaDescription: "Car not starting in Dubai? Get expert starter motor repair and replacement with Car Repair Mechanic Dubai fast 5 to 15 minutes mobile service. 24/7 diagnosis and onsite repair anywhere in Dubai.",
+    metaTitle: "Starter Motor Repair & Replacement Dubai | 24/7 Mobile Fix",
+    metaDescription: "Clicking noise when turning key? Mobile starter motor repair and replacement at your location in Dubai. Fast emergency response by expert mechanics.",
 
     features: [
         "Starter motor diagnostics and repair",

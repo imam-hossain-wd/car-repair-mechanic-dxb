@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const carRaditorRepair = {
     title: "Car Radiator Repair Dubai | Engine Overheating & Coolant Leak Fix Near You",
     name: "Radiator Replacement",
-    metaTitle: "Car Radiator Repair Dubai – Fix Overheating & Coolant Leaks | Mobile Service",
-    metaDescription: "Expert car radiator repair in Dubai with Car Repair Mechanic Dubai. 24/7 mobile radiator repair and replacement service anywhere in Dubai for overheating engines and coolant leaks.",
+    metaTitle: "Car Radiator Repair & Overheating Fix Dubai | Mobile Repair",
+    metaDescription: "Car engine overheating or coolant leaking? Emergency on-site radiator repair, hose replacement, and coolant flush service anywhere in Dubai 24/7.",
 
     features: [
         "Radiator leak repair and replacement",

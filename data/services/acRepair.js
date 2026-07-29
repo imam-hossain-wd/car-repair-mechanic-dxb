@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const acRepair = {
     title: "Car AC Repair Dubai | AC Not Cooling Fix & Gas Refill Near You",
     name: "Car AC Repair",
-    metaTitle: "Car AC Repair Dubai – AC Not Cooling? Gas Refill & Fix Near Me",
-    metaDescription: "Car AC not cooling in Dubai? Get expert AC repair, gas refill, and compressor service with Car Repair Mechanic Dubai fast mobile mechanics. 24/7 onsite AC repair anywhere in Dubai.",
+    metaTitle: "Car AC Repair & Maintenance Dubai | Mobile Auto AC Service",
+    metaDescription: "Car AC blowing warm air? Expert mobile AC repair, compressor fix, leak detection, and cooling maintenance at your doorstep anywhere in Dubai.",
 
     features: [
         "Car AC cooling system diagnostics",

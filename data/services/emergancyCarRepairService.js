@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const emergancyCarRepairService = {
     title: "Emergency Car Repair Dubai | 24/7 Mobile Roadside Assistance",
     name: "Emergency Car Repair",
-    metaTitle: "Emergency Car Repair Dubai – Fast 24/7 Mobile Mechanic Service",
-    metaDescription: "Stuck on the road in Dubai? Our 24/7 emergency car repair service with Car Repair Mechanic Dubai provides fast 5 to 15 minutes mobile mechanics at your location. Battery, starter, AC, brakes, and full car repair solutions.",
+    metaTitle: "24/7 Emergency Car Repair Dubai | Roadside Rescue in 15 Mins",
+    metaDescription: "Unexpected breakdown on Sheikh Zayed Rd or home driveway? 24/7 rapid emergency mobile mechanic dispatch across Dubai. Call for instant rescue!",
 
     features: [
         "24/7 mobile emergency car repair",

@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const transmissionRepairService = {
     title: "Car Transmission Repair Dubai | Automatic & Manual Transmission Service",
     name: "Car Transmission Repair",
-    metaTitle: "Car Transmission Repair Dubai – Expert Gearbox & Transmission Service",
-    metaDescription: "Stuck in gear or facing transmission issues? Car Repair Mechanic Dubai provides fast and reliable 5 to 15 minutes response for transmission repair, clutch and gearbox maintenance at your location.",
+    metaTitle: "Car Transmission Repair & Fluid Change Dubai | Mobile Service",
+    metaDescription: "Gear slipping or hard shifting? Expert mobile automatic & manual transmission diagnostic, fluid replacement, and solenoid repair in Dubai.",
 
     features: [
         "Automatic and manual transmission repair",

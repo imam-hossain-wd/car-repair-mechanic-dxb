@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const oilChangeService = {
   title: "Car Oil Change Dubai | Engine Oil Replacement & Service",
   name: "Oil Change Service",
-  metaTitle: "Car Oil Change Dubai – Fast Engine Oil Replacement & Maintenance",
-  metaDescription: "Keep your engine running smoothly with Car Repair Mechanic Dubai professional oil change service. Fast 5 to 15 minutes response for onsite oil replacement for all car types.",
+  metaTitle: "Doorstep Car Oil Change Service Dubai | Mobile Oil Replacement",
+  metaDescription: "Fast on-site synthetic engine oil change, filter replacement, and fluid checkup at your home or office anywhere in Dubai. Clean, fast & hassle-free.",
 
     features: [
         "Engine oil replacement for petrol and diesel cars",

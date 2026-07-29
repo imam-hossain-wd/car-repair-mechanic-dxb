@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const windowMotorRepair = {
     title: "Car Window Motor Repair Dubai | Power Window Not Working Fix Near You",
     name: "Car Window Motor Repair",
-    metaTitle: "Car Window Motor Repair Dubai – Power Window Not Working? Fix Near Me",
-    metaDescription: "Power window stuck or not working? Get expert car window motor repair in Dubai with Car Repair Mechanic Dubai. Fast 5 to 15 minutes mobile service, 24/7 onsite diagnosis, window motor repair and replacement for all car brands.",
+    metaTitle: "Car Window Motor & Regulator Repair Dubai | Doorstep Fix",
+    metaDescription: "Power window stuck? Fast mobile power window motor and regulator repair service in Dubai. We repair glass lifters and switches at your home or office.",
 
     features: [
         "Power window motor diagnostics",

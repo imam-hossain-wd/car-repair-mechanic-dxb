@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const batteryReplacementService = {
     title: "Car Battery Replacement Dubai | 24/7 Mobile Battery Service Near You",
     name: "Car Battery Replacement",
-    metaTitle: "Car Battery Replacement Dubai – 24/7 Mobile Battery Service Near Me",
-    metaDescription: "Looking for car battery replacement in Dubai? Get fast 24/7 mobile battery service with on-site installation, battery testing, and warranty with Car Repair Mechanic Dubai. We reach you anywhere in Dubai in 5 to 15 minutes.",
+    metaTitle: "24/7 Car Battery Replacement Dubai | On-Site Doorstep Fix",
+    metaDescription: "Dead car battery? Get instant doorstep battery replacement in Dubai within 15 mins. Genuine batteries with warranty, free testing & installation. Call 24/7!",
 
     features: [
         "On-site car battery replacement Dubai",

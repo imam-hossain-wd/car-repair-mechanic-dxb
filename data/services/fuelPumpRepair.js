@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const fuelPumpRepair = {
     title: "Car Fuel Pump Repair Dubai | Engine Not Starting & Fuel Issue Fix Near You",
     name: "Car Fuel Pump Repair",
-    metaTitle: "Car Fuel Pump Repair Dubai – Engine Not Starting? Fix Near Me",
-    metaDescription: "Car not starting or losing power? Get expert fuel pump repair in Dubai with Car Repair Mechanic Dubai fast 5 to 15 minutes mobile service. 24/7 onsite diagnosis and replacement anywhere in Dubai.",
+    metaTitle: "Car Fuel Pump Repair & Replacement Dubai | On-Site Service",
+    metaDescription: "Engine sputtering or not starting? Professional on-site fuel pump diagnosis, cleaning, and replacement across Dubai with genuine spare parts.",
 
     features: [
         "Fuel pump diagnostics and repair",

@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const absSystemRepairService = {
     title: "ABS System Repair Dubai | Expert Car Brake Services",
     name: "ABS System Repair",
-    metaTitle: "ABS System Repair Dubai – Professional Brake System Service",
-    metaDescription: "Is your ABS warning light on? Car Repair Mechanic Dubai's expert mechanics provide fast and reliable ABS system repair, brake diagnostics, and maintenance at your location.",
+    metaTitle: "Car ABS System Repair & Sensor Replacement Dubai | On-Site",
+    metaDescription: "ABS light on or brake slipping? Professional mobile ABS module repair, wheel speed sensor replacement, and brake diagnostics at your doorstep in Dubai.",
 
     features: [
         "ABS warning light diagnostics",

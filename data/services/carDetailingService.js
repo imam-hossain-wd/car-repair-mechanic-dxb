@@ -3,8 +3,8 @@ import { ServiceBanner, serviceImages } from "@/utils/assets";
 export const carDetailingService = {
     title: "Car Detailing Dubai | Mobile & Professional Auto Detailing Service",
     name: "Car Detailing Service",
-    metaTitle: "Car Detailing Dubai – Mobile Auto Cleaning & Polishing Service",
-    metaDescription: "Get your car looking brand new with Car Repair Mechanic Dubai professional car detailing service. Interior & exterior cleaning, polishing, waxing, and full mobile detailing at your doorstep.",
+    metaTitle: "Doorstep Car Detailing & Polishing Dubai | Mobile Service",
+    metaDescription: "Premium mobile car detailing at your doorstep in Dubai. Paint protection, interior deep cleaning, ceramic coating, and headlamp restoration.",
 
     features: [
         "Complete interior and exterior cleaning",
