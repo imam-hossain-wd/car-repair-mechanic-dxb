@@ -17,25 +17,13 @@ export const dubaiLandArea = {
   },
 
   hero: {
-    title: "Mobile Mechanic & Emergency Car Repair in Dubai Land",
-    subtitle:
-      "On-demand mobile car repair, emergency roadside assistance, certified battery replacement, computer diagnostics, and car AC repair near Al Barari, Arabian Ranches, Mudon, Falcon City of Wonders, and The Sustainable City.",
+    title: "24/7 Mobile Car Repair & Roadside Mechanic Dubai Land",
+    subtitle: "Prompt mobile workshop service across all Dubai Land communities including Villanova, Falcon City, Living Legends, and Majan. We provide full on-site car maintenance, battery installation, brake pad replacements, and emergency jump starts.",
   },
-
   seo: {
-    title:
-      "Car Repair Dubai Land | 24/7 Mobile Mechanic at Your Door",
-    description:
-      "Professional on-site car repair and mobile mechanic services in Dubai Land (Dubailand). Specialized in emergency battery replacement, car AC repair, diagnostics, brake service, and breakdown recovery across all Dubailand communities.",
+    title: "Mobile Mechanic Dubai Land | On-Site Auto Repair 24/7",
+    description: "Reliable mobile mechanic serving Dubai Land communities 24/7. Fast on-site battery replacement, computer diagnostics, AC gas refilling, and emergency breakdown assistance.",
   },
-
-  images: {
-    hero: "/images/areas/dubai-land/hero.webp",
-    cover: "/images/areas/dubai-land/cover.webp",
-    thumbnail: "/images/areas/dubai-land/thumb.webp",
-    map: "/images/areas/dubai-land/map.webp",
-  },
-
   overviewSection: {
     title: "Professional Mobile Car Repair Services in Dubai Land",
     heading:
@@ -78,56 +66,6 @@ export const dubaiLandArea = {
     title: "Our Car Repair Services in Dubai Land",
     subtitle:
       "Professional mobile mechanic and roadside assistance services tailored for luxury cars, SUVs, and everyday commuter vehicles.",
-    services: [
-      {
-        name: "Car Battery Replacement",
-        slug: "car-battery-replacement",
-        description:
-          "24/7 emergency battery testing and premium replacement with warranties, delivered right to your villa or community parking spot.",
-      },
-      {
-        name: "Mobile Mechanic Service",
-        slug: "mobile-mechanic",
-        description:
-          "Professional diagnostics and on-site mechanical repairs at townhouses, villas, apartments, and roadside breakdown spots.",
-      },
-      {
-        name: "Car AC Repair",
-        slug: "car-ac-repair",
-        description:
-          "Comprehensive AC climate control diagnostics, cleanings, gas refills, leak detection, and compressor repairs suited for Dubai weather.",
-      },
-      {
-        name: "Brake Pad Replacement",
-        slug: "brake-pad-replacement",
-        description:
-          "On-site brake system inspection, brake pad replacement, and sensor changes performed safely on your driveway.",
-      },
-      {
-        name: "Vehicle Diagnostics",
-        slug: "car-diagnostics",
-        description:
-          "Advanced OBD2 computerized scanning to decode check engine lights, transmission issues, and complex electrical faults.",
-      },
-      {
-        name: "Oil Change Service",
-        slug: "oil-change",
-        description:
-          "Quick, clean, and professional mobile engine oil and filter replacement using premium synthetic lubricants at your location.",
-      },
-      {
-        name: "Alternator Repair",
-        slug: "alternator-repair",
-        description:
-          "On-site diagnostics and rapid replacement of failing alternators and faulty vehicle charging system components.",
-      },
-      {
-        name: "Radiator Repair",
-        slug: "radiator-repair",
-        description:
-          "Cooling system flushes, radiator leak sealing, hose replacements, and thermostat repairs to combat engine overheating.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

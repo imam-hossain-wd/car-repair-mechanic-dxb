@@ -15,21 +15,17 @@ export const tradeCenterArea = {
     lat: 25.2185,
     lng: 55.2819,
   },
+
   hero: {
-    title: "Car Repair & Mobile Mechanic in Trade Center Dubai",
-    subtitle: "Expert mobile mechanic services, professional roadside rescue, corporate tower battery fitting, and car AC repair near Dubai World Trade Centre (DWTC), Emirates Towers, and Trade Center 1 & 2 loading zones.",
+    title: "Mobile Mechanic & Fast Car Repair Trade Center Dubai (DWTCA)",
+    subtitle: "Rapid response auto repair service for professionals, residents, and visitors in Trade Center 1 & 2. Immediate parking lot and roadside assistance near World Trade Centre, Sheikh Zayed Road towers, and Museum of the Future.",
   },
+
   seo: {
-    title: "Mobile Mechanic Trade Center Dubai | 24/7 Emergency Car Repair",
-    description: "24/7 emergency mobile mechanic and car repair services across Trade Center 1 and Trade Center 2 Dubai by Car Repair Mechanic Dubai. Call 055 183 1901 for quick corporate basement rescues and battery swaps.",
+    title: "Mobile Mechanic Trade Center Dubai | 24/7 Parking Lot Repair",
+    description: "Fast mobile car repair in Trade Center Dubai. On-site battery replacement, jump start, computer diagnostics, and emergency repair near Sheikh Zayed Road & DWTC. Call 24/7!",
   },
-  
-  images: {
-    hero: "/images/areas/trade-center/hero.webp",
-    cover: "/images/areas/trade-center/cover.webp",
-    thumbnail: "/images/areas/trade-center/thumb.webp",
-    map: "/images/areas/trade-center/map.webp",
-  },
+
   overviewSection: {
     title: "On-Site Car Repair Services in Trade Center 1 & 2",
     heading: "Trusted Mobile Mechanic & Corporate Roadside Assistance by Car Repair Mechanic Dubai",
@@ -63,48 +59,6 @@ export const tradeCenterArea = {
   servicesGridSection: {
     title: "Our On-Site Car Repair Services in Trade Center Dubai",
     subtitle: "Complete mobile auto garage solutions tailored for luxury sedans, SUVs, sports cars, and corporate fleets.",
-    services: [
-      {
-        name: "Car Battery Replacement",
-        slug: "car-battery-replacement",
-        description: "24/7 fast delivery and installation of premium batteries with ECU registration, delivered straight to your building parking spot.",
-      },
-      {
-        name: "Mobile Mechanic Service",
-        slug: "mobile-mechanic",
-        description: "On-site mechanical repairs, belt checks, and engine diagnostics handled directly at your workspace or hotel without hassle.",
-      },
-      {
-        name: "Car AC Repair",
-        slug: "car-ac-repair",
-        description: "Digital AC diagnostics, leak testing, compressor troubleshooting, and R134a/R1234yf gas refills for optimal cooling performance.",
-      },
-      {
-        name: "Brake Pad Replacement",
-        slug: "brake-pad-replacement",
-        description: "On-site brake pad and sensor replacements with caliper checks completed conveniently while you work.",
-      },
-      {
-        name: "Vehicle Diagnostics",
-        slug: "car-diagnostics",
-        description: "Computerized system scans to identify check engine lights, ABS faults, transmission errors, and electrical issues.",
-      },
-      {
-        name: "Oil Change Service",
-        slug: "oil-change",
-        description: "Clean, mess-free synthetic engine oil and filter replacements performed on-site inside office basements.",
-      },
-      {
-        name: "Alternator Repair",
-        slug: "alternator-repair",
-        description: "On-site testing and replacement of failing alternators and charging system components to keep your car starting reliably.",
-      },
-      {
-        name: "Radiator & Cooling Repair",
-        slug: "radiator-repair",
-        description: "Cooling fan module checks, thermostat replacements, coolant leak repairs, and hose fittings to protect your engine.",
-      },
-    ],
   },
   whyChooseUsSection: {
     title: "Why Drivers in Trade Center Choose Car Repair Mechanic Dubai",

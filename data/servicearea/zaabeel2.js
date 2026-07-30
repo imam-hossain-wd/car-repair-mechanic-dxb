@@ -1,5 +1,3 @@
-// src/data/serviceAreas/zaabeel2.js
-
 export const zaabeel2Area = {
   id: 145,
   slug: "zaabeel-2",
@@ -15,20 +13,17 @@ export const zaabeel2Area = {
     lat: 25.198,
     lng: 55.312,
   },
+
   hero: {
-    title: "On-Site Car Repair & Mobile Mechanic in Za'abeel Second Dubai",
-    subtitle: "Professional mobile mechanic services, roadside assistance, premium battery fitting, and vehicle AC repairs near Za'abeel Stadium, Dubai Royal Stables, and Nad Al Sheba borders.",
+    title: "On-Site Mobile Car Repair & Roadside Assistance Za'abeel Second",
+    subtitle: "Dedicated mobile auto repair coverage across Za'abeel 2. Fast arrival for residential villas, palace corridors, and commercial areas near Za'abeel Palace and Nad Al Sheba border for diagnostics, battery changes, and starter motor fixes.",
   },
+
   seo: {
-    title: "Mobile Mechanic Za'abeel 2 Dubai | Car Repair & Roadside Help",
-    description: "Expert 24/7 on-site car repair and mobile mechanic solutions across Za'abeel Second (Za'abeel 2) Dubai. Specializing in luxury vehicle diagnostic checks, professional AC restoration, and rapid battery swaps.",
+    title: "Mobile Mechanic Za'abeel Second Dubai | 24/7 Doorstep Repair",
+    description: "Reliable mobile mechanic in Za'abeel Second Dubai. On-site car battery replacement, computer scans, jump start, AC repairs, and mechanical services 24 hours a day.",
   },
-  images: {
-    hero: "/images/areas/zaabeel-2/hero.webp",
-    cover: "/images/areas/zaabeel-2/cover.webp",
-    thumbnail: "/images/areas/zaabeel-2/thumb.webp",
-    map: "/images/areas/zaabeel-2/map.webp",
-  },
+
   overviewSection: {
     title: "Premium Mobile Car Repair Services in Za'abeel Second",
     heading: "Trusted On-Site Mechanic & Elite Roadside Assistance in Za'abeel 2 Dubai",
@@ -62,48 +57,6 @@ export const zaabeel2Area = {
   servicesGridSection: {
     title: "Our Professional Car Repair Services in Za'abeel 2",
     subtitle: "Comprehensive on-site garage solutions tailored meticulously for exotic sports cars, premium luxury SUVs, and multi-car family fleets.",
-    services: [
-      {
-        name: "Car Battery Replacement",
-        slug: "car-battery-replacement",
-        description: "24/7 prompt premium battery installation with warranty registration and ECU coding, delivered straight to your villa driveway or club parking lot.",
-      },
-      {
-        name: "Mobile Mechanic Service",
-        slug: "mobile-mechanic",
-        description: "Expert mechanical repairs, part replacements, and on-site tune-ups performed at your residence, villa, or workplace without towing delays.",
-      },
-      {
-        name: "Car AC Repair",
-        slug: "car-ac-repair",
-        description: "Deep digital AC diagnostics, refrigerant gas refills, compressor clutch changes, and leak tracing engineered to defeat extreme summer heat.",
-      },
-      {
-        name: "Brake Pad Replacement",
-        slug: "brake-pad-replacement",
-        description: "On-site replacement of high-performance ceramic or semi-metallic brake pads, wear sensors, and brake fluid flushes right on your property.",
-      },
-      {
-        name: "Vehicle Diagnostics",
-        slug: "car-diagnostics",
-        description: "Full system scanning using advanced European and American vehicle software to safely diagnose check engine, ABS, Airbag, and transmission codes.",
-      },
-      {
-        name: "Oil Change Service",
-        slug: "oil-change",
-        description: "Eco-safe, vacuum-assisted premium synthetic engine oil and filter flushing carried out right outside your home with zero mess or residue.",
-      },
-      {
-        name: "Alternator Repair",
-        slug: "alternator-repair",
-        description: "On-site testing and rapid replacement of faulty alternators, regulators, and bad grounding cables to restore your vehicle's charging system.",
-      },
-      {
-        name: "Radiator Repair",
-        slug: "radiator-repair",
-        description: "Cooling fan diagnostics, thermostat swaps, radiator core flushing, and emergency coolant leak tracking to protect your engine from warping.",
-      },
-    ],
   },
   whyChooseUsSection: {
     title: "Why Drivers in Za'abeel 2 Choose Fix Car Dubai",

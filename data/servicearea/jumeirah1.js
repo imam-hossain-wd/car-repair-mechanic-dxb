@@ -27,32 +27,13 @@ export const jumeirah1Area = {
   },
 
   hero: {
-    title:
-      "Car Repair & On-Site Mobile Mechanic in Jumeirah 1 Dubai",
-    subtitle:
-      "Luxury vehicle diagnostics, rapid roadside assistance, premium battery replacement, and car AC repair near Mercato Shopping Mall, Jumeirah Mosque, La Mer area, and Pearl Jumeira."
-  },
-
-  seo: {
-    title:
-      "Mobile Mechanic Jumeirah 1 Dubai | 24/7 Car Repair at Home",
-    description:
-      "Professional 24/7 on-site car repair and mobile mechanic service in Jumeirah 1 Dubai by Car Repair Mechanic Dubai. Expert emergency battery replacement, European car diagnostics, and car AC repair at your villa or roadside."
-  },
-
-  images: {
-    hero:
-      "/images/areas/jumeirah-1/hero.webp",
-
-    cover:
-      "/images/areas/jumeirah-1/cover.webp",
-
-    thumbnail:
-      "/images/areas/jumeirah-1/thumb.webp",
-
-    map:
-      "/images/areas/jumeirah-1/map.webp",
-  },
+      title: "Premium Mobile Car Repair & Mechanic in Jumeirah 1 Dubai",
+      subtitle: "Elite mobile auto repair for luxury, sports, and everyday vehicles in Jumeirah 1. On-site service near La Mer, Mercato Shopping Mall, Jumeirah Beach Road, and Dubai Zoo area. Dealer-level diagnostics, battery changes, and brake repairs.",
+    },
+    seo: {
+      title: "Mobile Mechanic Jumeirah 1 Dubai | On-Site Car Repair 24/7",
+      description: "Premium mobile car repair in Jumeirah 1 Dubai. 24/7 luxury vehicle diagnostics, battery replacement, brake repair, AC service, and jump start at your villa or roadside.",
+    },
 
   overviewSection: {
     title:
@@ -108,96 +89,6 @@ export const jumeirah1Area = {
 
     subtitle:
       "Comprehensive on-site garage solutions tailored for high-end sports cars, premium SUVs, and multi-car family fleets.",
-
-    services: [
-      {
-        name:
-          "Car Battery Replacement",
-
-        slug:
-          "car-battery-replacement",
-
-        description:
-          "24/7 premium battery installation with complete ECU profiling and warranty registration on your villa driveway or beach parking lot.",
-      },
-
-      {
-        name:
-          "Mobile Mechanic Service",
-
-        slug:
-          "mobile-mechanic",
-
-        description:
-          "Expert mechanical component replacements, structural code checks, and on-site servicing executed at your primary residence without delay.",
-      },
-
-      {
-        name:
-          "Car AC Repair",
-
-        slug:
-          "car-ac-repair",
-
-        description:
-          "Advanced climate control scanning, eco-friendly refrigerant gas extraction and refill, leak tracing, and compressor clutch servicing.",
-      },
-
-      {
-        name:
-          "Brake Pad Replacement",
-
-        slug:
-          "brake-pad-replacement",
-
-        description:
-          "On-site replacement of high-performance ceramic or semi-metallic brake linings and wear sensors on-site with zero garage drop-off hassles.",
-      },
-
-      {
-        name:
-          "Vehicle Diagnostics",
-
-        slug:
-          "car-diagnostics",
-
-        description:
-          "OBD2 code scanning using premium diagnostic modules to safely target engine faults, transmission drops, and vehicle network issues.",
-      },
-
-      {
-        name:
-          "Oil Change Service",
-
-        slug:
-          "oil-change",
-
-        description:
-          "Vacuum-assisted premium engine oil flushing and filter installation executed cleanly in your garage with complete containment setups.",
-      },
-
-      {
-        name:
-          "Alternator Repair",
-
-        slug:
-          "alternator-repair",
-
-        description:
-          "On-site electrical health testing, faulty alternator swaps, and terminal wiring fixes to ensure healthy charging loops.",
-      },
-
-      {
-        name:
-          "Radiator Repair",
-
-        slug:
-          "radiator-repair",
-
-        description:
-          "Coolant expansion tank replacements, thermostat changes, and line pressure checking to safeguard against engine heat-soak.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

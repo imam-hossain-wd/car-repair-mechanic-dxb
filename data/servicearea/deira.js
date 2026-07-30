@@ -27,32 +27,14 @@ export const deiraArea = {
   },
 
   hero: {
-    title:
-      "Car Repair & Emergency Mobile Mechanic in Deira Dubai",
-    subtitle:
-      "Fast mobile car repair, emergency battery replacement, roadside assistance, AC repair, diagnostics, jump start, oil change, and on-site mechanic service near Al Rigga Metro Station, Al Ghurair Centre, Deira Clocktower, and Rigga Road.",
+    title: "Fast Mobile Car Repair & Roadside Assistance Deira Dubai",
+    subtitle: "Professional local mechanics on call 24/7 in Deira. We perform on-site battery swaps, starter motor repairs, AC gas refilling, computer scans, and emergency jump starts near Al Rigga Metro Station, Rigga Al Buteen, and Deira Clocktower.",
   },
-
   seo: {
-    title:
-      "Car Repair Deira Dubai | Mobile Mechanic & Roadside Help",
-    description:
-      "Professional car repair and mobile mechanic service in Al Rigga Dubai by Car Repair Mechanic Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and on-site vehicle maintenance throughout Deira and Al Rigga."
+    title: "Mobile Mechanic Deira Dubai | 24/7 Roadside Car Repair",
+    description: "Emergency mobile mechanic in Deira Dubai. Fast 24/7 on-site car battery replacement, computer diagnostics, jump starts, AC repair, and mechanical fixes. We come to you!",
   },
 
-  images: {
-    hero:
-      "/images/areas/al-rigga/hero.webp",
-
-    cover:
-      "/images/areas/al-rigga/cover.webp",
-
-    thumbnail:
-      "/images/areas/al-rigga/thumb.webp",
-
-    map:
-      "/images/areas/al-rigga/map.webp",
-  },
 
   overviewSection: {
     title:
@@ -108,96 +90,6 @@ export const deiraArea = {
 
     subtitle:
       "Professional mobile mechanic and roadside assistance services for all vehicle brands and models.",
-
-    services: [
-      {
-        name:
-          "Car Battery Replacement",
-
-        slug:
-          "car-battery-replacement",
-
-        description:
-          "24/7 emergency battery replacement service for all vehicle brands and models.",
-      },
-
-      {
-        name:
-          "Mobile Mechanic Service",
-
-        slug:
-          "mobile-mechanic",
-
-        description:
-          "Professional on-site mechanic service at apartments, hotels, offices, and roadside locations.",
-      },
-
-      {
-        name:
-          "Car AC Repair",
-
-        slug:
-          "car-ac-repair",
-
-        description:
-          "Advanced AC diagnostics, gas refill, cooling repair, and compressor inspection service.",
-      },
-
-      {
-        name:
-          "Brake Pad Replacement",
-
-        slug:
-          "brake-pad-replacement",
-
-        description:
-          "Brake inspection and brake pad replacement service.",
-      },
-
-      {
-        name:
-          "Vehicle Diagnostics",
-
-        slug:
-          "car-diagnostics",
-
-        description:
-          "Computerized diagnostics and warning light scanning service.",
-      },
-
-      {
-        name:
-          "Oil Change Service",
-
-        slug:
-          "oil-change",
-
-        description:
-          "Fast engine oil and oil filter replacement service.",
-      },
-
-      {
-        name:
-          "Alternator Repair",
-
-        slug:
-          "alternator-repair",
-
-        description:
-          "Charging system inspection and alternator repair service.",
-      },
-
-      {
-        name:
-          "Radiator Repair",
-
-        slug:
-          "radiator-repair",
-
-        description:
-          "Cooling system diagnostics and radiator maintenance service.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

@@ -30,13 +30,6 @@ export const dubaiFestivalCityArea = {
       "Professional car repair and mobile mechanic service in Dubai Festival City. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, and on-site vehicle maintenance throughout Festival City and nearby areas.",
   },
 
-  images: {
-    hero: "/images/areas/dubai-festival-city/hero.webp",
-    cover: "/images/areas/dubai-festival-city/cover.webp",
-    thumbnail: "/images/areas/dubai-festival-city/thumb.webp",
-    map: "/images/areas/dubai-festival-city/map.webp",
-  },
-
   overviewSection: {
     title: "Professional Mobile Car Repair Services in Dubai Festival City",
     heading: "Trusted On-Site Mechanic & Emergency Roadside Assistance",
@@ -77,54 +70,6 @@ export const dubaiFestivalCityArea = {
     title: "Our Car Repair Services in Dubai Festival City",
     subtitle:
       "Professional mobile mechanic and roadside assistance services for all vehicle brands and models.",
-    services: [
-      {
-        name: "Car Battery Replacement",
-        slug: "car-battery-replacement",
-        description:
-          "24/7 emergency battery replacement service for all vehicle brands and models.",
-      },
-      {
-        name: "Mobile Mechanic Service",
-        slug: "mobile-mechanic",
-        description:
-          "Professional on-site mechanic service at apartments, offices, malls, hotels, and roadside locations.",
-      },
-      {
-        name: "Car AC Repair",
-        slug: "car-ac-repair",
-        description:
-          "Advanced AC diagnostics, gas refill, cooling repair, and compressor inspection service.",
-      },
-      {
-        name: "Brake Pad Replacement",
-        slug: "brake-pad-replacement",
-        description: "Brake inspection and brake pad replacement service.",
-      },
-      {
-        name: "Vehicle Diagnostics",
-        slug: "car-diagnostics",
-        description:
-          "Computerized diagnostics and warning light scanning service.",
-      },
-      {
-        name: "Oil Change Service",
-        slug: "oil-change",
-        description: "Fast engine oil and oil filter replacement service.",
-      },
-      {
-        name: "Alternator Repair",
-        slug: "alternator-repair",
-        description:
-          "Charging system inspection and alternator repair service.",
-      },
-      {
-        name: "Radiator Repair",
-        slug: "radiator-repair",
-        description:
-          "Cooling system diagnostics and radiator maintenance service.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

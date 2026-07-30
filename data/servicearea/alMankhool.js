@@ -25,31 +25,12 @@ export const alMankhoolArea = {
   },
 
   hero: {
-    title:
-      "24/7 Mobile Mechanic & Car Repair Service in Al Mankhool Dubai",
-    subtitle:
-      "Professional on-site car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, jump start, and mobile mechanic support near BurJuman, Mankhool Road, and residential apartment areas in Al Mankhool Dubai.",
+    title: "On-Site Mobile Car Repair & Emergency Mechanic Al Mankhool",
+    subtitle: "Trusted residential and roadside mobile mechanic service throughout Al Mankhool Bur Dubai. Certified repairs for car batteries, alternators, brakes, AC units, and engine electronics near Mankhool Park, Kuwait Street, and Al Fahidi.",
   },
-
   seo: {
-    title:
-      "Car Repair Al Mankhool Dubai | 24/7 Emergency Mechanic Service",
-    description:
-      "Trusted car repair and mobile mechanic service in Al Mankhool Dubai by Car Repair Mechanic Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and complete on-site vehicle repair.",
-  },
-
-  images: {
-    hero:
-      "/images/areas/al-mankhool/hero.webp",
-
-    cover:
-      "/images/areas/al-mankhool/cover.webp",
-
-    thumbnail:
-      "/images/areas/al-mankhool/thumb.webp",
-
-    map:
-      "/images/areas/al-mankhool/map.webp",
+    title: "Mobile Mechanic Al Mankhool Dubai | Emergency Car Repair 24/7",
+    description: "Fast mobile mechanic service in Al Mankhool Dubai. On-site car repair, battery replacement, diagnostics, jump start, and AC maintenance available 24 hours a day with zero towing.",
   },
 
   overviewSection: {
@@ -106,96 +87,6 @@ export const alMankhoolArea = {
 
     subtitle:
       "Professional mobile mechanic and emergency roadside assistance services available throughout Al Mankhool.",
-
-    services: [
-      {
-        name:
-          "Car Battery Replacement",
-
-        slug:
-          "car-battery-replacement",
-
-        description:
-          "24/7 emergency battery replacement service for all vehicle brands.",
-      },
-
-      {
-        name:
-          "Mobile Mechanic Service",
-
-        slug:
-          "mobile-mechanic",
-
-        description:
-          "Professional mechanic support at your home, office, or roadside location.",
-      },
-
-      {
-        name:
-          "Car AC Repair",
-
-        slug:
-          "car-ac-repair",
-
-        description:
-          "Advanced AC diagnostics, gas refill, and cooling repair service.",
-      },
-
-      {
-        name:
-          "Brake Pad Replacement",
-
-        slug:
-          "brake-pad-replacement",
-
-        description:
-          "Professional brake inspection and brake pad replacement.",
-      },
-
-      {
-        name:
-          "Car Diagnostics",
-
-        slug:
-          "car-diagnostics",
-
-        description:
-          "Computerized vehicle diagnostics and engine fault scanning.",
-      },
-
-      {
-        name:
-          "Oil Change Service",
-
-        slug:
-          "oil-change",
-
-        description:
-          "Fast engine oil and oil filter replacement service.",
-      },
-
-      {
-        name:
-          "Alternator Repair",
-
-        slug:
-          "alternator-repair",
-
-        description:
-          "Charging system inspection and alternator repair service.",
-      },
-
-      {
-        name:
-          "Radiator Repair",
-
-        slug:
-          "radiator-repair",
-
-        description:
-          "Cooling system repair and radiator maintenance service.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

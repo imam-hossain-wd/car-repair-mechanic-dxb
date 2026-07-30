@@ -12,8 +12,6 @@ export function FAQSection({ area }) {
   const [openIndex, setOpenIndex] = useState(null);
   const areaName = area?.name || "Dubai";
   const faqs = area?.faqSection?.faqs || [];
-
-  console.log(faqs, 'faqs---')
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };

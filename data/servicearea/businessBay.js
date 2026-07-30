@@ -2,73 +2,38 @@
 
 export const businessBayArea = {
   id: 7,
-
   slug: "business-bay",
-
   href: "/area-we-serve/business-bay",
-
   name: "Business Bay",
-
   shortName: "Business Bay",
-
   city: "Dubai",
-
   country: "UAE",
-
   type: "commercial-business",
-
   popular: true,
-
   responseTime: "16 Minutes",
-
   coordinates: {
     lat: 25.186,
     lng: 55.274,
   },
-
+  
   hero: {
-    title:
-      "24/7 On-Site Car Repair & Mobile Mechanic in Business Bay Dubai",
-
-    subtitle:
-      "Professional mobile car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, jump start, oil change, and on-site mechanic service near Business Bay Metro Station, Bay Avenue, Downtown Dubai, and office towers."
+    title: "24/7 Mobile Mechanic & Emergency Car Repair Business Bay Dubai",
+    subtitle: "Stuck in a basement parking or roadside in Business Bay? Our mobile auto workshop brings certified mechanics directly to your tower or parking spot near Executive Towers, Bay Square, Dubai Canal, and Bay Avenue with zero towing required.",
   },
-
   seo: {
-    title:
-      "Mobile Mechanic Business Bay Dubai | 24/7 On-Site Car Repair",
-
-    description:
-      "Trusted car repair and mobile mechanic service in Business Bay Dubai by Car Repair Mechanic Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and on-site vehicle maintenance across Business Bay and Downtown Dubai.",
-  },
-
-  images: {
-    hero:
-      "/images/areas/business-bay/hero.webp",
-
-    cover:
-      "/images/areas/business-bay/cover.webp",
-
-    thumbnail:
-      "/images/areas/business-bay/thumb.webp",
-
-    map:
-      "/images/areas/business-bay/map.webp",
+    title: "Mobile Mechanic Business Bay Dubai | 24/7 Car Repair On-Site",
+    description: "Reliable mobile car repair in Business Bay Dubai. Fast 24/7 response for battery replacement, computer diagnostics, AC gas refill, jump starts, and basement parking repairs. Call now!",
   },
 
   overviewSection: {
     title:
       "Professional Mobile Car Repair Services in Business Bay Dubai",
-
     heading:
       "Fast On-Site Mechanic & Emergency Roadside Assistance",
-
     description:
       "Car Repair Mechanic Dubai provides professional mobile mechanic and emergency car repair services throughout Business Bay Dubai. Our experienced automotive technicians regularly assist drivers near Business Bay Metro Station, Bay Avenue, Dubai Canal, office towers, residential apartments, hotel parking areas, and major roads connecting Downtown Dubai and Sheikh Zayed Road.",
-
     descriptionTwo:
       "We specialize in emergency battery replacement, roadside assistance, diagnostics, car AC repair, brake repair, alternator repair, radiator repair, oil change, engine diagnostics, and complete on-site vehicle maintenance. Whether your car breaks down in office parking, basement parking areas, valet zones, or roadside locations, our mobile mechanics arrive quickly with advanced diagnostic equipment and professional repair tools.",
-
     highlights: [
       "24/7 Emergency Mobile Mechanic",
       "Fast Business Bay Response Time",
@@ -82,16 +47,12 @@ export const businessBayArea = {
   emergencyContentSection: {
     title:
       "24/7 Emergency Roadside Assistance in Business Bay",
-
     heading:
       "Fast Vehicle Breakdown Recovery & Mobile Mechanic Support",
-
     description:
       "Heavy traffic, basement parking areas, office towers, valet parking zones, and busy commercial roads make vehicle breakdowns stressful in Business Bay Dubai. Our emergency roadside assistance team provides fast and professional mobile mechanic support across Business Bay and nearby Downtown Dubai.",
-
     descriptionTwo:
       "We regularly assist customers with dead batteries, overheating engines, AC cooling failures, brake problems, electrical faults, warning lights, flat batteries, and non-starting vehicles. Our fully equipped mobile repair units are available day and night to provide professional roadside assistance directly at your location.",
-
     emergencyServices: [
       "Emergency Battery Replacement",
       "Roadside Assistance",
@@ -107,110 +68,8 @@ export const businessBayArea = {
   servicesGridSection: {
     title:
       "Our Car Repair Services in Business Bay Dubai",
-
     subtitle:
       "Professional mobile mechanic and roadside assistance services for all vehicle brands and models.",
-
-    services: [
-      {
-        name:
-          "Car Battery Replacement",
-
-        slug:
-          "car-battery-replacement",
-
-        description:
-          "24/7 emergency battery replacement service for all vehicle brands and models.",
-      },
-
-      {
-        name:
-          "Mobile Mechanic Service",
-
-        slug:
-          "mobile-mechanic",
-
-        description:
-          "Professional on-site mechanic service at offices, apartments, hotels, and roadside locations.",
-      },
-
-      {
-        name:
-          "Car AC Repair",
-
-        slug:
-          "car-ac-repair",
-
-        description:
-          "Advanced AC diagnostics, gas refill, cooling repair, and compressor inspection service.",
-      },
-
-      {
-        name:
-          "Brake Pad Replacement",
-
-        slug:
-          "brake-pad-replacement",
-
-        description:
-          "Brake inspection, brake pad replacement, and brake system maintenance service.",
-      },
-
-      {
-        name:
-          "Vehicle Diagnostics",
-
-        slug:
-          "car-diagnostics",
-
-        description:
-          "Computerized diagnostics and warning light scanning service.",
-      },
-
-      {
-        name:
-          "Oil Change Service",
-
-        slug:
-          "oil-change",
-
-        description:
-          "Fast engine oil and oil filter replacement service.",
-      },
-
-      {
-        name:
-          "Alternator Repair",
-
-        slug:
-          "alternator-repair",
-
-        description:
-          "Charging system inspection and alternator repair service.",
-      },
-
-      {
-        name:
-          "Radiator Repair",
-
-        slug:
-          "radiator-repair",
-
-        description:
-          "Cooling system diagnostics and radiator maintenance service.",
-      },
-
-      {
-        name:
-          "Engine Diagnostics",
-
-        slug:
-          "engine-diagnostics",
-
-        description:
-          "Advanced engine fault diagnostics and computerized scanning service.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

@@ -74,7 +74,7 @@ export function HomeHero() {
             </h1>
 
             <p className="text-md text-white max-w-lg">
-              Dubai&lsquo;s top-rated mobile mechanic service brought directly to your doorstep. On-site car battery replacement, auto AC repair, engine diagnostics, and 24/7 emergency roadside support in 15–30 minutes.
+              Dubai&lsquo;s top-rated mobile mechanic service brought directly to your doorstep. On-site car battery replacement, auto AC repair, engine diagnostics, and 24/7 emergency roadside support in 5–15 minutes.
             </p>
           </div>
 

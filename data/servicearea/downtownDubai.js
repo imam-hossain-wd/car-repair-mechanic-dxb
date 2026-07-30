@@ -27,35 +27,14 @@ export const downtownDubaiArea = {
   },
 
   hero: {
-    title:
-      "Premium Car Repair & Mobile Mechanic in Downtown Dubai",
-
-    subtitle:
-      "Professional mobile mechanic services, luxury roadside assistance, instant basement battery fitting, and car AC repair near Burj Khalifa, Dubai Mall underground parking, and Sheikh Mohammed bin Rashid Boulevard."
+    title: "On-Site Mobile Car Repair & Mechanic in Downtown Dubai",
+    subtitle: "Premium mobile auto repair services tailored for residents and visitors across Downtown Dubai. Rapid arrival near Burj Khalifa, Dubai Mall, Sheikh Mohammed Bin Rashid Boulevard, and South Ridge for emergency battery replacement, diagnostics, and mechanical repairs.",
   },
-
   seo: {
-    title:
-      "Car Repair Downtown Dubai | Premium Mobile Mechanic 24/7",
-
-    description:
-      "Expert 24/7 on-site car repair and mobile mechanic solutions across Downtown Dubai by Car Repair Mechanic Dubai. Specializing in underground basement rescue, luxury vehicle diagnostics, AC restoration, and rapid battery swaps."
+    title: "Mobile Mechanic Downtown Dubai | On-Site Car Repair & Battery",
+    description: "Top-rated 24/7 mobile car repair in Downtown Dubai. On-site diagnostics, battery replacement, jump start, AC repair, and brake service near Burj Khalifa & Dubai Mall. Fast arrival.",
   },
-
-  images: {
-    hero:
-      "/images/areas/downtown-dubai/hero.webp",
-
-    cover:
-      "/images/areas/downtown-dubai/cover.webp",
-
-    thumbnail:
-      "/images/areas/downtown-dubai/thumb.webp",
-
-    map:
-      "/images/areas/downtown-dubai/map.webp",
-  },
-
+  
   overviewSection: {
     title:
       "Premium Mobile Car Repair Services in Downtown Dubai",
@@ -110,96 +89,6 @@ export const downtownDubaiArea = {
 
     subtitle:
       "Comprehensive on-site garage solutions tailored meticulously for exotic sports cars, premium luxury SUVs, and executive sedans.",
-
-    services: [
-      {
-        name:
-          "Car Battery Replacement",
-
-        slug:
-          "car-battery-replacement",
-
-        description:
-          "24/7 prompt premium battery installation with digital warranty registration and mandatory ECU coding, delivered straight to your residential tower valet or underground space.",
-      },
-
-      {
-        name:
-          "Mobile Mechanic Service",
-
-        slug:
-          "mobile-mechanic",
-
-        description:
-          "Expert mechanical repairs, part replacements, and on-site troubleshooting performed at your residence, office block, or public lot without towing delays.",
-      },
-
-      {
-        name:
-          "Car AC Repair",
-
-        slug:
-          "car-ac-repair",
-
-        description:
-          "Deep digital AC diagnostics, pressurized refrigerant gas refills, compressor clutch changes, and leak tracing engineered to defeat extreme summer temperatures.",
-      },
-
-      {
-        name:
-          "Brake Pad Replacement",
-
-        slug:
-          "brake-pad-replacement",
-
-        description:
-          "On-site replacement of high-performance ceramic or semi-metallic brake pads, wear sensors, and computer-guided brake caliper resets right on your property.",
-      },
-
-      {
-        name:
-          "Vehicle Diagnostics",
-
-        slug:
-          "car-diagnostics",
-
-        description:
-          "Full module scanning using advanced European and American vehicle software to safely diagnose check engine, ABS, airbag, and transmission fault codes.",
-      },
-
-      {
-        name:
-          "Oil Change Service",
-
-        slug:
-          "oil-change",
-
-        description:
-          "Eco-safe, vacuum-assisted premium synthetic engine oil and filter flushing carried out cleanly inside your allocated parking bay with zero environmental residue.",
-      },
-
-      {
-        name:
-          "Alternator Repair",
-
-        slug:
-          "alternator-repair",
-
-        description:
-          "On-site testing and rapid replacement of faulty alternators, voltage regulators, and worn drive belts to restore your vehicle's charging profile.",
-      },
-
-      {
-        name:
-          "Radiator Repair",
-
-        slug:
-          "radiator-repair",
-
-        description:
-          "Cooling fan diagnostics, thermostat swaps, radiator core flushing, and emergency coolant leak tracking to protect high-performance engines from warping.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

@@ -2,34 +2,20 @@
 export const alJadafArea = {
   id: 12,
   slug: "al-jadaf",
-  href: "/area-we-serve/al-jadaf",
   name: "Al Jadaf",
-  shortName: "Jadaf",
-  city: "Dubai",
-  country: "UAE",
-  type: "residential-commercial",
-  popular: true,
   responseTime: "5–15 Minutes",
   coordinates: {
-    lat: 25.228,
-    lng: 55.330,
+    lat: 25.2141226,
+    lng: 55.306689,
   },
 
   hero: {
     title: "Emergency Car Repair & Mobile Mechanic in Al Jadaf Dubai",
     subtitle: "Professional mobile car repair, emergency roadside assistance, battery replacement, diagnostics, AC repair, jump start, oil change, and on-site mechanic service near Jaddaf Waterfront, Al Jadaf Metro Station, Dubai Healthcare City, and Culture Village.",
   },
-
   seo: {
     title: "Mobile Mechanic Al Jadaf Dubai | On-Site Car Repair 24/7",
     description: "Professional car repair and mobile mechanic service in Al Jadaf Dubai by Car Repair Mechanic Dubai. We provide 24/7 emergency battery replacement, roadside assistance, computer diagnostics, AC repair, brake service, jump start, and on-site maintenance.",
-  },
-
-  images: {
-    hero: "/images/areas/al-jadaf/hero.webp",
-    cover: "/images/areas/al-jadaf/cover.webp",
-    thumbnail: "/images/areas/al-jadaf/thumb.webp",
-    map: "/images/areas/al-jadaf/map.webp",
   },
 
   overviewSection: {
@@ -76,49 +62,6 @@ export const alJadafArea = {
     title: "Our Car Repair Services in Al Jadaf Dubai",
 
     subtitle: "Professional mobile mechanic and roadside assistance services for all vehicle brands and models.",
-
-    services: [
-      {
-        name: "Car Battery Replacement",
-        slug: "car-battery-replacement",
-        description: "24/7 emergency battery replacement with genuine branded batteries and full warranty.",
-      },
-      {
-        name: "Mobile Mechanic Service",
-        slug: "mobile-mechanic",
-        description: "Professional on-site mechanic service at apartments, offices, hotels, and roadside locations.",
-      },
-      {
-        name: "Car AC Repair",
-        slug: "car-ac-repair",
-        description: "Advanced AC diagnostics, gas refill, cooling repair, leak detection, and compressor inspection.",
-      },
-      {
-        name: "Brake Pad Replacement",
-        slug: "brake-pad-replacement",
-        description: "On-site brake inspection, disc resurfacing, and high-quality brake pad replacement service.",
-      },
-      {
-        name: "Vehicle Diagnostics",
-        slug: "car-diagnostics",
-        description: "Computerized ECU diagnostics, engine fault detection, and warning light scanning service.",
-      },
-      {
-        name: "Oil Change Service",
-        slug: "oil-change",
-        description: "Fast engine oil change, filter replacement, and multi-point vehicle inspection at your location.",
-      },
-      {
-        name: "Alternator Repair",
-        slug: "alternator-repair",
-        description: "Charging system inspection, battery testing, and full alternator repair or replacement.",
-      },
-      {
-        name: "Radiator Repair",
-        slug: "radiator-repair",
-        description: "Engine cooling system diagnostics, leak repair, coolant refill, and radiator maintenance.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

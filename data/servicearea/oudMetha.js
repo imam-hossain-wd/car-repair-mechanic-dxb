@@ -18,25 +18,13 @@ export const oudMethaArea = {
   },
 
   hero: {
-    title: "24/7 Car Repair & On-Site Mobile Mechanic in Oud Metha Dubai",
-    subtitle:
-      "Professional on-site car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, oil change, jump start, and mobile mechanic service near Oud Metha Metro Station, American Hospital Dubai, and Dubai Healthcare City.",
+    title: "Emergency Car Repair & Mobile Mechanic in Oud Metha Dubai",
+    subtitle: "Fast, certified mobile mechanic arriving at your doorstep, office, or roadside location in Oud Metha. On-site car repair, battery replacement, computer diagnostics, AC repair, brake service, and 24/7 roadside assistance near Al Nasr Leisureland, Dubai Healthcare City, and Rashid Hospital.",
   },
-
   seo: {
-    title:
-      "Car Repair Oud Metha Dubai | Fast Mobile Mechanic Service",
-    description:
-      "Trusted car repair and mobile mechanic service in Oud Metha Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and complete on-site vehicle maintenance.",
+    title: "Mobile Mechanic Oud Metha Dubai | 24/7 On-Site Car Repair",
+    description: "Fast 24/7 mobile mechanic and car repair service in Oud Metha Dubai. On-site battery replacement, computer diagnostics, AC repair, jump starts, and brake service. Tow-free auto repair near you.",
   },
-
-  images: {
-    hero: "/images/areas/oud-metha/hero.webp",
-    cover: "/images/areas/oud-metha/cover.webp",
-    thumbnail: "/images/areas/oud-metha/thumb.webp",
-    map: "/images/areas/oud-metha/map.webp",
-  },
-
   overviewSection: {
     title: "Reliable Mobile Car Repair Services in Oud Metha Dubai",
     heading:
@@ -78,56 +66,7 @@ export const oudMethaArea = {
     title: "Our Car Repair Services in Oud Metha Dubai",
     subtitle:
       "Professional mobile mechanic and roadside assistance services available across Oud Metha Dubai.",
-    services: [
-      {
-        name: "Car Battery Replacement",
-        slug: "car-battery-replacement",
-        description:
-          "24/7 emergency battery replacement service for all vehicle brands and models.",
-      },
-      {
-        name: "Mobile Mechanic Service",
-        slug: "mobile-mechanic",
-        description:
-          "Professional on-site mechanic service at your home, office, or roadside location.",
-      },
-      {
-        name: "Car AC Repair",
-        slug: "car-ac-repair",
-        description:
-          "Advanced AC diagnostics, gas refill, and cooling repair solutions.",
-      },
-      {
-        name: "Brake Pad Replacement",
-        slug: "brake-pad-replacement",
-        description:
-          "Complete brake inspection and brake pad replacement service.",
-      },
-      {
-        name: "Vehicle Diagnostics",
-        slug: "car-diagnostics",
-        description:
-          "Computerized diagnostics and warning light scanning service.",
-      },
-      {
-        name: "Oil Change Service",
-        slug: "oil-change",
-        description:
-          "Fast engine oil and oil filter replacement service.",
-      },
-      {
-        name: "Alternator Repair",
-        slug: "alternator-repair",
-        description:
-          "Professional charging system inspection and alternator repair.",
-      },
-      {
-        name: "Radiator Repair",
-        slug: "radiator-repair",
-        description:
-          "Cooling system inspection and radiator maintenance service.",
-      },
-    ],
+
   },
 
   whyChooseUsSection: {

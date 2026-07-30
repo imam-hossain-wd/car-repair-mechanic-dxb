@@ -27,31 +27,12 @@ export const jumeirah2Area = {
   },
 
   hero: {
-    title:
-      "24/7 Car Repair & Mobile Mechanic Service in Jumeirah 2 Dubai",
-    subtitle:
-      "Bespoke mobile car repair, emergency roadside assistance, luxury battery replacement, and automotive AC repairs near Boxpark, Jumeirah Bay Island, and Jumeirah Beach Road 2."
+    title: "Doorstep Mobile Mechanic & Auto Repair Service Jumeirah 2",
+    subtitle: "Convenient home and villa car repair in Jumeirah 2. Certified technicians equipped to perform diagnostic checks, electrical repairs, battery replacements, and oil changes directly in your driveway near Boxpark and Four Seasons Resort.",
   },
-
   seo: {
-    title:
-      "Car Repair Jumeirah 2 Dubai | On-Site Mobile Mechanic 24/7",
-    description:
-      "Expert 24/7 on-site car repair and mobile mechanic solutions across Jumeirah 2 Dubai by Car Repair Mechanic Dubai. Specializing in luxury vehicle diagnostic checks, professional AC restoration, and rapid battery swaps."
-  },
-
-  images: {
-    hero:
-      "/images/areas/jumeirah-2/hero.webp",
-
-    cover:
-      "/images/areas/jumeirah-2/cover.webp",
-
-    thumbnail:
-      "/images/areas/jumeirah-2/thumb.webp",
-
-    map:
-      "/images/areas/jumeirah-2/map.webp",
+    title: "Mobile Mechanic Jumeirah 2 Dubai | Villa & Roadside Car Repair",
+    description: "Expert mobile mechanic in Jumeirah 2 Dubai. Fast villa service for battery replacement, computer scans, brake replacement, and 24/7 emergency roadside assistance.",
   },
 
   overviewSection: {
@@ -108,96 +89,6 @@ export const jumeirah2Area = {
 
     subtitle:
       "Comprehensive on-site garage solutions tailored meticulously for exotic sports cars, premium luxury SUVs, and multi-car family fleets.",
-
-    services: [
-      {
-        name:
-          "Car Battery Replacement",
-
-        slug:
-          "car-battery-replacement",
-
-        description:
-          "24/7 prompt premium battery installation with warranty registration and ECU coding, delivered straight to your villa driveway or beach parking lot.",
-      },
-
-      {
-        name:
-          "Mobile Mechanic Service",
-
-        slug:
-          "mobile-mechanic",
-
-        description:
-          "Expert mechanical repairs, part replacements, and on-site tune-ups performed at your residence, villa, or workplace without towing delays.",
-      },
-
-      {
-        name:
-          "Car AC Repair",
-
-        slug:
-          "car-ac-repair",
-
-        description:
-          "Deep digital AC diagnostics, refrigerant gas refills, compressor clutch changes, and leak tracing engineered to defeat extreme maritime humidity.",
-      },
-
-      {
-        name:
-          "Brake Pad Replacement",
-
-        slug:
-          "brake-pad-replacement",
-
-        description:
-          "On-site replacement of high-performance ceramic or semi-metallic brake pads, wear sensors, and brake fluid flushes right on your property.",
-      },
-
-      {
-        name:
-          "Vehicle Diagnostics",
-
-        slug:
-          "car-diagnostics",
-
-        description:
-          "Full system scanning using advanced European and American vehicle software to safely diagnose check engine, ABS, Airbag, and transmission codes.",
-      },
-
-      {
-        name:
-          "Oil Change Service",
-
-        slug:
-          "oil-change",
-
-        description:
-          "Eco-safe, vacuum-assisted premium synthetic engine oil and filter flushing carried out right outside your home with zero mess or residue.",
-      },
-
-      {
-        name:
-          "Alternator Repair",
-
-        slug:
-          "alternator-repair",
-
-        description:
-          "On-site testing and rapid replacement of faulty alternators, regulators, and bad grounding cables to restore your vehicle's charging system.",
-      },
-
-      {
-        name:
-          "Radiator Repair",
-
-        slug:
-          "radiator-repair",
-
-        description:
-          "Cooling fan diagnostics, thermostat swaps, radiator core flushing, and emergency coolant leak tracking to protect your engine from warping.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

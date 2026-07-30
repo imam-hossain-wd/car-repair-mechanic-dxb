@@ -17,25 +17,13 @@ export const dubaiSiliconOasisArea = {
   },
 
   hero: {
-    title: "24/7 Car Repair & Mobile Mechanic in Dubai Silicon Oasis",
-    subtitle:
-      "Professional on-site car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, jump start, oil change, and mobile mechanic service near Silicon Central Mall, DSO Headquarters, and residential communities in Dubai Silicon Oasis.",
+    title: "Mobile Mechanic & On-Site Car Repair Dubai Silicon Oasis (DSO)",
+    subtitle: "Complete auto repair brought directly to your villa, apartment, or office parking in DSO. Fast 24/7 arrival near Silicon Central Mall, Dubai Digital Park, and Academic City for computer scans, battery swaps, AC repairs, and mechanical fixes.",
   },
-
   seo: {
-    title:
-      "Car Repair Dubai Silicon Oasis | Emergency Mobile Mechanic",
-    description:
-      "Trusted car repair and mobile mechanic service in Dubai Silicon Oasis. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and complete on-site vehicle maintenance."
+    title: "Mobile Mechanic Dubai Silicon Oasis | 24/7 DSO Car Repair",
+    description: "Top-rated mobile car repair in Dubai Silicon Oasis (DSO). On-site battery replacement, computer diagnostics, jump starts, AC repair, and brake replacement. Fast 24/7 response.",
   },
-
-  images: {
-    hero: "/images/areas/dubai-silicon-oasis/hero.webp",
-    cover: "/images/areas/dubai-silicon-oasis/cover.webp",
-    thumbnail: "/images/areas/dubai-silicon-oasis/thumb.webp",
-    map: "/images/areas/dubai-silicon-oasis/map.webp",
-  },
-
   overviewSection: {
     title: "Reliable Mobile Car Repair Services in Dubai Silicon Oasis",
     heading: "Professional On-Site Car Repair & Roadside Assistance in DSO",
@@ -76,56 +64,6 @@ export const dubaiSiliconOasisArea = {
     title: "Our Car Repair Services in Dubai Silicon Oasis",
     subtitle:
       "Professional mobile mechanic and emergency roadside assistance services available throughout DSO Dubai.",
-    services: [
-      {
-        name: "Car Battery Replacement",
-        slug: "car-battery-replacement",
-        description:
-          "24/7 emergency battery replacement service for all car brands and vehicle models.",
-      },
-      {
-        name: "Mobile Mechanic Service",
-        slug: "mobile-mechanic",
-        description:
-          "Professional on-site mechanic service at your home, office, or roadside location.",
-      },
-      {
-        name: "Car AC Repair",
-        slug: "car-ac-repair",
-        description:
-          "Advanced AC diagnostics, gas refill, compressor inspection, and cooling repair.",
-      },
-      {
-        name: "Brake Pad Replacement",
-        slug: "brake-pad-replacement",
-        description:
-          "Complete brake inspection and brake pad replacement service.",
-      },
-      {
-        name: "Vehicle Diagnostics",
-        slug: "car-diagnostics",
-        description:
-          "Computerized diagnostics and engine warning light scanning.",
-      },
-      {
-        name: "Oil Change Service",
-        slug: "oil-change",
-        description:
-          "Fast engine oil and oil filter replacement service.",
-      },
-      {
-        name: "Alternator Repair",
-        slug: "alternator-repair",
-        description:
-          "Professional charging system inspection and alternator repair.",
-      },
-      {
-        name: "Radiator Repair",
-        slug: "radiator-repair",
-        description:
-          "Cooling system diagnostics and radiator maintenance service.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

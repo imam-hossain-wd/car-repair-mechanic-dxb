@@ -27,46 +27,23 @@ export const jumeirah3Area = {
   },
 
   hero: {
-    title:
-      "Emergency Car Repair & Mobile Mechanic in Jumeirah 3 Dubai",
-    subtitle:
-      "Elite mobile mechanic garage, roadside rescue setups, premium car battery diagnostics, and climate control AC repairs near Kite Beach, Sunset Beach, and Jumeirah Beach Road 3."
+    title: "24/7 Mobile Car Repair & Emergency Service Jumeirah 3",
+    subtitle: "Fast and professional mobile auto repair delivered to your location in Jumeirah 3 near Sunset Mall, Kite Beach, and Umm Suqeim border. Expert technicians handling battery swaps, AC repairs, alternator replacements, and brake maintenance on-site.",
   },
-
   seo: {
-    title:
-      "Mobile Mechanic Jumeirah 3 Dubai | Car Repair Near Kite Beach",
-    description:
-      "Professional 24/7 on-site car repair and mobile mechanic services in Jumeirah 3 Dubai by Car Repair Mechanic Dubai. Specializing in high-performance automotive diagnostics, battery replacement, and brake care near Kite Beach."
-  },
-
-  images: {
-    hero:
-      "/images/areas/jumeirah-3/hero.webp",
-
-    cover:
-      "/images/areas/jumeirah-3/cover.webp",
-
-    thumbnail:
-      "/images/areas/jumeirah-3/thumb.webp",
-
-    map:
-      "/images/areas/jumeirah-3/map.webp",
+    title: "Mobile Mechanic Jumeirah 3 Dubai | Fast On-Site Auto Repair",
+    description: "Trusted 24/7 mobile mechanic in Jumeirah 3 Dubai. Villa driveway and roadside battery replacement, jump starts, AC repair, and diagnostic scans with genuine parts.",
   },
 
   overviewSection: {
     title:
       "Premium Mobile Car Repair Services in Jumeirah 3",
-
     heading:
       "Trusted On-Site Mechanic & Elite Roadside Assistance in Jumeirah 3 Dubai",
-
     description:
       "Car Repair Mechanic Dubai runs top-tier, on-demand mobile mechanic and luxury roadside support across Jumeirah 3. This area features large family estates, high-end private villas, and highly visited coastline spots like Kite Beach and Sunset Beach. Our mobile workshops are fully optimized to complete complex auto services on-site, skipping the traditional need to visit an off-site workshop.",
-
     descriptionTwo:
       "Our services include professional battery replacements with battery management system matching, advanced AC leak tracing, engine oil extractions, mechanical troubleshooting, and brake pad swaps. We maintain an expert local crew that understands the specific challenges of salt air exposure and extreme coastal heat on luxury vehicles.",
-
     highlights: [
       "24/7 Specialized Mobile Mechanic",
       "15-Minute Jumeirah 3 Response",
@@ -80,16 +57,12 @@ export const jumeirah3Area = {
   emergencyContentSection: {
     title:
       "24/7 Emergency Roadside Assistance in Jumeirah 3",
-
     heading:
       "Instant Vehicle Breakdown Support & Emergency Mechanic Dispatch",
-
     description:
       "An unexpected breakdown near active beach parking zones or along internal villa avenues in Jumeirah 3 can be caused by heat-induced electrical failures, flat batteries, or sudden cooling system issues. Salty sea air can speed up oxidation on grounding wires, leading to unexpected starter electrical faults.",
-
     descriptionTwo:
       "Our emergency response vans operate inside Jumeirah 3 around the clock to assist with non-starting engines, blown radiator lines, or locked calipers. We carry professional jumping packs, a complete set of diagnostic computers, and a selection of premium batteries to resolve your breakdown safely on-site.",
-
     emergencyServices: [
       "Emergency Battery Replacement",
       "Jumeirah 3 Roadside Help",
@@ -108,96 +81,6 @@ export const jumeirah3Area = {
 
     subtitle:
       "Comprehensive on-site garage solutions tailored meticulously for exotic sports cars, premium luxury SUVs, and multi-car family fleets.",
-
-    services: [
-      {
-        name:
-          "Car Battery Replacement",
-
-        slug:
-          "car-battery-replacement",
-
-        description:
-          "24/7 prompt premium battery installation with warranty registration and ECU coding, delivered straight to your villa driveway or beach parking lot.",
-      },
-
-      {
-        name:
-          "Mobile Mechanic Service",
-
-        slug:
-          "mobile-mechanic",
-
-        description:
-          "Expert mechanical repairs, part replacements, and on-site tune-ups performed at your residence, villa, or workplace without towing delays.",
-      },
-
-      {
-        name:
-          "Car AC Repair",
-
-        slug:
-          "car-ac-repair",
-
-        description:
-          "Deep digital AC diagnostics, refrigerant gas refills, compressor clutch changes, and leak tracing engineered to defeat extreme maritime humidity.",
-      },
-
-      {
-        name:
-          "Brake Pad Replacement",
-
-        slug:
-          "brake-pad-replacement",
-
-        description:
-          "On-site replacement of high-performance ceramic or semi-metallic brake pads, wear sensors, and brake fluid flushes right on your property.",
-      },
-
-      {
-        name:
-          "Vehicle Diagnostics",
-
-        slug:
-          "car-diagnostics",
-
-        description:
-          "Full system scanning using advanced European and American vehicle software to safely diagnose check engine, ABS, Airbag, and transmission codes.",
-      },
-
-      {
-        name:
-          "Oil Change Service",
-
-        slug:
-          "oil-change",
-
-        description:
-          "Eco-safe, vacuum-assisted premium synthetic engine oil and filter flushing carried out right outside your home with zero mess or residue.",
-      },
-
-      {
-        name:
-          "Alternator Repair",
-
-        slug:
-          "alternator-repair",
-
-        description:
-          "On-site testing and rapid replacement of faulty alternators, regulators, and bad grounding cables to restore your vehicle's charging system.",
-      },
-
-      {
-        name:
-          "Radiator Repair",
-
-        slug:
-          "radiator-repair",
-
-        description:
-          "Cooling fan diagnostics, thermostat swaps, radiator core flushing, and emergency coolant leak tracking to protect your engine from warping.",
-      },
-    ],
   },
 
   whyChooseUsSection: {

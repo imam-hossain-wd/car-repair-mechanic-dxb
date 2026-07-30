@@ -15,20 +15,17 @@ export const zaabeel1Area = {
     lat: 25.215,
     lng: 55.295,
   },
+  
   hero: {
-    title: "24/7 Car Repair & Mobile Mechanic in Za'abeel First Dubai",
-    subtitle: "Car Repair Mechanic Dubai brings certified, white-glove automotive solutions directly to your doorstep near Za'abeel Palace, Za'abeel Park, and the Dubai Frame area.",
+    title: "24/7 Emergency Mobile Mechanic in Za'abeel First Dubai",
+    subtitle: "Top-rated mobile car repair service in Za'abeel 1. We deliver expert mechanics, advanced OBD-II diagnostics, instant battery replacements, and brake repairs straight to your location near Dubai Frame, Za'abeel Park, and One Za'abeel.",
   },
+
   seo: {
-    title: "Car Repair Za'abeel 1 Dubai | 24/7 Mobile Mechanic Service",
-    description: "24/7 on-site car repair and mobile mechanic service in Za'abeel First (Za'abeel 1) Dubai by Car Repair Mechanic Dubai. Battery replacement, AC repairs, and diagnostic solutions at your doorstep.",
+    title: "Mobile Mechanic Za'abeel First Dubai | On-Site Auto Repair",
+    description: "Professional 24/7 mobile car repair in Za'abeel First Dubai. On-site battery replacement, computer diagnostics, AC service, brake repair, and emergency jump start.",
   },
-  images: {
-    hero: "/images/areas/zaabeel-1/hero.webp",
-    cover: "/images/areas/zaabeel-1/cover.webp",
-    thumbnail: "/images/areas/zaabeel-1/thumb.webp",
-    map: "/images/areas/zaabeel-1/map.webp",
-  },
+
   overviewSection: {
     title: "Professional Mobile Auto Repair Services in Za'abeel First",
     heading: "Trusted On-Site Mechanic & Emergency Roadside Assistance in Za'abeel 1",
@@ -62,48 +59,6 @@ export const zaabeel1Area = {
   servicesGridSection: {
     title: "Car Repair & Maintenance Services in Za'abeel 1",
     subtitle: "Complete mobile garage solutions brought directly to your home, office, or roadside location.",
-    services: [
-      {
-        name: "Car Battery Replacement",
-        slug: "car-battery-replacement",
-        description: "24/7 premium battery installation with complete ECU profiling and warranty registration directly on your driveway.",
-      },
-      {
-        name: "Mobile Mechanic Service",
-        slug: "mobile-mechanic",
-        description: "Expert mechanical component replacements, electrical debugging, and full on-site servicing executed without garage hassle.",
-      },
-      {
-        name: "Car AC Repair",
-        slug: "car-ac-repair",
-        description: "Climate control scanning, refrigerant refilling, leak detection, and compressor clutch servicing directly on-site.",
-      },
-      {
-        name: "Brake Pad Replacement",
-        slug: "brake-pad-replacement",
-        description: "On-site installation of high-quality ceramic or semi-metallic brake pads and wear sensors.",
-      },
-      {
-        name: "Vehicle Diagnostics",
-        slug: "car-diagnostics",
-        description: "Comprehensive OBD2 scanner evaluation targeting engine fault codes, electrical check lights, and transmission systems.",
-      },
-      {
-        name: "Oil Change Service",
-        slug: "oil-change",
-        description: "Clean, vacuum-assisted engine oil flushing and filter replacements performed in your garage or driveway.",
-      },
-      {
-        name: "Alternator Repair",
-        slug: "alternator-repair",
-        description: "Electrical system testing, charging loop repair, and on-site alternator replacements.",
-      },
-      {
-        name: "Radiator Repair",
-        slug: "radiator-repair",
-        description: "Coolant tank replacements, thermostat installations, and cooling pressure testing to stop overheating.",
-      },
-    ],
   },
   whyChooseUsSection: {
     title: "Why Drivers Choose Car Repair Mechanic Dubai in Za'abeel 1",

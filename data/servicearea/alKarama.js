@@ -14,22 +14,13 @@ export const alKaramaArea = {
     lng: 55.304,
   },
   hero: {
-    title: "24/7 Car Repair & Mobile Mechanic Service in Al Karama Dubai",
-    subtitle: "Professional on-site car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, oil change, brake service, and mobile mechanic support near Karama Park, Lulu Hypermarket, Karama Centre, and ADCB Metro Station.",
+    title: "24/7 Mobile Mechanic & Auto Repair Service Al Karama Dubai",
+    subtitle: "Expert automotive repair service delivered straight to your home or street side in Al Karama. Rapid response near Karama Park, ADCB Metro Station, Za'abeel Street, and Karama Market for battery replacement, brake service, and vehicle diagnostics.",
   },
-
   seo: {
-    title: "Car Repair in Al Karama Dubai | 24/7 Mobile Mechanic Near You",
-    description: "Professional car repair and mobile mechanic service in Al Karama Dubai by Car Repair Mechanic Dubai. We provide 24/7 emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, and jump start at your location."
+    title: "Mobile Mechanic Al Karama Dubai | On-Site Garage & Battery 24/7",
+    description: "Expert mobile car repair in Al Karama Dubai. Fast 24/7 arrival for on-site battery replacement, AC repair, computer scans, jump starts, and brake maintenance. Clear, honest pricing.",
   },
-
-  images: {
-    hero: "/images/areas/al-karama/hero.webp",
-    cover: "/images/areas/al-karama/cover.webp",
-    thumbnail: "/images/areas/al-karama/thumb.webp",
-    map: "/images/areas/al-karama/map.webp",
-  },
-
   overviewSection: {
     title: "Trusted Mobile Car Repair Experts in Al Karama Dubai",
     heading: "Professional On-Site Car Repair & Roadside Assistance in Al Karama",
