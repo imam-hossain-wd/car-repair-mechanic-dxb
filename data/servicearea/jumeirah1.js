@@ -27,75 +27,17 @@ export const jumeirah1Area = {
   },
 
   hero: {
-    badge:
-      "Premium 24/7 Mobile Mechanic & Roadside Assistance",
-
     title:
-      "24/7 Car Repair & On-Site Mobile Mechanic in Jumeirah 1 Dubai",
-
+      "Car Repair & On-Site Mobile Mechanic in Jumeirah 1 Dubai",
     subtitle:
-      "Luxury vehicle diagnostics, rapid roadside assistance, premium battery replacement, and car AC repair near Mercato Shopping Mall, Jumeirah Mosque, La Mer area, and Pearl Jumeira.",
-
-    ctaPrimary:
-      "Call Emergency Mechanic",
-
-    ctaSecondary:
-      "WhatsApp Mobile Mechanic",
-
-    phone: "055 183 1901",
-
-    whatsapp: "https://wa.me/971551831901",
-
-    stats: [
-      {
-        label: "Response Time",
-        value: "15 Min",
-      },
-
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
+      "Luxury vehicle diagnostics, rapid roadside assistance, premium battery replacement, and car AC repair near Mercato Shopping Mall, Jumeirah Mosque, La Mer area, and Pearl Jumeira."
   },
 
   seo: {
     title:
-      "Mobile Mechanic Jumeirah 1 | Car Repair Mechanic Dubai",
-
+      "Mobile Mechanic Jumeirah 1 Dubai | 24/7 Car Repair at Home",
     description:
-      "Professional 24/7 on-site car repair and mobile mechanic service in Jumeirah 1 Dubai by Car Repair Mechanic Dubai. Expert emergency battery replacement, European car diagnostics, and car AC repair at your villa or roadside.",
-
-    primaryKeyword:
-      "car repair jumeirah 1",
-
-    secondaryKeywords: [
-      "mobile mechanic jumeirah 1",
-      "battery replacement jumeirah 1",
-      "car battery replacement jumeirah 1",
-      "roadside assistance jumeirah 1",
-      "car AC repair jumeirah 1",
-      "jump start jumeirah 1",
-      "mechanic near mercato mall",
-      "luxury car repair jumeirah 1",
-      "on site mechanic jumeirah 1",
-      "roadside assistance la mer dubai",
-    ],
-
-    geoKeywords: [
-      "Jumeirah 1",
-      "Jumeirah 1 Dubai",
-      "Mercato Shopping Mall",
-      "Jumeirah Mosque",
-      "Pearl Jumeira",
-      "Nikki Beach Dubai",
-      "Jumeirah Beach Road 1",
-    ],
+      "Professional 24/7 on-site car repair and mobile mechanic service in Jumeirah 1 Dubai by Car Repair Mechanic Dubai. Expert emergency battery replacement, European car diagnostics, and car AC repair at your villa or roadside."
   },
 
   images: {

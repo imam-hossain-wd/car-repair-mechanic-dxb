@@ -25,59 +25,17 @@ export const alMankhoolArea = {
   },
 
   hero: {
-    badge:
-      "24/7 Emergency Mobile Car Repair",
-
     title:
-      "24/7 Car Repair & Mobile Mechanic Service in Al Mankhool Dubai",
-
+      "24/7 Mobile Mechanic & Car Repair Service in Al Mankhool Dubai",
     subtitle:
       "Professional on-site car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, jump start, and mobile mechanic support near BurJuman, Mankhool Road, and residential apartment areas in Al Mankhool Dubai.",
-
-    ctaPrimary:
-      "Call Mobile Mechanic",
-
-    ctaSecondary:
-      "WhatsApp Now",
-
-    stats: [
-      {
-        label: "Response Time",
-        value: "16 Min",
-      },
-
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
   },
 
   seo: {
     title:
-      "Car Repair & Mobile Mechanic in Al Mankhool Dubai | 24/7 Roadside Assistance",
-
+      "Car Repair Al Mankhool Dubai | 24/7 Emergency Mechanic Service",
     description:
       "Trusted car repair and mobile mechanic service in Al Mankhool Dubai by Car Repair Mechanic Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and complete on-site vehicle repair.",
-
-    primaryKeyword:
-      "car repair al mankhool",
-
-    secondaryKeywords: [
-      "mobile mechanic al mankhool",
-      "battery replacement al mankhool",
-      "roadside assistance al mankhool",
-      "car AC repair al mankhool",
-      "car garage al mankhool",
-      "jump start al mankhool",
-      "mechanic near burjuman",
-      "mobile car repair al mankhool dubai",
-    ],
   },
 
   images: {

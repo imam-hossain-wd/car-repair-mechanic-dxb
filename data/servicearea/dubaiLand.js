@@ -17,58 +17,16 @@ export const dubaiLandArea = {
   },
 
   hero: {
-    badge: "24/7 Mobile Mechanic & On-Site Car Repair",
-    title: "24/7 Car Repair & Emergency Mobile Mechanic in Dubai Land",
+    title: "Mobile Mechanic & Emergency Car Repair in Dubai Land",
     subtitle:
       "On-demand mobile car repair, emergency roadside assistance, certified battery replacement, computer diagnostics, and car AC repair near Al Barari, Arabian Ranches, Mudon, Falcon City of Wonders, and The Sustainable City.",
-    ctaPrimary: "Call Emergency Mechanic",
-    ctaSecondary: "WhatsApp Mobile Mechanic",
-    stats: [
-      {
-        label: "Response Time",
-        value: "25 Min",
-      },
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
   },
 
   seo: {
     title:
-      "Mobile Mechanic & Car Repair Dubai Land | 24/7 Roadside Assistance",
+      "Car Repair Dubai Land | 24/7 Mobile Mechanic at Your Door",
     description:
       "Professional on-site car repair and mobile mechanic services in Dubai Land (Dubailand). Specialized in emergency battery replacement, car AC repair, diagnostics, brake service, and breakdown recovery across all Dubailand communities.",
-    primaryKeyword: "car repair dubai land",
-    secondaryKeywords: [
-      "mobile mechanic dubai land",
-      "battery replacement dubai land",
-      "car battery replacement dubailand",
-      "roadside assistance dubai land",
-      "car AC repair dubai land",
-      "jump start dubailand",
-      "mechanic near al barari",
-      "mobile car repair dubai land",
-      "car garage dubai land",
-      "emergency mechanic dubailand",
-      "on site mechanic dubai land",
-      "roadside assistance mudon",
-    ],
-    geoKeywords: [
-      "Dubai Land",
-      "Dubailand Community",
-      "Al Barari",
-      "Mudon Dubai",
-      "Falcon City of Wonders",
-      "The Sustainable City",
-      "Living Legends",
-      "Liwan",
-    ],
   },
 
   images: {

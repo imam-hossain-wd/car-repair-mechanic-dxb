@@ -47,16 +47,14 @@ export function ServiceAreaHomeBanner({ area }) {
                 <div className="inline-flex items-center gap-2.5 bg-gray-800/80 backdrop-blur-sm border border-gray-700 rounded-full px-4 py-2">
                   <ShieldCheck className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                   <span className="text-xs md:text-sm font-medium text-gray-200 tracking-wide">
-                    {area?.hero?.badge || "24/7 Emergency Mobile Mechanic"}
+                    24/7 Emergency Mobile Mechanic
                   </span>
                 </div>
               </div>
 
               {/* Main Heading */}
               <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight lg:leading-tight">
-                {area?.hero?.title ||
-                  `24/7 Car Repair & Mobile Mechanic Service in ${area?.name} Dubai`
-                }
+                {area?.hero?.title}
               </h1>
 
               {/* Subtitle / Description */}

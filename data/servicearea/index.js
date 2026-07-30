@@ -3,8 +3,8 @@
 import { alJadafArea } from "./alJadaf";
 import { alKaramaArea } from "./alKarama";
 import { alMankhoolArea } from "./alMankhool";
-import { alRiggaArea } from "./alRigga";
 import { businessBayArea } from "./businessBay";
+import { deiraArea } from "./deira";
 import { downtownDubaiArea } from "./downtownDubai";
 import { dubaiLandArea } from "./dubaiLand";
 import { dubaiSiliconOasisArea } from "./dubaiSiliconOasis";
@@ -18,7 +18,7 @@ import { zaabeel2Area } from "./zaabeel2";
 
 export const serviceAeas = [
   oudMethaArea,
-  alRiggaArea,
+  deiraArea,
   businessBayArea,
   alJadafArea,
   alKaramaArea,

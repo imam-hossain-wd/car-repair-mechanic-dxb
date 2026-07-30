@@ -27,70 +27,19 @@ export const downtownDubaiArea = {
   },
 
   hero: {
-    badge:
-      "Premium 24/7 Mobile Mechanic & Emergency Roadside Assistance",
-
     title:
-      "24/7 Car Repair & On-Site Mobile Mechanic in Downtown Dubai",
+      "Premium Car Repair & Mobile Mechanic in Downtown Dubai",
 
     subtitle:
-      "Professional mobile mechanic services, luxury roadside assistance, instant basement battery fitting, and car AC repair near Burj Khalifa, Dubai Mall underground parking, and Sheikh Mohammed bin Rashid Boulevard.",
-
-    ctaPrimary:
-      "Call Emergency Mechanic",
-
-    ctaSecondary:
-      "WhatsApp Mobile Mechanic",
-
-    stats: [
-      {
-        label: "Response Time",
-        value: "15 Min",
-      },
-
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
+      "Professional mobile mechanic services, luxury roadside assistance, instant basement battery fitting, and car AC repair near Burj Khalifa, Dubai Mall underground parking, and Sheikh Mohammed bin Rashid Boulevard."
   },
 
   seo: {
     title:
-      "Mobile Mechanic Downtown Dubai | Premium Car Repair & Battery Fix",
+      "Car Repair Downtown Dubai | Premium Mobile Mechanic 24/7",
 
     description:
-      "Expert 24/7 on-site car repair and mobile mechanic solutions across Downtown Dubai by Car Repair Mechanic Dubai. Specializing in underground basement rescue, luxury vehicle diagnostics, AC restoration, and rapid battery swaps.",
-
-    primaryKeyword:
-      "car repair downtown dubai",
-
-    secondaryKeywords: [
-      "mobile mechanic downtown dubai",
-      "battery replacement downtown dubai",
-      "car battery replacement downtown dubai",
-      "roadside assistance downtown dubai",
-      "car AC repair downtown dubai",
-      "jump start downtown dubai",
-      "mechanic near burj khalifa",
-      "dubai mall basement car repair",
-      "on site mechanic downtown dubai",
-      "luxury auto repair sheikh zayed road",
-    ],
-
-    geoKeywords: [
-      "Downtown Dubai",
-      "Burj Khalifa Boulevard",
-      "The Dubai Mall Parking",
-      "Financial Centre Road",
-      "Sheikh Mohammed bin Rashid Boulevard",
-      "Opera District Dubai",
-    ],
+      "Expert 24/7 on-site car repair and mobile mechanic solutions across Downtown Dubai by Car Repair Mechanic Dubai. Specializing in underground basement rescue, luxury vehicle diagnostics, AC restoration, and rapid battery swaps."
   },
 
   images: {

@@ -27,75 +27,17 @@ export const jumeirah2Area = {
   },
 
   hero: {
-    badge:
-      "Premium 24/7 Mobile Mechanic & Roadside Assistance",
-
     title:
-      "24/7 Car Repair & On-Site Mobile Mechanic in Jumeirah 2 Dubai",
-
+      "24/7 Car Repair & Mobile Mechanic Service in Jumeirah 2 Dubai",
     subtitle:
-      "Bespoke mobile car repair, emergency roadside assistance, luxury battery replacement, and automotive AC repairs near Boxpark, Jumeirah Bay Island, and Jumeirah Beach Road 2.",
-
-    ctaPrimary:
-      "Call Emergency Mechanic",
-
-    ctaSecondary:
-      "WhatsApp Mobile Mechanic",
-
-    phone: "055 183 1901",
-
-    whatsapp: "https://wa.me/971551831901",
-
-    stats: [
-      {
-        label: "Response Time",
-        value: "15 Min",
-      },
-
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
+      "Bespoke mobile car repair, emergency roadside assistance, luxury battery replacement, and automotive AC repairs near Boxpark, Jumeirah Bay Island, and Jumeirah Beach Road 2."
   },
 
   seo: {
     title:
-      "Mobile Mechanic Jumeirah 2 | Car Repair Mechanic Dubai",
-
+      "Car Repair Jumeirah 2 Dubai | On-Site Mobile Mechanic 24/7",
     description:
-      "Expert 24/7 on-site car repair and mobile mechanic solutions across Jumeirah 2 Dubai by Car Repair Mechanic Dubai. Specializing in luxury vehicle diagnostic checks, professional AC restoration, and rapid battery swaps.",
-
-    primaryKeyword:
-      "car repair jumeirah 2",
-
-    secondaryKeywords: [
-      "mobile mechanic jumeirah 2",
-      "battery replacement jumeirah 2",
-      "car battery replacement jumeirah 2",
-      "roadside assistance jumeirah 2",
-      "car AC repair jumeirah 2",
-      "jump start jumeirah 2",
-      "mechanic near boxpark",
-      "luxury car garage jumeirah 2",
-      "on site mechanic jumeirah 2",
-      "roadside assistance al wasl road",
-    ],
-
-    geoKeywords: [
-      "Jumeirah 2",
-      "Jumeirah 2 Dubai",
-      "Boxpark Dubai",
-      "Jumeirah Bay Island",
-      "Bvlgari Resort Dubai",
-      "Al Wasl Road Jumeirah",
-      "Jumeirah Beach Road 2",
-    ],
+      "Expert 24/7 on-site car repair and mobile mechanic solutions across Jumeirah 2 Dubai by Car Repair Mechanic Dubai. Specializing in luxury vehicle diagnostic checks, professional AC restoration, and rapid battery swaps."
   },
 
   images: {

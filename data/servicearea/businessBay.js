@@ -27,72 +27,19 @@ export const businessBayArea = {
   },
 
   hero: {
-    badge:
-      "24/7 Emergency Mobile Mechanic",
-
     title:
-      "24/7 Car Repair & Mobile Mechanic Service in Business Bay Dubai",
+      "24/7 On-Site Car Repair & Mobile Mechanic in Business Bay Dubai",
 
     subtitle:
-      "Professional mobile car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, jump start, oil change, and on-site mechanic service near Business Bay Metro Station, Bay Avenue, Downtown Dubai, and office towers.",
-
-    ctaPrimary:
-      "Call Emergency Mechanic",
-
-    ctaSecondary:
-      "WhatsApp Mobile Mechanic",
-
-    stats: [
-      {
-        label: "Response Time",
-        value: "16 Min",
-      },
-
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
+      "Professional mobile car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, jump start, oil change, and on-site mechanic service near Business Bay Metro Station, Bay Avenue, Downtown Dubai, and office towers."
   },
 
   seo: {
     title:
-      "Car Repair & Mobile Mechanic in Business Bay Dubai | 24/7 Roadside Assistance",
+      "Mobile Mechanic Business Bay Dubai | 24/7 On-Site Car Repair",
 
     description:
       "Trusted car repair and mobile mechanic service in Business Bay Dubai by Car Repair Mechanic Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and on-site vehicle maintenance across Business Bay and Downtown Dubai.",
-
-    primaryKeyword:
-      "car repair business bay",
-
-    secondaryKeywords: [
-      "mobile mechanic business bay",
-      "battery replacement business bay",
-      "car battery replacement business bay",
-      "roadside assistance business bay",
-      "car AC repair business bay",
-      "mobile car repair business bay dubai",
-      "jump start business bay",
-      "car garage business bay",
-      "emergency mechanic business bay",
-      "mechanic near business bay metro station",
-      "on site mechanic business bay",
-      "downtown dubai roadside assistance",
-    ],
-
-    geoKeywords: [
-      "Business Bay Dubai",
-      "Business Bay Metro Station",
-      "Bay Avenue",
-      "Downtown Dubai",
-      "Sheikh Zayed Road",
-      "Dubai Canal roadside assistance",
-    ],
   },
 
   images: {

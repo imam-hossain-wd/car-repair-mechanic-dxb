@@ -17,56 +17,17 @@ export const dubaiFestivalCityArea = {
   },
 
   hero: {
-    badge: "24/7 Emergency Mobile Mechanic",
-    title: "24/7 Car Repair & Mobile Mechanic Service in Dubai Festival City",
+  
+    title: "24/7 Car Repair & Mobile Mechanic in Dubai Festival City",
     subtitle:
-      "Professional mobile car repair, emergency roadside assistance, battery replacement, diagnostics, AC repair, jump start, oil change, and on-site mechanic service near Dubai Festival City Mall, IKEA Dubai, Al Badia Residences, and Dubai Creek waterfront areas.",
-    ctaPrimary: "Call Emergency Mechanic",
-    ctaSecondary: "WhatsApp Mobile Mechanic",
-    stats: [
-      {
-        label: "Response Time",
-        value: "22 Min",
-      },
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
+      "Professional mobile car repair, emergency roadside assistance, battery replacement, diagnostics, AC repair, jump start, oil change, and on-site mechanic service near Dubai Festival City Mall, IKEA Dubai, Al Badia Residences, and Dubai Creek waterfront areas."
   },
 
   seo: {
     title:
-      "Car Repair & Mobile Mechanic in Dubai Festival City | 24/7 Roadside Assistance",
+      "Mobile Mechanic Dubai Festival City | 24/7 Car Repair Service",
     description:
       "Professional car repair and mobile mechanic service in Dubai Festival City. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, and on-site vehicle maintenance throughout Festival City and nearby areas.",
-    primaryKeyword: "car repair dubai festival city",
-    secondaryKeywords: [
-      "mobile mechanic dubai festival city",
-      "battery replacement dubai festival city",
-      "car battery replacement festival city",
-      "roadside assistance festival city",
-      "car AC repair festival city",
-      "jump start dubai festival city",
-      "mechanic near festival city mall",
-      "mobile car repair festival city",
-      "car garage festival city",
-      "emergency mechanic festival city",
-      "on site mechanic dubai creek harbour",
-      "roadside assistance ikea dubai",
-    ],
-    geoKeywords: [
-      "Dubai Festival City",
-      "Festival City Mall",
-      "IKEA Dubai",
-      "Al Badia Residences",
-      "Dubai Creek Waterfront",
-      "Festival Bay",
-    ],
   },
 
   images: {

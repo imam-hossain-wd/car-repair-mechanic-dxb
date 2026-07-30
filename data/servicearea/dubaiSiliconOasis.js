@@ -17,45 +17,16 @@ export const dubaiSiliconOasisArea = {
   },
 
   hero: {
-    badge: "24/7 Emergency Mobile Mechanic",
-    title: "24/7 Car Repair & Mobile Mechanic Service in Dubai Silicon Oasis",
+    title: "24/7 Car Repair & Mobile Mechanic in Dubai Silicon Oasis",
     subtitle:
       "Professional on-site car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, jump start, oil change, and mobile mechanic service near Silicon Central Mall, DSO Headquarters, and residential communities in Dubai Silicon Oasis.",
-    ctaPrimary: "Call Mobile Mechanic",
-    ctaSecondary: "WhatsApp Now",
-    stats: [
-      {
-        label: "Response Time",
-        value: "22 Min",
-      },
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
   },
 
   seo: {
     title:
-      "Car Repair & Mobile Mechanic in Dubai Silicon Oasis | 24/7 Roadside Assistance",
+      "Car Repair Dubai Silicon Oasis | Emergency Mobile Mechanic",
     description:
-      "Trusted car repair and mobile mechanic service in Dubai Silicon Oasis. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and complete on-site vehicle maintenance.",
-    primaryKeyword: "car repair dubai silicon oasis",
-    secondaryKeywords: [
-      "mobile mechanic dubai silicon oasis",
-      "battery replacement dubai silicon oasis",
-      "roadside assistance DSO",
-      "car AC repair dubai silicon oasis",
-      "car garage dubai silicon oasis",
-      "jump start DSO",
-      "mobile car repair DSO",
-      "mechanic near silicon central mall",
-      "car battery replacement dubai silicon oasis",
-    ],
+      "Trusted car repair and mobile mechanic service in Dubai Silicon Oasis. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and complete on-site vehicle maintenance."
   },
 
   images: {

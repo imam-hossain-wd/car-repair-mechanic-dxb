@@ -1,111 +1,40 @@
-// src/data/serviceAreas/alKarama.js
-
 export const alKaramaArea = {
   id: 1,
-
   slug: "al-karama",
-
   href: "area-we-serve/al-karama",
-
   name: "Al Karama",
-
   shortName: "Karama",
-
   city: "Dubai",
-
   country: "UAE",
-
   type: "commercial-residential",
-
   popular: true,
-
   responseTime: "5–15 Minutes",
-
   coordinates: {
     lat: 25.251,
     lng: 55.304,
   },
-
   hero: {
-    badge: "24/7 Emergency Mobile Mechanic",
-
     title: "24/7 Car Repair & Mobile Mechanic Service in Al Karama Dubai",
-
     subtitle: "Professional on-site car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, oil change, brake service, and mobile mechanic support near Karama Park, Lulu Hypermarket, Karama Centre, and ADCB Metro Station.",
-
-    ctaPrimary: "Call Emergency Mechanic",
-
-    ctaSecondary: "WhatsApp Mobile Mechanic",
-
-    stats: [
-      {
-        label: "Response Time",
-        value: "15–30 Min",
-      },
-
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
   },
 
   seo: {
-    title: "Car Repair & Mobile Mechanic in Al Karama Dubai | 24/7 Emergency Service",
-
-    description: "Professional car repair and mobile mechanic service in Al Karama Dubai by Car Repair Mechanic Dubai. We provide 24/7 emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, and jump start at your location.",
-
-    primaryKeyword: "car repair al karama",
-
-    secondaryKeywords: [
-      "mobile mechanic al karama",
-      "battery replacement al karama",
-      "car battery replacement al karama",
-      "roadside assistance al karama",
-      "car AC repair al karama",
-      "car garage al karama",
-      "car diagnostics al karama",
-      "jump start service al karama",
-      "mechanic near karama park",
-      "mechanic near ADCB metro station",
-      "emergency mechanic al karama",
-      "on site mechanic al karama",
-    ],
-
-    geoKeywords: [
-      "Al Karama Dubai",
-      "Karama Park",
-      "Lulu Hypermarket Karama",
-      "ADCB Metro Station",
-      "Karama Centre",
-      "Sheikh Khalifa Bin Zayed Street",
-    ],
+    title: "Car Repair in Al Karama Dubai | 24/7 Mobile Mechanic Near You",
+    description: "Professional car repair and mobile mechanic service in Al Karama Dubai by Car Repair Mechanic Dubai. We provide 24/7 emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, and jump start at your location."
   },
 
   images: {
     hero: "/images/areas/al-karama/hero.webp",
-
     cover: "/images/areas/al-karama/cover.webp",
-
     thumbnail: "/images/areas/al-karama/thumb.webp",
-
     map: "/images/areas/al-karama/map.webp",
   },
 
   overviewSection: {
     title: "Trusted Mobile Car Repair Experts in Al Karama Dubai",
-
     heading: "Professional On-Site Car Repair & Roadside Assistance in Al Karama",
-
     description: "Car Repair Mechanic Dubai provides fast, reliable, and professional mobile car repair services throughout Al Karama Dubai. Operating from our neighboring hub in Oud Metha, our certified mechanics regularly assist drivers in residential towers, commercial streets, basement parking facilities, and roadside breakdown locations near Karama Park, Lulu Hypermarket, Karama Centre, and ADCB Metro Station.",
-
     descriptionTwo: "We specialize in emergency battery replacement, mobile mechanic service, engine diagnostics, car AC repair, oil change, brake repair, alternator repair, radiator service, and roadside assistance for all major vehicle brands. Whether your car fails to start, overheats in traffic, or experiences electrical issues, our technicians arrive quickly with advanced diagnostic tools and professional repair equipment.",
-
     highlights: [
       "24/7 Emergency Roadside Assistance",
       "15–30 Min Fast Mobile Mechanic Response",
@@ -118,11 +47,8 @@ export const alKaramaArea = {
 
   emergencyContentSection: {
     title: "24/7 Emergency Roadside Assistance in Al Karama",
-
     heading: "Fast Breakdown Recovery & Mobile Mechanic Support",
-
     description: "Busy roads, heavy traffic congestion, apartment basement parking, and high commercial activity in Al Karama can quickly turn a minor vehicle issue into a stressful roadside emergency. Our emergency mobile mechanic team provides rapid roadside assistance and complete on-site vehicle repair across Al Karama Dubai.",
-
     descriptionTwo: "We regularly assist customers with dead batteries, engine overheating, non-starting vehicles, AC failures, brake issues, alternator faults, and warning light diagnostics. Our fully equipped mobile repair units are available 24 hours a day for emergency support—getting you back on the road without towing delays.",
 
     emergencyServices: [
@@ -137,161 +63,67 @@ export const alKaramaArea = {
     ],
   },
 
-  servicesGridSection: {
-    title: "Our Car Repair Services in Al Karama Dubai",
 
-    subtitle: "Professional mobile mechanic and emergency roadside assistance services available anywhere in Al Karama.",
-
-    services: [
-      {
-        name: "Car Battery Replacement",
-
-        slug: "car-battery-replacement",
-
-        description: "24/7 emergency battery replacement service with branded batteries and full warranty.",
-      },
-
-      {
-        name: "Mobile Mechanic Service",
-
-        slug: "mobile-mechanic",
-
-        description: "Professional on-site mechanic support at your home, office, hotel, or roadside location.",
-      },
-
-      {
-        name: "Car AC Repair",
-
-        slug: "car-ac-repair",
-
-        description: "Advanced AC diagnostics, gas refill, compressor inspection, leak testing, and cooling repair.",
-      },
-
-      {
-        name: "Brake Pad Replacement",
-
-        slug: "brake-pad-replacement",
-
-        description: "On-site brake inspection, rotor checking, and premium brake pad replacement service.",
-      },
-
-      {
-        name: "Engine Diagnostics",
-
-        slug: "car-diagnostics",
-
-        description: "Computerized ECU vehicle diagnostics, engine error code clearing, and warning light scanning.",
-      },
-
-      {
-        name: "Oil Change Service",
-
-        slug: "oil-change",
-
-        description: "Fast engine oil and filter replacement service right at your doorstep.",
-      },
-
-      {
-        name: "Alternator Repair",
-
-        slug: "alternator-repair",
-
-        description: "Professional charging system inspection, battery testing, and alternator repair/replacement.",
-      },
-
-      {
-        name: "Radiator Repair",
-
-        slug: "radiator-repair",
-
-        description: "Engine cooling system inspection, coolant leak repair, and radiator maintenance.",
-      },
-    ],
-  },
 
   whyChooseUsSection: {
     title: "Why Drivers in Al Karama Choose Car Repair Mechanic Dubai",
-
     subtitle: "Reliable mobile mechanic and emergency car repair services trusted by drivers across Dubai.",
-
     items: [
       {
         title: "Fast 15–30 Minute Response",
-
         description: "Dispatched directly from nearby Oud Metha to reach any point in Al Karama within 15–30 minutes.",
       },
-
       {
         title: "Certified Automotive Technicians",
-
         description: "Highly trained mechanics experienced with Japanese, German, American, Korean, and European vehicles.",
       },
-
       {
         title: "Advanced Diagnostic Equipment",
-
         description: "Professional diagnostic scanners and specialized tools for accurate on-site fault detection.",
       },
-
       {
         title: "24/7/365 Emergency Availability",
-
         description: "Available day, night, weekends, and holidays for emergency roadside assistance.",
       },
-
       {
         title: "Transparent & Upfront Pricing",
-
         description: "Honest repair recommendations with clear cost estimates and no hidden fees.",
       },
-
       {
         title: "On-Site Repair Convenience",
-
         description: "We repair your car directly at home, office, street side, or basement parking spaces.",
       },
     ],
   },
 
+
   customerProblemsSection: {
     title: "Common Vehicle Problems in Al Karama Dubai",
-
     subtitle: "Frequent car issues our mobile mechanics solve daily across Al Karama.",
-
     problems: [
       {
         title: "Dead Battery in Underground Parking",
 
         description: "Battery drain is extremely common in tight apartment basement parking areas across Al Karama.",
       },
-
       {
         title: "Car AC Blowing Hot Air",
-
         description: "Heavy Dubai city traffic and summer temperatures strain cooling compressors and cause gas leaks.",
       },
-
       {
         title: "Engine Overheating in Traffic Congestion",
-
         description: "Cooling fan and radiator issues frequently occur during peak-hour traffic delays on Sheikh Khalifa Bin Zayed St.",
       },
-
       {
         title: "Check Engine Light & Electrical Warnings",
-
         description: "Modern vehicles require computerized diagnostic scanning to isolate complex sensor and ECU faults.",
       },
-
       {
         title: "Car Not Starting After Parking",
-
         description: "We regularly provide instant battery testing, jump starts, or starter motor repairs on the spot.",
       },
-
       {
         title: "Brake Squealing & Reduced Braking",
-
         description: "Stop-and-go driving in Karama accelerates brake pad wear and requires timely inspection.",
       },
     ],
@@ -299,7 +131,6 @@ export const alKaramaArea = {
 
   nearbyLandmarksSection: {
     title: "Areas & Landmarks We Cover in Al Karama",
-
     subtitle: "Fast mobile mechanic and emergency roadside assistance near major Al Karama landmarks.",
 
     landmarks: [
@@ -337,7 +168,6 @@ export const alKaramaArea = {
 
   faqSection: {
     title: "Frequently Asked Questions",
-
     subtitle: "Answers to common questions about our mobile mechanic and car repair services in Al Karama Dubai.",
 
     faqs: [

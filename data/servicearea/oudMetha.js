@@ -18,45 +18,16 @@ export const oudMethaArea = {
   },
 
   hero: {
-    badge: "24/7 Emergency Mobile Mechanic",
-    title: "24/7 Car Repair & Mobile Mechanic Service in Oud Metha Dubai",
+    title: "24/7 Car Repair & On-Site Mobile Mechanic in Oud Metha Dubai",
     subtitle:
       "Professional on-site car repair, emergency battery replacement, roadside assistance, diagnostics, AC repair, oil change, jump start, and mobile mechanic service near Oud Metha Metro Station, American Hospital Dubai, and Dubai Healthcare City.",
-    ctaPrimary: "Call Mobile Mechanic",
-    ctaSecondary: "WhatsApp Now",
-    stats: [
-      {
-        label: "Response Time",
-        value: "17 Min",
-      },
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
   },
 
   seo: {
     title:
-      "Car Repair & Mobile Mechanic in Oud Metha Dubai | 24/7 Roadside Assistance",
+      "Car Repair Oud Metha Dubai | Fast Mobile Mechanic Service",
     description:
       "Trusted car repair and mobile mechanic service in Oud Metha Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and complete on-site vehicle maintenance.",
-    primaryKeyword: "car repair oud metha",
-    secondaryKeywords: [
-      "mobile mechanic oud metha",
-      "battery replacement oud metha",
-      "roadside assistance oud metha",
-      "car AC repair oud metha",
-      "car garage oud metha",
-      "jump start oud metha",
-      "mechanic near oud metha metro station",
-      "mobile car repair oud metha dubai",
-      "car battery replacement oud metha",
-    ],
   },
 
   images: {

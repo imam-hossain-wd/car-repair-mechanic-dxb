@@ -27,74 +27,17 @@ export const jumeirah3Area = {
   },
 
   hero: {
-    badge:
-      "Premium 24/7 Mobile Mechanic & Roadside Assistance",
-
     title:
-      "24/7 Car Repair & On-Site Mobile Mechanic in Jumeirah 3 Dubai",
-
+      "Emergency Car Repair & Mobile Mechanic in Jumeirah 3 Dubai",
     subtitle:
-      "Elite mobile mechanic garage, roadside rescue setups, premium car battery diagnostics, and climate control AC repairs near Kite Beach, Sunset Beach, and Jumeirah Beach Road 3.",
-
-    ctaPrimary:
-      "Call Emergency Mechanic",
-
-    ctaSecondary:
-      "WhatsApp Mobile Mechanic",
-
-    phone: "055 183 1901",
-
-    whatsapp: "https://wa.me/971551831901",
-
-    stats: [
-      {
-        label: "Response Time",
-        value: "15 Min",
-      },
-
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
+      "Elite mobile mechanic garage, roadside rescue setups, premium car battery diagnostics, and climate control AC repairs near Kite Beach, Sunset Beach, and Jumeirah Beach Road 3."
   },
 
   seo: {
     title:
-      "Mobile Mechanic Jumeirah 3 | Car Repair Mechanic Dubai",
-
+      "Mobile Mechanic Jumeirah 3 Dubai | Car Repair Near Kite Beach",
     description:
-      "Professional 24/7 on-site car repair and mobile mechanic services in Jumeirah 3 Dubai by Car Repair Mechanic Dubai. Specializing in high-performance automotive diagnostics, battery replacement, and brake care near Kite Beach.",
-
-    primaryKeyword:
-      "car repair jumeirah 3",
-
-    secondaryKeywords: [
-      "mobile mechanic jumeirah 3",
-      "battery replacement jumeirah 3",
-      "car battery replacement jumeirah 3",
-      "roadside assistance jumeirah 3",
-      "car AC repair jumeirah 3",
-      "jump start jumeirah 3",
-      "mechanic near kite beach",
-      "performance car repair jumeirah 3",
-      "on site mechanic jumeirah 3",
-      "roadside assistance sunset beach",
-    ],
-
-    geoKeywords: [
-      "Jumeirah 3",
-      "Jumeirah 3 Dubai",
-      "Kite Beach Dubai",
-      "Sunset Beach Jumeirah",
-      "Umm Suqeim Border",
-      "Jumeirah Beach Road 3",
-    ],
+      "Professional 24/7 on-site car repair and mobile mechanic services in Jumeirah 3 Dubai by Car Repair Mechanic Dubai. Specializing in high-performance automotive diagnostics, battery replacement, and brake care near Kite Beach."
   },
 
   images: {

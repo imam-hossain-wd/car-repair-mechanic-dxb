@@ -16,62 +16,13 @@ export const alJadafArea = {
   },
 
   hero: {
-    badge: "24/7 Emergency Mobile Mechanic",
-
-    title: "24/7 Car Repair & Mobile Mechanic Service in Al Jadaf Dubai",
-
+    title: "Emergency Car Repair & Mobile Mechanic in Al Jadaf Dubai",
     subtitle: "Professional mobile car repair, emergency roadside assistance, battery replacement, diagnostics, AC repair, jump start, oil change, and on-site mechanic service near Jaddaf Waterfront, Al Jadaf Metro Station, Dubai Healthcare City, and Culture Village.",
-
-    ctaPrimary: "Call Emergency Mechanic",
-
-    ctaSecondary: "WhatsApp Mobile Mechanic",
-
-    stats: [
-      {
-        label: "Response Time",
-        value: "15–30 Min",
-      },
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
   },
 
   seo: {
-    title: "Car Repair & Mobile Mechanic in Al Jadaf Dubai | 24/7 Roadside Assistance",
-
+    title: "Mobile Mechanic Al Jadaf Dubai | On-Site Car Repair 24/7",
     description: "Professional car repair and mobile mechanic service in Al Jadaf Dubai by Car Repair Mechanic Dubai. We provide 24/7 emergency battery replacement, roadside assistance, computer diagnostics, AC repair, brake service, jump start, and on-site maintenance.",
-
-    primaryKeyword: "car repair al jadaf",
-
-    secondaryKeywords: [
-      "mobile mechanic al jadaf",
-      "battery replacement al jadaf",
-      "car battery replacement al jadaf",
-      "roadside assistance al jadaf",
-      "car AC repair al jadaf",
-      "jump start al jadaf",
-      "mechanic near jaddaf waterfront",
-      "mobile car repair al jadaf",
-      "car garage al jadaf",
-      "emergency mechanic al jadaf",
-      "on site mechanic al jadaf",
-      "roadside assistance dubai healthcare city",
-    ],
-
-    geoKeywords: [
-      "Al Jadaf Dubai",
-      "Jaddaf Waterfront",
-      "Dubai Healthcare City",
-      "Culture Village",
-      "Al Jadaf Metro Station",
-      "Dubai Creek Area",
-    ],
   },
 
   images: {

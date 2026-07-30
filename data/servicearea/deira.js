@@ -1,15 +1,15 @@
 // src/data/serviceAreas/alRigga.js
 
-export const alRiggaArea = {
+export const deiraArea = {
   id: 9,
 
-  slug: "al-rigga",
+  slug: "deira",
 
-  href: "/dubai/area-we-serve/al-rigga",
+  href: "/dubai/area-we-serve/deira",
 
-  name: "Al Rigga",
+  name: "Deira",
 
-  shortName: "Rigga",
+  shortName: "deira",
 
   city: "Dubai",
 
@@ -27,72 +27,17 @@ export const alRiggaArea = {
   },
 
   hero: {
-    badge:
-      "24/7 Emergency Mobile Mechanic",
-
     title:
-      "24/7 Car Repair & Mobile Mechanic Service in Al Rigga Dubai",
-
+      "Car Repair & Emergency Mobile Mechanic in Deira Dubai",
     subtitle:
       "Fast mobile car repair, emergency battery replacement, roadside assistance, AC repair, diagnostics, jump start, oil change, and on-site mechanic service near Al Rigga Metro Station, Al Ghurair Centre, Deira Clocktower, and Rigga Road.",
-
-    ctaPrimary:
-      "Call Emergency Mechanic",
-
-    ctaSecondary:
-      "WhatsApp Mobile Mechanic",
-
-    stats: [
-      {
-        label: "Response Time",
-        value: "15 Min",
-      },
-
-      {
-        label: "Customer Rating",
-        value: "4.9/5",
-      },
-
-      {
-        label: "Emergency Support",
-        value: "24/7",
-      },
-    ],
   },
 
   seo: {
     title:
-      "Car Repair & Mobile Mechanic in Al Rigga Dubai | 24/7 Roadside Assistance",
-
+      "Car Repair Deira Dubai | Mobile Mechanic & Roadside Help",
     description:
-      "Professional car repair and mobile mechanic service in Al Rigga Dubai by Car Repair Mechanic Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and on-site vehicle maintenance throughout Deira and Al Rigga.",
-
-    primaryKeyword:
-      "car repair al rigga",
-
-    secondaryKeywords: [
-      "mobile mechanic al rigga",
-      "battery replacement al rigga",
-      "car battery replacement al rigga",
-      "roadside assistance al rigga",
-      "car AC repair al rigga",
-      "jump start al rigga",
-      "mechanic near al rigga metro station",
-      "mobile car repair deira",
-      "car garage al rigga",
-      "emergency mechanic al rigga",
-      "roadside assistance deira dubai",
-      "on site mechanic al rigga",
-    ],
-
-    geoKeywords: [
-      "Al Rigga Dubai",
-      "Rigga Road",
-      "Al Rigga Metro Station",
-      "Deira Dubai",
-      "Al Ghurair Centre",
-      "Deira Clocktower",
-    ],
+      "Professional car repair and mobile mechanic service in Al Rigga Dubai by Car Repair Mechanic Dubai. We provide emergency battery replacement, roadside assistance, diagnostics, AC repair, brake service, jump start, oil change, and on-site vehicle maintenance throughout Deira and Al Rigga."
   },
 
   images: {
