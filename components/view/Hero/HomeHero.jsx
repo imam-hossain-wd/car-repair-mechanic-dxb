@@ -64,7 +64,7 @@ export function HomeHero() {
 
             {/* Main Heading */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl  font-bold leading-tight">
-              <span className="text-white">Fast & Relaible Car </span>
+              <span className="text-white">Fast & Reliable Car </span>
               <br />
               <span className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                 Repair Mechanic
@@ -74,7 +74,7 @@ export function HomeHero() {
             </h1>
 
             <p className="text-md text-white max-w-lg">
-              Dubai&lsquo;s top-rated mobile mechanic service brought directly to your doorstep. On-site car battery replacement, auto AC repair, engine diagnostics, and 24/7 emergency roadside support in 5–15 minutes.
+            Dubai&lsquo;s top-rated mobile mechanic service brought directly to your doorstep. On-site car battery replacement, auto AC repair, engine diagnostics, and 24/7 emergency roadside assistance in 5–15 minutes.
             </p>
           </div>
 
@@ -113,30 +113,6 @@ export function HomeHero() {
                 </div>
               </div>
             </div>
-
-            {/* Stats Grid */}
-            {/* <div className="grid grid-cols-4 gap-3">
-              {stats.map((stat, index) => {
-                const Icon = stat.icon;
-                return (
-                  <div
-                    key={index}
-                    className="group relative bg-white/5 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-primary/10 transition-all duration-300 hover:scale-105 border border-white/10"
-                  >
-                    <Icon className="h-5 w-5 text-primary mx-auto mb-1.5" />
-                    <div className="text-xl font-bold text-white mb-0.5">{stat.value}</div>
-                    <div className="text-xs text-gray-400">{stat.label}</div>
-                  </div>
-                );
-              })}
-            </div> */}
-
-            {/* Quick Service Note */}
-            {/* <div className="bg-linear-to-r from-primary/10 to-primary/5 rounded-xl p-3 text-center border border-primary/20">
-              <p className="text-sm text-gray-300">
-                ⚡ No towing fees • Free inspection • Warranty on all repairs
-              </p>
-            </div> */}
           </div>
         </div>
       </div>

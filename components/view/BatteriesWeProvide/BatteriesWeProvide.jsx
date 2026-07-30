@@ -20,20 +20,14 @@ export function BatteriesWeProvide() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-6">
-          <div className="inline-flex items-center gap-2 bg-primary/10 px-3 py-0.5 rounded-full mb-2">
-            <Battery className="h-3 w-3 text-primary" />
-            <span className="text-xs font-medium text-primary uppercase tracking-wide">
-              Premium Quality
-            </span>
-          </div>
           
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
             Genuine <span className="text-primary">Batteries</span> We Provide
           </h2>
           
-          <div className="w-12 h-0.5 bg-primary mx-auto my-2"></div>
+          {/* <div className="w-12 h-0.5 bg-primary mx-auto my-2"></div> */}
           
-          <p className="text-sm text-gray-600 dark:text-gray-300">
+          <p className="text-sm md:text-lg text-gray-600 dark:text-gray-300">
             {totalBrands}+ top brands | All types available | Free installation
           </p>
         </div>

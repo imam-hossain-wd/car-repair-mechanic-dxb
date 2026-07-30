@@ -9,18 +9,18 @@ import {
 } from "lucide-react";
 import { SiteConfig } from "@/config/siteConfig";
 import { faqData } from "@/data/faq";
+import Link from "next/link";
 
 
 
 // Group FAQs by category
 const categories = [...new Set(faqData.map(faq => faq.category))];
-const popularFAQs = faqData.filter(faq => faq.popular === true);
+
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
   const [activeCategory, setActiveCategory] = useState("All");
-  const { brandName, displayNumber, city, email } = SiteConfig;
-
+  
   const filteredFAQs = activeCategory === "All" 
     ? faqData 
     : faqData.filter(faq => faq.category === activeCategory);
@@ -49,12 +49,6 @@ export function FAQ() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-5">
-          <div className="inline-flex items-center gap-2 bg-primary/10 px-3 py-0.5 rounded-full mb-2">
-            <HelpCircle className="h-3 w-3 text-primary" />
-            <span className="text-xs font-medium text-primary uppercase tracking-wide">
-              FAQ
-            </span>
-          </div>
           
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
             Frequently Asked <span className="text-primary">Questions</span>
@@ -134,13 +128,13 @@ export function FAQ() {
                   {faq.answer}
                   {faq.category === "Emergency" && (
                     <div className="mt-2 pt-2 border-t border-gray-100 dark:border-gray-700">
-                      <a 
+                      <Link 
                         href={`tel:${SiteConfig.displayNumber}`}
                         className="inline-flex items-center gap-1 text-xs text-primary font-medium hover:underline"
                       >
                         <Phone className="h-3 w-3" />
                         Call Emergency: {SiteConfig.displayNumber}
-                      </a>
+                      </Link>
                     </div>
                   )}
                 </div>

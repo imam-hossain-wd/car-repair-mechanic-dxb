@@ -8,10 +8,7 @@ import {
     X,
     ChevronLeft,
     ChevronRight,
-    Camera,
-    Grid,
     Maximize2,
-    Heart,
     Share2,
     Clock,
     MapPin,
@@ -102,12 +99,6 @@ export function WorkGallery() {
 
                 {/* Section Header */}
                 <div className={`text-center max-w-3xl mx-auto mb-12 transition-all duration-1000 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
-                    <div className="inline-flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full mb-4">
-                        <Camera className="h-3.5 w-3.5 text-primary" />
-                        <span className="text-xs font-medium text-primary uppercase tracking-wide">
-                            Our Work Gallery
-                        </span>
-                    </div>
 
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                         See Our <span className="text-primary">Car Repair</span> Work

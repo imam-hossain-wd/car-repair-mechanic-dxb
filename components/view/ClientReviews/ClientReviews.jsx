@@ -51,12 +51,6 @@ export function ClientReviews() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-8">
-          <div className="inline-flex items-center gap-2 bg-primary/10 px-3 py-0.5 rounded-full mb-2">
-            <Star className="h-3 w-3 text-primary fill-primary" />
-            <span className="text-xs font-medium text-primary uppercase tracking-wide">
-              Client Reviews
-            </span>
-          </div>
           
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
             What Our <span className="text-primary">Customers Say</span>

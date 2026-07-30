@@ -17,7 +17,7 @@ const HomePage = () => {
   return (
     <div>
       <HomeHero />
-      <TrustedBadges />
+      {/* <TrustedBadges /> */}
       <FeaturedServices />
       <AboutUs />
       <WhyChooseUs />

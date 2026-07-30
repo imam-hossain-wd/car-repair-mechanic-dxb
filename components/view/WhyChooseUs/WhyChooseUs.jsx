@@ -1,151 +1,154 @@
-// components/WhyChooseUs.jsx
-"use client";
-
-import { 
-  Zap, 
-  Shield, 
-  Clock,  
-  ThumbsUp, 
+import {
+  Zap,
+  Shield,
+  Clock,
+  ThumbsUp,
   Award,
   Truck,
   Users,
-  BadgeCheck,
-  Sparkles,
+  BadgeCheck
 } from "lucide-react";
 import { SiteConfig } from "@/config/siteConfig";
 
+
 export function WhyChooseUs() {
-  const { brandName, city } = SiteConfig;
+  const { brandName = "Car Repair Mechanic", city = "Dubai", phone = "+971500000000" } = SiteConfig || {};
 
   const reasons = [
     {
       icon: Zap,
       title: "Rapid Response",
-      description: `Average 15-30 minute arrival time across ${city}. We value your time.`,
+      description: `Average 5-15 minute arrival time across ${city}. We value your emergency needs.`,
       highlight: "Fastest in Dubai",
-      color: "blue"
     },
     {
       icon: Shield,
       title: "Certified Experts",
-      description: "All mechanics are certified with 5+ years experience.",
+      description: "All mobile mechanics are licensed professionals with 5+ years experience.",
       highlight: "Fully Licensed",
-      color: "green"
     },
     {
       icon: Clock,
       title: "24/7 Availability",
-      description: "Day or night, we're always ready to help you get back on road.",
+      description: "Day or night, weekend or holiday, our roadside team is on standby.",
       highlight: "365 Days/Year",
-      color: "orange"
     },
     {
       icon: BadgeCheck,
       title: "Warranty Guarantee",
-      description: "All repairs come with comprehensive warranty coverage.",
-      highlight: "Up to 2 Years",
-      color: "purple"
+      description: "All on-site repairs come with a comprehensive labor & parts warranty.",
+      highlight: "Up to 12 Months",
     },
     {
       icon: Truck,
-      title: "Mobile Service",
-      description: "We come to your location - home, office, or roadside.",
+      title: "Doorstep Mobile Service",
+      description: "Complete repair equipment brought to your home, office, or roadside location.",
       highlight: "Doorstep Delivery",
-      color: "red"
     },
     {
       icon: ThumbsUp,
       title: "Satisfaction First",
-      description: "5000+ happy customers with 4.9/5 rating across platforms.",
+      description: "5,000+ satisfied vehicle owners with a 4.9/5 rating across UAE review platforms.",
       highlight: "Top Rated",
-      color: "yellow"
     }
   ];
 
   const quickFacts = [
-    { label: "Response Time", value: "15-30 min", icon: Clock },
-    { label: "Customer Rating", value: "4.9/5", icon: Award },
+    { label: "Fastest On-Site Arrival", value: "5-15 min", icon: Clock },
+    { label: "Top-Rated Service", value: "4.9/5", icon: Award },
     { label: "Vehicles Serviced", value: "5000+", icon: Users },
     { label: "Service Warranty", value: "12 Months", icon: Shield },
   ];
 
+  // Schema.org Structured Data for Local Business SEO Signal
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": brandName,
+    "areaServed": city,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "5000"
+    }
+  };
+
   return (
-    <section className="py-5 bg-gray-50 dark:bg-gray-800">
+    <section
+      className="py-5 bg-gray-50 dark:bg-gray-800/50"
+      aria-label="Why Choose Our Mobile Car Repair Services"
+    >
+      {/* Structural SEO Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 lg:mb-12">
-          <div className="inline-flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full mb-3">
-            <Sparkles className="h-3.5 w-3.5 text-primary" />
-            <span className="text-xs font-medium text-primary uppercase tracking-wide">
-              Why Choose Us
-            </span>
-          </div>
-          
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
-            Why {brandName}?
+        <div className="text-center max-w-2xl mx-auto mb-6">
+
+
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-3 tracking-tight">
+            <span className="text-primary">Why Choose </span>{brandName}?
           </h2>
-          
-          <div className="w-16 h-0.5 bg-primary mx-auto mb-4"></div>
-          
-          <p className="text-gray-600 dark:text-gray-300">
-            We combine expertise, technology, and convenience to deliver exceptional service
+
+          {/* <div className="w-16 h-1 bg-primary mx-auto rounded-full mb-4"></div> */}
+
+          <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+            We combine certified mechanic expertise, advanced diagnostic equipment, and 24/7 mobile convenience directly across {city}.
           </p>
         </div>
 
-        {/* Quick Facts Bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+        {/* Quick Facts Metric Cards */}
+        <ul className="w-auto md:w-[70%] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mb-5 list-none p-0">
           {quickFacts.map((fact, index) => {
             const Icon = fact.icon;
             return (
-              <div 
+              <li
                 key={index}
-                className="bg-white dark:bg-gray-900 rounded-lg p-3 text-center border border-gray-200 dark:border-gray-700"
+                className="bg-white flex justify-center items-center  rounded-xl p-4 text-center border border-gray-200/80 dark:border-gray-700/80 shadow-sm hover:shadow-md transition-shadow duration-200"
               >
-                <Icon className="h-5 w-5 text-primary mx-auto mb-1" />
-                <div className="text-lg font-bold text-gray-900 dark:text-white">{fact.value}</div>
-                <div className="text-xs text-gray-500 dark:text-gray-400">{fact.label}</div>
-              </div>
+                <Icon className="h-6 w-6 text-primary mx-auto mb-2" />
+                <div className="text-left">
+                  <div className="text-xl font-black text-gray-900 dark:text-white tracking-tight">{fact.value}</div>
+                  <div className="text-xs font-medium text-gray-500 dark:text-gray-400 mt-0.5">{fact.label}</div>
+                </div>
+              </li>
             );
           })}
-        </div>
+        </ul>
 
-        {/* Reasons Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Value Proposition Feature Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {reasons.map((reason, index) => {
             const Icon = reason.icon;
             return (
-              <div
+              <article
                 key={index}
-                className="group bg-white dark:bg-gray-900 rounded-xl p-5 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-lg transition-all duration-300"
+                className="group bg-white dark:bg-gray-900 rounded-2xl p-4 border border-primary/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
               >
-                {/* Icon */}
-                <div className="flex items-start justify-between mb-3">
-                  <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-all duration-300">
-                    <Icon className="h-5 w-5 text-primary" />
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="p-3 rounded-xl bg-primary text-white">
+                      <Icon className="h-6 w-6 text-white transition-colors duration-300" />
+                    </div>
+                    <span className="text-xs font-bold text-primary bg-primary/10 dark:bg-primary/20 px-2.5 py-1 rounded-full">
+                      {reason.highlight}
+                    </span>
                   </div>
-                  <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full">
-                    {reason.highlight}
-                  </span>
+
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
+                    {reason.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                    {reason.description}
+                  </p>
                 </div>
-                
-                {/* Content */}
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-                  {reason.title}
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  {reason.description}
-                </p>
-              </div>
+              </article>
             );
           })}
-        </div>
-
-        {/* Bottom Banner */}
-        <div className="mt-10 p-4 bg-primary/5 rounded-xl border border-primary/20 text-center">
-          <p className="text-gray-700 dark:text-gray-300 text-sm">
-            🏆 Trusted by over 5,000 vehicle owners across {city}
-          </p>
         </div>
       </div>
     </section>

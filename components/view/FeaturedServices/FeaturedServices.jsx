@@ -12,29 +12,21 @@ import { services } from "@/data/services/services";
 
 export function FeaturedServices() {
   return (
-    <section className="py-5 bg-linear-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <section className="py-8 bg-linear-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-4">
-            <Wrench className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-primary uppercase tracking-wide">
-              Our Services
-            </span>
-          </div>
+        <div className="text-center max-w-3xl mx-auto mb-8">
 
           {/* Title */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Professional Car Repair
-            <span className="text-primary"> Services</span>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2">
+            Professional Mobile 
+            <span className="text-primary"> Car Repair Services</span>
           </h2>
 
           {/* Description */}
-          <p className="text-gray-600 dark:text-gray-300 text-lg">
-            Comprehensive automotive solutions delivered to your doorstep.
-            Certified mechanics using advanced diagnostic tools.
+          <p className="text-gray-600 text-sm md:text-lg">
+            Comprehensive automotive solutions delivered directly to your location. Certified mechanics equipped with advanced diagnostic tools available 24/7
           </p>
         </div>
 
