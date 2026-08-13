@@ -16,14 +16,14 @@ import { tradeCenterArea } from "./tradeCenter";
 import { zaabeel1Area } from "./zaabeel1";
 import { zaabeel2Area } from "./zaabeel2";
 
-export const serviceAeas = [
+export const serviceAreas = [
   oudMethaArea,
-  deiraArea,
-  businessBayArea,
-  alJadafArea,
   alKaramaArea,
   alMankhoolArea,
+  businessBayArea,
   downtownDubaiArea,
+  deiraArea,
+  alJadafArea,
   dubaiLandArea,
   dubaiSiliconOasisArea,
   jumeirah1Area,

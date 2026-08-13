@@ -80,7 +80,7 @@ export function AboutUs() {
               </h2>
               <div className="space-y-2 text-gray-600 text-sm md:text-lg
               leading-relaxed">
-                <p>Founded to revolutionize car care in Dubai, we bring certified mechanic expertise directly to your home, office, or roadside. Combining 13+ years of experience with state-of-the-art diagnostic tools, we&lsquo;ve successfully serviced 5,000+ vehicles across the UAE. Operating 24/7, expert help is always just a phone call away.</p>
+                <p>Founded to revolutionize car care in Dubai, we bring certified mechanic expertise directly to your home, office, or roadside. Combining 10+ years of experience with state-of-the-art diagnostic tools, we&lsquo;ve successfully serviced 5,000+ vehicles across the UAE. Operating 24/7, expert help is always just a phone call away.</p>
               </div>
             </div>
 

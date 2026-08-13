@@ -1,5 +1,6 @@
 import Script from "next/script";
 import { SiteConfig } from "@/config/siteConfig";
+import { serviceAreas } from "@/data/servicearea";
 
 export default function OrganizationSchema() {
   const telephoneNumber = SiteConfig.displayNumber
@@ -49,7 +50,7 @@ export default function OrganizationSchema() {
           ...SiteConfig.socialLinks.map((social) => social.href),
           `https://www.google.com/maps?cid=${SiteConfig.GMB?.CID || "17371170169148373037"}`
         ],
-        "areaServed": SiteConfig.serviceAreas.map((area) => ({
+        "areaServed": serviceAreas.map((area) => ({
           "@type": "AdministrativeArea",
           "name": `${area.name}, ${SiteConfig.city}`
         })),

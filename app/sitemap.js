@@ -61,7 +61,7 @@
 // }
 
 import { SiteConfig } from "@/config/siteConfig"; // Adjust this import path based on your folder structure
-import { serviceAeas } from "@/data/servicearea";
+import { serviceAreas } from "@/data/servicearea";
 import { services } from "@/data/services/services";
 // import { blogPosts } from "@/data/blogsData";
 
@@ -100,7 +100,7 @@ export default async function sitemap() {
   }));
 
   // ৪. Dynamic Area We Serve Routes
-  const areaRoutes = serviceAeas.map((area) => ({
+  const areaRoutes = serviceAreas.map((area) => ({
     url: `${baseUrl}/area-we-serve/${area.slug}`,
     lastModified: area.updatedAt 
       ? new Date(area.updatedAt) 

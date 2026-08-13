@@ -1,6 +1,5 @@
 import React from 'react'
 import VehiclesWeServePage from '@/pages/VehiclesWeServePage/VehiclesWeServePage'
-import { SiteConfig } from '@/config/siteConfig';
 import { siteMetadata } from '@/seo/siteMetadata/siteMetadata';
 
 // export const metadata = {

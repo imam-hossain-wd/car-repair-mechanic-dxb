@@ -59,15 +59,15 @@ export default function AboutPage() {
 
   // Milestones
   const milestones = [
-    { year: "2011", title: "Founded in Dubai", description: "Started with a vision to transform car repair", icon: Target },
-    { year: "2015", title: "Expanded Fleet", description: "Grew to 15+ mobile service vans", icon: Truck },
-    { year: "2020", title: "5000+ Customers", description: "Reached milestone of satisfied clients", icon: Users },
-    { year: "2024", title: "Premium Service", description: "Launched luxury & EV specialist services", icon: Award }
+    { year: "2016", title: "Founded in Dubai", description: "Started with a vision to transform car repair", icon: Target },
+    { year: "2017", title: "Expanded Fleet", description: "Grew to 15+ mobile service vans", icon: Truck },
+    { year: "2019", title: "5000+ Customers", description: "Reached milestone of satisfied clients", icon: Users },
+    { year: "2020", title: "Premium Service", description: "Launched luxury & EV specialist services", icon: Award }
   ];
 
   // Stats
   const stats = [
-    { value: "13+", label: "Years of Excellence", icon: Award, color: "from-yellow-500 to-orange-500" },
+    { value: "10+", label: "Years of Excellence", icon: Award, color: "from-yellow-500 to-orange-500" },
     { value: "5000+", label: "Happy Customers", icon: Users, color: "from-green-500 to-emerald-500" },
     { value: "50+", label: "Service Locations", icon: MapPin, color: "from-blue-500 to-cyan-500" },
     { value: "24/7", label: "Emergency Support", icon: Clock, color: "from-red-500 to-pink-500" },
@@ -101,7 +101,7 @@ export default function AboutPage() {
             <div className="inline-flex items-center gap-1.5 bg-primary/10 px-3 py-1 rounded-full mb-4">
               <Sparkles className="h-3 w-3 text-primary" />
               <span className="text-xs font-medium text-primary uppercase tracking-wide">
-                13+ Years of Excellence
+                10+ Years of Excellence
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
@@ -137,7 +137,7 @@ export default function AboutPage() {
             
             <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed">
               <p>
-                Founded in 2011, {brandName} began with a simple yet powerful vision — 
+                Founded in 2016, {brandName} began with a simple yet powerful vision — 
                 to make professional car repair accessible, transparent, and convenient for every vehicle owner in {city}.
               </p>
               <p>
@@ -147,7 +147,7 @@ export default function AboutPage() {
               </p>
               <p>
                 Today, we&apos;re proud to be {city}&apos;s leading mobile car repair service, trusted by families, 
-                businesses, and luxury vehicle owners alike. Our 13+ years of experience, combined with 
+                businesses, and luxury vehicle owners alike. Our 10+ years of experience, combined with 
                 continuous investment in training and technology, ensures every repair meets the highest standards.
               </p>
             </div>

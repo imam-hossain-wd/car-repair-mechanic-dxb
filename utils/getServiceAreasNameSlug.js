@@ -1,8 +1,9 @@
-import { serviceAeas } from "@/data/servicearea";
+import { serviceAreas } from "@/data/servicearea";
+
 
 
 export const getServiceAreasNameSlug = () => {
-  return serviceAeas.map(area => ({
+  return serviceAreas.map(area => ({
     name: area.name,
     slug: area.slug
   }));

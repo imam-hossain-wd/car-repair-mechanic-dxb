@@ -5,6 +5,7 @@ import { Footer } from "@/components/shared/Footer/Footer";
 import { MobileFloatingButtons } from "@/components/shared/FloatingButtons/FloatingButtons";
 import OrganizationSchema from "@/seo/schemas/OrganizationSchema";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 
 const geistSans = Geist({
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
         </main>
 
       </body>
+      <GoogleAnalytics gaId="G-JBPBY420W3" />
     </html>
   );
 }

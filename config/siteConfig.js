@@ -37,19 +37,19 @@ export const SiteConfig = {
     longitude: "55.31207400",
   },
 
-  serviceAreas: [
-    { name: "Business Bay" },
-    { name: "Al Rigga" },
-    { name: "Dubai Land" },
-    { name: "Jumeirah" },
-    { name: "Al Mankhool" },
-    { name: "Trade Center" },
-    { name: "Dubai Silicon Oasis" },
-    { name: "Downtown Dubai" },
-    { name: "Za'abeel First" },
-    { name: "Za'abeel Second" },
-    { name: "Al Jaddaf" }
-  ],
+  // serviceAreas: [
+  //   { name: "Business Bay" },
+  //   { name: "Al Rigga" },
+  //   { name: "Dubai Land" },
+  //   { name: "Jumeirah" },
+  //   { name: "Al Mankhool" },
+  //   { name: "Trade Center" },
+  //   { name: "Dubai Silicon Oasis" },
+  //   { name: "Downtown Dubai" },
+  //   { name: "Za'abeel First" },
+  //   { name: "Za'abeel Second" },
+  //   { name: "Al Jaddaf" }
+  // ],
 
   operatingHours: [
     { day: "Saturday", hours: "24 Hours" },

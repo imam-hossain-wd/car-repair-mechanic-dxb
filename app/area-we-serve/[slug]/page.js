@@ -1,11 +1,11 @@
-import { serviceAeas } from "@/data/servicearea";
 import AreaWeServeDetailPage from "@/pages/AreaWeServePage/AreaWeServeDetailPage";
 import { SiteConfig } from "@/config/siteConfig";
 import { notFound } from "next/navigation";
+import { serviceAreas } from "@/data/servicearea";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const area = serviceAeas.find((item) => item.slug === slug);
+  const area = serviceAreas.find((item) => item.slug === slug);
 
   if (!area) {
     return {
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }) {
 
 export default async function AreaWeServeDetail({ params }) {
   const { slug } = await params;
-  const area = serviceAeas.find((item) => item.slug === slug);
+  const area = serviceAreas.find((item) => item.slug === slug);
 
   if (!area) {
     notFound();
