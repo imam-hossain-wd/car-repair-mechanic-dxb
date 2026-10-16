@@ -8,6 +8,7 @@ import { deiraArea } from "./deira";
 import { downtownDubaiArea } from "./downtownDubai";
 import { dubaiLandArea } from "./dubaiLand";
 import { dubaiSiliconOasisArea } from "./dubaiSiliconOasis";
+import { dubaiStudioCityArea } from "./dubaiStudioCity";
 import { jumeirah1Area } from "./jumeirah1";
 import { jumeirah2Area } from "./jumeirah2";
 import { jumeirah3Area } from "./jumeirah3";
@@ -31,7 +32,8 @@ export const serviceAreas = [
   jumeirah3Area, 
   zaabeel1Area, 
   zaabeel2Area,
-  tradeCenterArea
+  tradeCenterArea,
+  dubaiStudioCityArea
 
 
 ];
