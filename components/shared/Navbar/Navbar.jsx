@@ -24,7 +24,7 @@ const NavCallButton = () => {
       href={SiteConfig?.numberCallLink}
       className="flex items-center justify-center gap-2 px-2 py-2 bg-primary text-white font-semibold rounded"
     >
-      <Phone className="h-3 w-3 group-hover:rotate-12 transition-transform" />
+      <Phone className="h-3 w-3 group-hover:rotate-12 transition-transform -mr-1.5 md:mr-0" />
       <span className="text-[10px] md:text-md">{SiteConfig?.displayNumber}</span>
     </Link>
   );
@@ -102,7 +102,7 @@ export const Navbar = () => {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            <Link href="/">
+            <Link className="w-44 md:w-48 h-auto md:h-18" href="/">
               <Logo />
             </Link>
 
