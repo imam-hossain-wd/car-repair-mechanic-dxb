@@ -62,6 +62,8 @@ import carrepair from "../assets/service-banner/ac-repair.png"
 
 import serviceHero from "../assets/hero/car-repair.jpg"
 
+import logo from "../assets/logo/logo.png"
+
 
 //social icons
 import facebook from "../assets/social-icon/facebook.png"
@@ -69,6 +71,10 @@ import instagram from "../assets/social-icon/instagram.png"
 import pinterest from "../assets/social-icon/pinterest.png"
 import youtube from "../assets/social-icon/youtube.png"
 
+
+export const brandLogo ={
+    logo
+}
 
 export const socialIcons = {
     facebook,
